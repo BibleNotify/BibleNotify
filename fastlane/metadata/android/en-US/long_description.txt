@@ -1,0 +1,7 @@
+Bible notify is a free and open-source, offline daily Bible verse notification app for Android.
+- Randomly sends you a notification from a selection of 140+ inspiring Bible verses.
+- Set the time of day Bible Notify will send you the verse notification each day -right down to the minute, if you so desire.
+- Simply tap on the notification to read the chapter in which the verse is found in the app's built-in Bible reader.
+- Features the KJV of the Bible with the true names restored.
+- Bible Notify is fully functional offline
+- No tracking or data collection whatsoever

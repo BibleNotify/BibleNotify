@@ -3,6 +3,7 @@ package com.correctsyntax.biblenotify;
 import android.content.Intent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.app.NotificationManager;
 import android.app.Notification;
@@ -12,6 +13,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
 import android.content.SharedPreferences;
@@ -158,7 +160,11 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                json = new String(buffer, StandardCharsets.UTF_8);
+            }else{
+                json = new String(buffer,Charset.forName("UTF-8"));
+            }
         } catch (IOException ex) {
 
             return null;

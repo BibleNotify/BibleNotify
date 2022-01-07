@@ -8,6 +8,9 @@ Get daily Bible verse notifications from your Android device with the free & ope
 
 *Thy word is a lamp unto my feet, and a light unto my path." -Psalms 119:105*
 
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/com.correctsyntax.biblenotify/)
 
 ## Contributing
 

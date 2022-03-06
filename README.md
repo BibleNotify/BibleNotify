@@ -11,9 +11,9 @@ Free daily Bible verse notification app for Android devices. Get daily Bible ver
      height="80">](https://f-droid.org/packages/com.correctsyntax.biblenotify/)
 
 
-## Discord chat
+## Element chat
 
-Need help? Want to help out? [Join our Discord](https://discord.gg/KeF95paSep) to chat with the developers.
+Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-notify:matrix.org) to chat with the developers or get support.
 
 
 ## Contributing

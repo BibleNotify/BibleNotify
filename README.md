@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".assets/bible-notify-banner.png" />
+  <img src=".assets/illustration.svg" />
   <h1>Bible Notify</h1>
   <p>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL_v3-green.svg" /></a>

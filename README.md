@@ -28,6 +28,11 @@ Bible Notify is a free daily Bible verse notification application for Android de
 Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-notify:matrix.org) to chat with the developers or get support.
 
 
+## Running the code
+
+Open in Android Studio (tested on Windows 10). Bible Notify uses minimal dependancies.
+
+
 ## Contributing
 
 Contributions are always welcome! Feel free to open a PR or ask questions.

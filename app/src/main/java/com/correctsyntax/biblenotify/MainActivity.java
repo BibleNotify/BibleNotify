@@ -1,31 +1,25 @@
 package com.correctsyntax.biblenotify;
 
-import android.os.Bundle;
-import android.app.Activity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.Toast;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.content.SharedPreferences;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.view.LayoutInflater;
+import android.widget.ImageButton;
 import android.widget.TimePicker;
-import com.correctsyntax.biblenotify.setAlarm;
+import android.widget.Toast;
 
+public class MainActivity extends AppCompatActivity {
 
-public class MainActivity extends Activity {
+    ImageButton startBtn, changeBtn, helpBtn;
 
-    ImageButton btnstart, btnsettings, btnhelp;
     Animation animFadeOut;
-
-    public static int MainSetTimeInt = 24;
-    public static int minTime = 60;
-
-    public static int min = 0;
-    public static int hour = 12;
 
     public static int HourToSet = 12;
     public static int MinToSet = 0;
@@ -39,20 +33,23 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnstart= findViewById(R.id.start_button);
-        btnsettings = findViewById(R.id.settings_button);
-        btnhelp = findViewById(R.id.help_button);
 
+        startBtn = findViewById(R.id.start_button);
+        changeBtn = findViewById(R.id.change_button);
+        helpBtn = findViewById(R.id.help_button);
 
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("bibleNotify",MODE_PRIVATE);
 
-        // If enabled set image to done
+
+
+// If enabled set image to done
         if(sharedPreferences.contains("Started")) {
-            btnstart.setImageResource(R.drawable.start_button_two);
+            startBtn.setImageResource(R.drawable.ic_pause_sending_button);
         }
 
+
         // Start Button
-        btnstart.setOnClickListener(new View.OnClickListener() {
+        startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(sharedPreferences.contains("Started") && sharedPreferences.getString("Started", "no").equals("yes")){
@@ -67,8 +64,8 @@ public class MainActivity extends Activity {
                     /* Make Alert dialog */
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     LayoutInflater inflater = MainActivity.this.getLayoutInflater();
-                    builder.setCancelable(true);
-                    View v_ = inflater.inflate(R.layout.dialog, null);
+                    builder.setCancelable(false);
+                    View v_ = inflater.inflate(R.layout.start_dialog, null);
                     builder.setView(v_);
                     builder.setTitle("Set Time");
                     builder.setMessage("Send notification at:")
@@ -80,14 +77,14 @@ public class MainActivity extends Activity {
                                     editor.putInt("SetTimeM", MinToBeSaved);
                                     editor.commit();
 
-                                    setAlarm.startAlarmBroadcastReceiver(MainActivity.this, sharedPreferences);
+                                    SetAlarm.startAlarmBroadcastReceiver(MainActivity.this, sharedPreferences);
                                     Toast.makeText(getApplicationContext(),"Saved",Toast.LENGTH_SHORT).show();
 
                                     // Animation
                                     animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
-                                    btnstart.setVisibility(View.VISIBLE);
-                                    btnstart.startAnimation(animFadeOut);
-                                    btnstart.setImageResource(R.drawable.start_button_two);
+                                    startBtn.setVisibility(View.VISIBLE);
+                                    startBtn.startAnimation(animFadeOut);
+                                    startBtn.setImageResource(R.drawable.ic_pause_sending_button);
 
                                 }
                             })
@@ -99,7 +96,7 @@ public class MainActivity extends Activity {
                                 }
                             }).create().show();
                     // get time picker object
-                    TimePicker input = v_.findViewById(R.id.picktime);
+                    TimePicker input = v_.findViewById(R.id.start_time_picker);
 
                     // set event Listener on Time picker
                     input.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
@@ -135,26 +132,45 @@ public class MainActivity extends Activity {
         });
 
 
-        // Settings
-        btnsettings.setOnClickListener(new View.OnClickListener() {
+        // Settings (Change time)
+        changeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent settings_Intent=new Intent(MainActivity.this,settingsActivity.class);
-                startActivity(settings_Intent);
+                if(sharedPreferences.contains("Started") && sharedPreferences.getString("Started", "no").equals("yes")){
+                    Intent settings_Intent = new Intent(MainActivity.this, SettingsActivity.class);
+                    startActivity(settings_Intent);
+                }else {
+                    Toast.makeText(getApplicationContext(),"You must enable notifications first",Toast.LENGTH_LONG).show();
+                }
 
             }
         });
 
         // Help
-        btnhelp.setOnClickListener(new View.OnClickListener() {
+        helpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent help_Intent=new Intent(MainActivity.this,helpActivity.class);
+                Intent help_Intent=new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(help_Intent);
             }
         });
 
 
 
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
 }

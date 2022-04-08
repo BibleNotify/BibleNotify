@@ -1,96 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/linear2"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="100">
-        <LinearLayout
-            android:id="@+id/top_bar"
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@color/mode_white"
+        app:layout_constraintBottom_toTopOf="@+id/main_logo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#81C784"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <TextView
-                android:id="@+id/top_bar_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:padding="8dp"
-                android:text="Bible Notify"
-                android:textSize="20sp"
-                android:textColor="#FFFFFF"
-                android:layout_gravity="left|top"/>
-            <LinearLayout
-                android:id="@+id/t_b_hold"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:gravity="right"
-                android:orientation="horizontal"
-                android:weightSum="40"
-                android:layout_gravity="right|top"
-                android:layout_weight="60">
-                <ImageButton
-                    android:id="@+id/help_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:background="#81C784"
-                    android:src="@drawable/help_button"
-                    android:scaleType="centerInside"
-                    android:layout_weight="1"/>
-                <ImageButton
-                    android:id="@+id/settings_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:padding="0dp"
-                    android:background="#81C784"
-                    android:src="@drawable/settings_button"
-                    android:scaleType="centerInside"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/sec_back"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#F5F5F5"
-            android:orientation="vertical"
-            android:weightSum="100">
-            <ImageView
-                android:id="@+id/main_image"
-                android:layout_width="wrap_content"
-                android:layout_height="326dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/bible_notify_home_screen"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal|top"
-                android:layout_weight="6"/>
-            <LinearLayout
-                android:id="@+id/start_button_hold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:orientation="vertical">
-                <ImageButton
-                    android:id="@+id/start_button"
-                    android:background="#F5F5F5"
-                    android:layout_width="86dp"
-                    android:layout_height="86dp"
-                    android:src="@drawable/start_button"
-                    android:scaleType="centerInside"
-                    android:layout_gravity="center_horizontal"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/mode_white"
+            android:contentDescription="help_icon"
+            android:tint="@color/mode_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_question_circle"
+            tools:srcCompat="@drawable/ic_question_circle" />
+
+        <TextView
+            android:id="@+id/top_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/main_screen_title"
+            android:textColor="@color/mode_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/main_logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="Main_logo"
+        app:layout_constraintBottom_toTopOf="@+id/main_logo_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:srcCompat="@drawable/ic_main_screen_logo"
+        tools:srcCompat="@drawable/ic_main_screen_logo" />
+
+    <ImageView
+        android:id="@+id/main_logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="main_logo_text"
+        android:tint="@color/mode_black"
+        app:layout_constraintBottom_toTopOf="@+id/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_logo_image"
+        app:srcCompat="@drawable/ic_main_screen_logo_text"
+        tools:srcCompat="@drawable/ic_main_screen_logo_text" />
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/mode_white"
+        app:layout_constraintBottom_toTopOf="@+id/change_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_logo_text"
+        app:srcCompat="@drawable/ic_main_start_button" />
+
+    <ImageButton
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/mode_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        app:srcCompat="@drawable/ic_set_button_two" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/bottom_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

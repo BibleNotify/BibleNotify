@@ -1,18 +1,17 @@
 package com.correctsyntax.biblenotify;
 
-import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.content.Intent;
-import android.net.Uri;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
-
-public class helpActivity extends Activity {
+public class HelpActivity extends AppCompatActivity {
 
     Button back;
     TextView licenseLink, webPageLink;
@@ -24,9 +23,9 @@ public class helpActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help_activity);
 
-        back = findViewById(R.id.back_button_help);
-        licenseLink = findViewById(R.id.license_link);
-        webPageLink = findViewById(R.id.web_page_link);
+        back = findViewById(R.id.close_help_button);
+        licenseLink = findViewById(R.id.view_license_button);
+        webPageLink = findViewById(R.id.website_link);
 
 
         // Back
@@ -41,10 +40,10 @@ public class helpActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(helpActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(HelpActivity.this);
                 builder.setTitle("Bible Notify License");
                 builder.setMessage(R.string.license);
-                builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("close", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User clicked OK button !!!
                     }
@@ -55,6 +54,8 @@ public class helpActivity extends Activity {
                 alert.show();
             }
         });
+
+
         // OUR Web Page Link
         webPageLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,5 +70,6 @@ public class helpActivity extends Activity {
 
 
     }
-}
 
+
+}

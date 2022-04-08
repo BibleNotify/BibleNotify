@@ -1,8 +1,6 @@
-Correct Syntax © 2020 Bible Notify
+Bible Notify verses v1.4
+------------------------
 
-*******************
 All chapters: 68
 All verses: 146
-All books:27
-*******************
-text version 1.3
+All books: 27

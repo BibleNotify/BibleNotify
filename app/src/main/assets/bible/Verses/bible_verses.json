@@ -1,0 +1,782 @@
+/**** Bible Notify ******/
+/*** text version 1.4 ***/
+
+{
+  "all":
+  [
+/******* Start **********/
+
+/** Genesis **/
+    {
+      "verse": "In the beginning Elohim created the heaven and the earth.",
+      "place": "Genesis 1:1 (story)",
+      "data": "Gn/1"
+    },
+
+/** Genesis **/
+    {
+      "verse": "And Elohim blessed the seventh day, and sanctified it: because that in it he had rested from all his work which Elohim created and made.",
+      "place": "Genesis 2:3",
+      "data": "Gn/2"
+    },
+    {
+      "verse": "If thou doest well, shalt thou not be accepted? and if thou doest not well, sin lieth at the door. And unto thee shall be his desire, and thou shalt rule over him. ",
+      "place": "Genesis 4:7 (story)",
+            "data": "Gn/4"
+    },
+{
+"verse": " While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.",
+      "place": "Genesis 8:22",
+            "data": "Gn/8"
+    },
+/** Exodus **/
+{
+"verse": "And I, behold, I will harden the hearts of the Egyptians, and they shall follow them: and I will get me honour upon Pharaoh, and upon all his host, upon his chariots, and upon his horsemen.",
+      "place": "Exodus 14:17 (story)",
+            "data": "Ex/14"
+    },
+    {
+"verse": "Thou shalt have no other Elohims before me.",
+      "place": "Exodus 14:17",
+            "data": "Ex/14"
+    },
+    {
+"verse": "Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth.",
+      "place": "Exodus 20:4",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not bow down thyself to them, nor serve them: for I Yahweh thy Elohim am a jealous Elohim, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me;",
+      "place": "Exodus 20:5",
+            "data": "Ex/20"
+    },
+    {
+"verse": "And shewing mercy unto thousands of them that love me, and keep my commandments.",
+      "place": "Exodus 20:6",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not take the name of Yahweh thy Elohim in vain; for Yahweh will not hold him guiltless that taketh his name in vain.",
+      "place": "Exodus 20:7",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Remember the sabbath day, to keep it holy.",
+      "place": "Exodus 20:8",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Six days shalt thou labour, and do all thy work:",
+      "place": "Exodus 20:9",
+            "data": "Ex/20"
+    },
+    {
+"verse": "But the seventh day is the sabbath of Yahweh thy Elohim: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates:",
+      "place": "Exodus 20:10",
+            "data": "Ex/20"
+    },
+    {
+"verse": "For in six days Yahweh made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore Yahweh blessed the sabbath day, and hallowed it.",
+      "place": "Exodus 20:11",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Honour thy father and thy mother: that thy days may be long upon the land which Yahweh thy Elohim giveth thee.",
+      "place": "Exodus 20:12",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not kill.",
+      "place": "Exodus 20:13",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not commit adultery.",
+      "place": "Exodus 20:14",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not steal.",
+      "place": "Exodus 20:15",
+            "data": "Ex/20"
+    },
+    {
+"verse": "Thou shalt not bear false witness against thy neighbour.",
+      "place": "Exodus 20:16",
+            "data": "Ex/20"
+    },
+/** Numbers **/
+    {
+"verse": "Yahweh bless thee, and keep thee:",
+      "place": "Numbers 6:24",
+            "data": "Nm/6"
+    },
+    {
+"verse": "Yahweh make his face shine upon thee, and be gracious unto thee:",
+      "place": "Numbers 6:25",
+            "data": "Nm/6"
+    },
+    {
+"verse": "Yahweh lift up his countenance upon thee, and give thee peace.",
+      "place": "Numbers 6:26",
+            "data": "Nm/6"
+    },
+    {
+"verse": "And they shall put my name upon the children of Israel, and I will bless them.",
+      "place": "Numbers 6:27",
+            "data": "Nm/6"
+    },
+/** Deuteronomy **/
+    {
+"verse": "Be strong and of a good courage, fear not, nor be afraid of them: for Yahweh thy Elohim, he it is that doth go with thee; he will not fail thee, nor forsake thee.",
+      "place": "Deuteronomy 31:6",
+            "data": "Dt/31"
+    },
+/** 1 kings **/
+    {
+"verse": "In Gibeon Yahweh appeared to Solomon in a dream by night: and Elohim said, Ask what I shall give thee.",
+      "place": "1 kings 3:5 (story)",
+            "data": "1Kgs/3"
+    },
+    {
+"verse": "And Elijah came unto all the people, and said, How long halt ye between two opinions? if Yahweh be Elohim follow him: but if Baal, then follow him. And the people answered him not a word.",
+      "place": "1 kings 18:21 (story)",
+            "data": "1Kgs/18"
+    },
+    {
+"verse": "Yet I have left me seven thousand in Israel, all the knees which have not bowed unto Baal, and every mouth which hath not kissed him.",
+      "place": "1 kings 19:18 (story)",
+            "data": "1Kgs/19"
+    },
+/** 1 Chronicles **/
+    {
+"verse": "If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.",
+      "place": "1 Chronicles 7:14",
+            "data": "1Chr/7"
+    },
+/** Job **/
+    {
+"verse": "And said, Naked came I out of my mother's womb, and naked shall I return thither: Yahweh gave, and Yahweh hath taken away; blessed be the name of Yahweh.",
+      "place": "Job 1:21 (story)",
+            "data": "Jb/1"
+    },
+    {
+"verse": "Who hath put wisdom in the inward parts? or who hath given understanding to the heart?",
+      "place": "Job 38:36",
+            "data": "Jb/38"
+    },
+    {
+"verse": "Once have I spoken; but I will not answer: yea, twice; but I will proceed no further.",
+      "place": "Job 40:5",
+            "data": "Jb/40"
+    },
+    {
+"verse": "I know that thou canst do every thing, and that no thought can be withholden from thee.",
+      "place": "Job 42:2",
+            "data": "Jb/42"
+    },
+/** Psalms **/
+    {
+"verse": "Why do the heathen rage, and the people imagine a vain thing?",
+      "place": "psalms 2:1",
+            "data": "Ps/2"
+    },
+    {
+"verse": "The heavens declare the glory of Elohim, and the firmament sheweth his handywork.",
+      "place": "psalms 19:1",
+            "data": "Ps/19"
+    },
+    {
+"verse": "Yahweh is my shepherd; I shall not want.",
+      "place": "psalms 23:1",
+            "data": "Ps/23"
+    },
+    {
+"verse": "Blessed is he whose transgression is forgiven, whose sin is covered.",
+      "place": "psalms 32:1",
+            "data": "Ps/32"
+    },
+    {
+"verse": "Keep thy tongue from evil, and thy lips from speaking guile.",
+      "place": "psalms 34:13",
+            "data": "Ps/34"
+    },
+    {
+"verse": "In Elohim have I put my trust: I will not be afraid what man can do unto me.",
+      "place": "psalms 56:11",
+            "data": "Ps/56"
+    },
+    {
+"verse": "I will set no wicked thing before mine eyes: I hate the work of them that turn aside; it shall not cleave to me.",
+      "place": "psalms 101:3",
+            "data": "Ps/101"
+    },  
+    {
+"verse": "As far as the east is from the west, so far hath he removed our transgressions from us.",
+      "place": "psalms 103:12",
+            "data": "Ps/103"
+    },
+    {
+"verse": "Happy is that people, that is in such a case: yea, happy is that people, whose mighty one is the Yahweh.",
+      "place": "psalms 144:15",
+            "data": "Ps/144"
+    },
+
+
+/** Cut Psalms **/
+    {
+      "verse": "Thy word have I hid in mine heart, that I might not sin against thee.",
+      "place": "Psalms 119:11",
+            "data": "Ps/119"
+    },
+    {
+      "verse": "Thy word is a lamp unto my feet, and a light unto my path.",
+      "place": "Psalms 119:105",
+            "data": "Ps/119"
+    },
+
+
+/** Proverbs **/
+    {
+      "verse": "Trust in Yahweh with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+      "place": "Proverbs 3:5-6",
+            "data": "Prv/3"
+    },
+    {
+      "verse": "When pride cometh, then cometh shame: but with the lowly is wisdom.",
+      "place": "Proverbs 11:2",
+            "data": "Prv/11"
+    },
+    {
+      "verse": "There is that scattereth, and yet increaseth; and there is that withholdeth more than is meet, but it tendeth to poverty.",
+      "place": "Proverbs 11:24",
+            "data": "Prv/11"
+    },
+    {
+      "verse": "He that keepeth his mouth keepeth his life: but he that openeth wide his lips shall have destruction.",
+      "place": "Proverbs 13:3",
+            "data": "Prv/13"
+    },
+    {
+      "verse": "He that walketh with wise men shall be wise: but a companion of fools shall be destroyed.",
+      "place": "Proverbs 13:20",
+            "data": "Prv/13"
+    },
+    {
+      "verse": "There is a way which seemeth right unto a man, but the end thereof are the ways of death.",
+      "place": "Proverbs 14:12",
+            "data": "Prv/14"
+    },
+    {
+      "verse": "In all labour there is profit: but the talk of the lips tendeth only to penury.",
+      "place": "Proverbs 14:23",
+            "data": "Prv/14"
+    },
+    {
+      "verse": "A soft answer turneth away wrath: but grievous words stir up anger.",
+      "place": "Proverbs 15:1",
+            "data": "Prv/15"
+    },
+    {
+      "verse": "Better is a dry morsel, and quietness therewith, than an house full of sacrifices with strife.",
+      "place": "Proverbs 17:1",
+            "data": "Prv/17"
+    },
+    {
+      "verse": "He that covereth a transgression seeketh love; but he thatrepeateth a matter separateth very friends.",
+      "place": "Proverbs 17:9",
+            "data": "Prv/17"
+    },
+    {
+      "verse": "The beginning of strife is as when one letteth out water: therefore leave off contention, before it be meddled with.",
+      "place": "Proverbs 17:14",
+            "data": "Prv/17"
+    },
+    {
+      "verse": "Even a fool, when he holdeth his peace, is counted wise: and he that shutteth his lips is esteemed a man of understanding.",
+      "place": "Proverbs 17:28",
+            "data": "Prv/17"
+    },
+    {
+      "verse": "Death and life are in the power of the tongue: and they that love it shall eat the fruit thereof.",
+      "place": "Proverbs 18:21",
+            "data": "Prv/18"
+    },
+    {
+      "verse": "A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.",
+      "place": "Proverbs 18:24",
+            "data": "Prv/18"
+    },
+    {
+      "verse": "Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
+      "place": "Proverbs 23",
+            "data": "Prv/23:5"
+    },
+    {
+      "verse": "Buy the truth, and sell it not; also wisdom, and instruction, and understanding.",
+      "place": "Proverbs 23:23",
+            "data": "Prv/23"
+    },
+    {
+      "verse": "The thought of foolishness is sin: and the scorner is an abomination to men.",
+      "place": "Proverbs 24:9",
+            "data": "Prv/24"
+    },
+ {
+      "verse": "For a just man falleth seven times, and riseth up again: but the wicked shall fall into mischief.",
+      "place": "Proverbs 24:16",
+            "data": "Prv/24"
+    },
+    {
+      "verse": "Open thy mouth for the dumb in the cause of all such as are appointed to destruction. Open thy mouth, judge righteously, and plead the cause of the poor and needy.",
+      "place": "Proverbs 31:8-9",
+            "data": "Prv/31"
+    },
+    {
+      "verse": "Favour is deceitful, and beauty is vain: but a woman that feareth Yahweh, she shall be praised.",
+      "place": "Proverbs 31:30",
+            "data": "Prv/31"
+    },
+/** Ecclesiastes **/
+    {
+      "verse": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.",
+      "place": "Ecclesiastes 9:10",
+            "data": "Eccl/9"
+    },
+    {
+      "verse": "Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.",
+      "place": "Ecclesiastes 10:1",
+            "data": "Eccl/10"
+    },
+    {
+      "verse": "Curse not the king, no not in thy thought; and curse not the rich in thy bedchamber: for a bird of the air shall carry the voice, and that which hath wings shall tell the matter",
+      "place": "Ecclesiastes 10:20",
+            "data": "Eccl/10"
+    },
+    {
+      "verse": "Let us hear the conclusion of the whole matter: Fear Elohim, and keep his commandments: for this is the whole duty of man.",
+      "place": "Ecclesiastes 12:13",
+            "data": "Eccl/12"
+    },
+/** Isaiah **/
+    {
+      "verse": "The grass withereth, the flower fadeth: but the word of our Elohim shall stand for ever.",
+      "place": "Isaiah 40:8",
+            "data": "Is/40"
+    },
+    {
+      "verse": "He shall feed his flock like a shepherd: he shall gather the lambs with his arm, and carry them in his bosom, and shall gently lead those that are with young.",
+      "place": "Isaiah 40:11",
+            "data": "Is/40"
+    },
+    {
+      "verse": "When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee.",
+      "place": "Isaiah 43:2",
+            "data": "Is/43"
+    },
+    {
+      "verse": "Seek ye Yahweh while he may be found, call ye upon him while he is near: Let the wicked forsake his way, and the unrighteous man his thoughts: and let him return unto Yahweh, and he will have mercy upon him; and to our Elohim, for he will abundantly pardon.",
+      "place": "Isaiah 55:6-7",
+            "data": "Is/55"
+    },
+    {
+      "verse": "If thou turn away thy foot from the sabbath, from doing thypleasure on my holy day; and call the sabbath a delight, the holy of Yahweh, honourable; and shalt honour him, not doing thine own ways, nor finding thine own pleasure, nor speaking thine own words: Then shalt thou delight thyself in Yahweh; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of Yahweh hath spoken it.",
+      "place": "Isaiah 58:13-14",
+            "data": "Is/58"
+    },
+/** Jeremiah **/
+    {
+      "verse": "Blessed is the man that trusteth in Yahweh, and whose hope Yahweh is.",
+      "place": "Jeremiah 17:7",
+            "data": "Jer/17"
+    },
+    {
+      "verse": "The heart is deceitful above all things, and desperately wicked: who can know it?",
+      "place": "Jeremiah 17:9",
+            "data": "Jer/17"
+    },
+/** Habakkuk **/
+ {
+      "verse": "Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls: Yet I will rejoice in Yahweh, I will joy in the Elohim of my salvation.",
+      "place": "Habakkuk 3",
+            "data": "Hb/3"
+    },
+/** Amos **/
+ {
+      "verse": "Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth: Yahweh is his name:",
+      "place": "Amos 5:8",
+            "data": "Am/5"
+    },
+    {
+      "verse": "Woe unto you that desire the day of Yahweh! to what end is it for you? the day of Yahweh is darkness, and not light.",
+      "place": "Amos 5:18",
+            "data": "Am/5"
+    },
+/** Matthew **/
+    {
+      "verse": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.",
+      "place": "Matthew 5:13",
+            "data": "Mt/5"
+    },
+    {
+      "verse": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+      "place": "Matthew 5:16",
+            "data": "Mt/5"
+    },
+    {
+      "verse": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil.",
+      "place": "Matthew 5:17",
+            "data": "Mt/5"
+    },
+    {
+      "verse": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;",
+      "place": "Matthew 5:44",
+            "data": "Mt/5"
+    },
+    {
+      "verse": "Give us this day our daily bread.",
+      "place": "Matthew 6:11",
+            "data": "Mt/6"
+    },
+    {
+      "verse": "Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal:",
+      "place": "Matthew 6:19",
+            "data": "Mt/6"
+    },
+    {
+      "verse": "For where your treasure is, there will your heart be also. ",
+      "place": "Matthew 6:21",
+            "data": "Mt/6"
+    },
+    {
+      "verse": "But seek ye first the kingdom of Elohim, and his righteousness; and all these things shall be added unto you.",
+      "place": "Matthew 6:33",
+            "data": "Mt/6"
+    },
+    {
+      "verse": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+      "place": "Matthew 6:34",
+            "data": "Mt/6"
+    },
+    {
+      "verse": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:",
+      "place": "Matthew 7:7",
+            "data": "Mt/7"
+    },
+    {
+      "verse": "Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat: Because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.",
+      "place": "Matthew 7:13-14",
+            "data": "Mt/7"
+    },
+/** Luke **/
+    {
+      "verse": "And he lifted up his eyes on his disciples, and said, Blessed be ye poor: for yours is the kingdom of Elohim.",
+      "place": "Luke 6:20",
+            "data": "Lk/6"
+    },
+    {
+      "verse": "Blessed are ye that hunger now: for ye shall be filled. Blessed are ye that weep now: for ye shall laugh.",
+      "place": "Luke 6:21",
+            "data": "Lk/6"
+    },
+    {
+      "verse": "Blessed are ye, when men shall hate you, and when they shall separate you from their company, and shall reproach you, and cast out your name as evil, for the Son of man's sake.",
+      "place": "Luke 6:22",
+            "data": "Lk/6"
+    },
+    {
+      "verse": "Rejoice ye in that day, and leap for joy: for, behold, your reward is great in heaven: for in the like manner did their fathers unto the prophets.",
+      "place": "Luke 6:23",
+            "data": "Lk/6"
+    },
+    {
+      "verse": "But love ye your enemies, and do good, and lend, hoping for nothing again; and your reward shall be great, and ye shall be the children of the Highest: for he is kind unto the unthankful and to the evil.",
+      "place": "Luke 6:35",
+            "data": "Lk/6"
+    },
+    {
+      "verse": "I tell you, Nay: but, except ye repent, ye shall all likewise perish.",
+      "place": "Luke 13:5",
+            "data": "Lk/13"
+    },
+    {
+      "verse": "And, behold, there are last which shall be first, and there are first which shall be last.",
+      "place": "Luke 13:30",
+            "data": "Lk/13"
+    },
+    {
+      "verse": "Behold, your house is left unto you desolate: and verily I say unto you, Ye shall not see me, until the time come when ye shall say, Blessed is he that cometh in the name of Yahweh.",
+      "place": "Luke 13:35",
+            "data": "Lk/13"
+    },
+    {
+      "verse": "Then said yahushua, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
+      "place": "Luke 23:34 (story)",
+            "data": "Lk/23"
+    },
+/** John **/
+    {
+      "verse": "Greater love hath no man than this, that a man lay down his life for his friends.",
+      "place": "John 15:13",
+            "data": "Jn/15"
+    },
+    {
+      "verse": "Ye have not chosen me, but I have chosen you, and ordained you, that ye should go and bring forth fruit, and that your fruit should remain: that whatsoever ye shall ask of the Father in my name, he may give it you.",
+      "place": "John 15:16",
+            "data": "Jn/15"
+    },
+    {
+      "verse": "If the world hate you, ye know that it hated me before it hated you.",
+      "place": "John 15:18",
+            "data": "Jn/15"
+    },
+/** Romans **/
+    {
+      "verse": "What shall we say then? Shall we continue in sin, that grace may abound? Elohim forbid. How shall we, that are dead to sin, live any longer therein?",
+      "place": "Romans 6:1-2",
+            "data": "Rom/6"
+    },
+    {
+      "verse": "Let not sin therefore reign in your mortal body, that ye should obey it in the lusts thereof.",
+      "place": "Romans 6:12",
+            "data": "Rom/6"
+    },
+    {
+      "verse": "What then? shall we sin, because we are not under the law, but under grace? Elohim forbid.",
+      "place": "Romans 6:15",
+            "data": "Rom/6"
+    },
+    {
+      "verse": "For the wages of sin is death; but the gift of Elohim is eternal life through Yahushua Christ our master.",
+      "place": "Romans 6:23",
+            "data": "Rom/6"
+    },
+    {
+      "verse": "There is therefore now no condemnation to them which are in Christ Yahushua, who walk not after the flesh, but after the Spirit.",
+      "place": "Romans 8:1",
+            "data": "Rom/8"
+    },
+    {
+      "verse": "And we know that all things work together for good to them that love Elohim, to them who are the called according to his purpose.",
+      "place": "Romans 8:28",
+            "data": "Rom/8"
+    },
+    {
+      "verse": "Nay, in all these things we are more than conquerors through him that loved us. For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come, Nor height, nor depth, nor any other creature, shall be able to separate us from the love of Elohim, which is in Christ Yahushua our Master.",
+      "place": "Romans 8:37-39",
+            "data": "Rom/8"
+    },
+    {
+      "verse": "Bless them which persecute you: bless, and curse not.",
+      "place": "Romans 12:14",
+            "data": "Rom/12"
+    },
+    {
+      "verse": "If it be possible, as much as lieth in you, live peaceably with all men.",
+      "place": "Romans 12:18",
+            "data": "Rom/12"
+    },
+    {
+      "verse": "Be not overcome of evil, but overcome evil with good.",
+      "place": "Romans 12:21",
+            "data": "Rom/12"
+    },
+    {
+      "verse": "Owe no man any thing, but to love one another: for he that loveth another hath fulfilled the law.",
+      "place": "Romans 13:8",
+            "data": "Rom/13"
+    },
+    {
+      "verse": "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light.",
+      "place": "Romans 13:12",
+            "data": "Rom/13"
+    },
+/** 1 Corinthians **/
+    {
+      "verse": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
+      "place": "1 Corinthians 13:1",
+            "data": "1Cor/13"
+    },
+/** 2 Corinthians **/
+    {
+      "verse": "Therefore seeing we have this ministry, as we have received mercy, we faint not;",
+      "place": "2 Corinthians 4:1",
+            "data": "2Cor/4"
+    },
+    {
+      "verse": "For Elohim, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of Elohim in the face of Yahushua Christ.",
+      "place": "2 Corinthians 4:6",
+            "data": "2Cor/4"
+    },
+    {
+      "verse": "We are troubled on every side, yet not distressed; we are perplexed, but not in despair; Persecuted, but not forsaken; cast down, but not destroyed; Always bearing about in the body the dying of the master Yahushua, that the life also of Yahushua might be made manifest in our body.",
+      "place": "2 Corinthians 4:8-10",
+            "data": "2Cor/4"
+    },
+    {
+      "verse": "For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory;",
+      "place": "2 Corinthians 4:17",
+            "data": "2Cor/4"
+    },
+/** Galatians **/
+    {
+      "verse": "I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of Elohim, who loved me, and gave himself for me.",
+      "place": "Galatians 2:20",
+            "data": "Gal/2"
+    },
+    {
+      "verse": "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, Meekness, temperance: against such there is no law.",
+      "place": "Galatians 5:22-23",
+            "data": "Gal/5"
+    },
+    {
+      "verse": "For he that soweth to his flesh shall of the flesh reap corruption; but he that soweth to the Spirit shall of the Spirit reap life everlasting.",
+      "place": "Galatians 6:8",
+            "data": "Gal/6"
+    },
+    {
+      "verse": "And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
+      "place": "Galatians 6:9",
+            "data": "Gal/6"
+    },
+/** Philippians **/
+    {
+      "verse": "Rejoice in Yahweh alway: and again I say, Rejoice.",
+      "place": "Philippians 4:4",
+            "data": "Phil/4"
+    },
+    {
+      "verse": "And the peace of Elohim, which passeth all understanding, shall keep your hearts and minds through Christ Yahushua.",
+      "place": "Philippians 4:7",
+            "data": "Phil/4"
+    },
+    {
+      "verse": "Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.",
+      "place": "Philippians 4:8",
+            "data": "Phil/4"
+    },
+    {
+      "verse": "I can do all things through Christ which strengtheneth me.",
+      "place": "Philippians 4:13",
+            "data": "Phil/4"
+    },
+/** 1 Thessalonians **/
+    {
+      "verse": "Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.",
+      "place": "1 Thessalonians 5:14",
+            "data": "1Thes/5"
+    },
+    {
+      "verse": "See that none render evil for evil unto any man; but ever follow that which is good, both among yourselves, and to all men.",
+      "place": "1 Thessalonians 5:15",
+            "data": "1Thes/5"
+    },
+    {
+      "verse": "Rejoice evermore.",
+      "place": "1 Thessalonians 5:16",
+            "data": "1Thes/5"
+    },
+    {
+      "verse": "Pray without ceasing.",
+      "place": "1 Thessalonians 5:17",
+            "data": "1Thes/5"
+    },
+    {
+      "verse": "Prove all things; hold fast that which is good.",
+      "place": "1 Thessalonians 5:21",
+            "data": "1Thes/5"
+    },
+    {
+      "verse": "Abstain from all appearance of evil.",
+      "place": "1 Thessalonians 5:22",
+            "data": "1Thes/5"
+    },
+/** 1 Timothy **/
+    {
+      "verse": "But righteousness with contentment is great gain.",
+      "place": "1 Timothy 6:6",
+            "data": "1Tm/6"
+    },
+    {
+      "verse": "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.",
+      "place": "1 Timothy 6:10",
+            "data": "1Tm/6"
+    },
+/** Hebrews **/
+    {
+      "verse": "Now faith is the substance of things hoped for, the evidence of things not seen.",
+      "place": "Hebrews 11:1",
+            "data": "Heb/11"
+    },
+    {
+      "verse": "Through faith we understand that the worlds were framed by the word of Yahweh, so that things which are seen were not made of things which do appear.",
+      "place": "Hebrews 11:3",
+            "data": "Heb/11"
+    },
+    {
+      "verse": "But without faith it is impossible to please him: for he that cometh to Yahweh must believe that he is, and that he is a rewarder of them that diligently seek him.",
+      "place": "Hebrews 11:6",
+            "data": "Heb/11"
+    },
+    {
+      "verse": "Choosing rather to suffer affliction with the people of Yahweh, than to enjoy the pleasures of sin for a season;",
+      "place": "Hebrews 11:25",
+            "data": "Heb/11"
+    },
+
+/** James **/
+    {
+"verse": "James, a servant of Elohim and of the master Yahushua messiah to the twelve tribes which are scattered abroad, greeting.",
+      "place": "James 1:1",
+            "data": "Jas/1"
+    },
+    {
+"verse": "My brethren, count it all joy when ye fall into divers temptations;",
+      "place": "James 1:2",
+            "data": "Jas/1"
+    },
+    {
+"verse": "Knowing this, that the trying of your faith worketh patience.",
+      "place": "James 1:3",
+            "data": "Jas/1"
+    },
+    {
+"verse": "But let patience have her perfect work, that ye may be perfect and entire, wanting nothing.",
+      "place": "James 1:4",
+            "data": "Jas/1"
+    },
+    {
+"verse": "Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which Yahweh hath promised to them that love him.",
+      "place": "James 1:12",
+            "data": "Jas/1"
+    },
+    {
+"verse": "But every man is tempted, when he is drawn away of his own lust, and enticed.",
+      "place": "James 1:14",
+            "data": "Jas/1"
+    },
+    {
+"verse": " Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:",
+      "place": "James 1:19",
+            "data": "Jas/1"
+    },
+    {
+"verse": "Pure religion and undefiled before messiah and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.",
+      "place": "James 1:27",
+            "data": "Jas/1"
+    },
+/** Revelation **/
+    {
+"verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
+      "place": "Revelations 14:12",
+            "data": "Rv/14"
+    },
+
+/*** copy ***/
+{
+"verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
+      "place": "Revelations 14:12",
+            "data": "Rv/14"
+    }
+  ]
+}

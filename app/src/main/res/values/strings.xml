@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Bible Notify</string>
+    <string name="main_screen_title">Bible Notify</string>
+    <string name="reader_screen_title">Reader</string>
+    <string name="bottom_text">Bible Notify © 2022 Bible Notify Contributors</string>
+    <string name="settings_screen_title">Set Time</string>
+    <string name="time_picker_text">Send daily notification at:</string>
     <string name="license">Bible Notify Copyright © 2021 Bible Notify contributors
 
         This program is free software: you can redistribute it and/or modify
@@ -14,4 +19,5 @@
 
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see [https://www.gnu.org/licenses].</string>
+
 </resources>

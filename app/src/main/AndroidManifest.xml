@@ -4,29 +4,29 @@
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.BibleNotify">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bibleReader" />
-        <activity android:name=".helpActivity" android:theme="@style/Dialog" />
-        <activity android:name=".settingsActivity" />
-        <receiver android:name=".AlarmBroadcastReceiver" />
-        <receiver android:name=".rebootReceiver" android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
+       <activity android:name=".BibleReader" android:screenOrientation="sensor" />
+        <activity android:name=".SettingsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".HelpActivity" android:theme="@style/Dialog" />
+
+         <receiver android:name=".AlarmBroadcastReceiver" />
+         <receiver android:name=".RebootReceiver" android:enabled="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+             </intent-filter>
         </receiver>
     </application>
 

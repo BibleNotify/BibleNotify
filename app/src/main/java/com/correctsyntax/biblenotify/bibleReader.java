@@ -1,27 +1,30 @@
 package com.correctsyntax.biblenotify;
 
-import android.app.Activity;
-import android.os.Build;
-import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ScrollView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-import android.content.SharedPreferences;
-import android.widget.TextView;
-import android.widget.ImageButton;
-import android.view.View;
-import android.widget.Toast;
-import android.widget.ScrollView;
+public class BibleReader extends AppCompatActivity {
 
-public class bibleReader extends Activity {
-    TextView mainTextHold, verseText;
+    TextView bibleText, chapterText;
     ImageButton home;
     ScrollView scrollview;
 
@@ -30,61 +33,55 @@ public class bibleReader extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reader_activity);
 
-        mainTextHold = findViewById(R.id.main_text);
-        verseText = findViewById(R.id.verse_text);
-        home = findViewById(R.id.back_button_read);
-        scrollview = findViewById(R.id.scroll_text);
 
+            bibleText = findViewById(R.id.bible_text);
+            chapterText = findViewById(R.id.chapter_text);
+            home = findViewById(R.id.home_button);
+            scrollview = findViewById(R.id.bible_text_scrollView);
 
+            // set padding
+            int width = getResources().getDisplayMetrics().widthPixels;
 
-        // set padding
-        int width = getResources().getDisplayMetrics().widthPixels;
-
-        // when smaller then 500 px
-        if(width <= 500){
-            scrollview.setPadding(5,0,5,0);
-            mainTextHold.setPadding(8,8,8,8);
-            mainTextHold.setTextSize(20);
-        }
-
-        // When between 500 px and 1100 px
-        if(width > 500 && width <= 1100){
-            scrollview.setPadding(30,0,30,0);
-            mainTextHold.setPadding(20,20,20,20);
-            mainTextHold.setTextSize(22);
-        }
-
-        // when more then 1100 px
-        if(width > 1101){
-            scrollview.setPadding(35,0,35,0);
-            mainTextHold.setPadding(30,30,30,30);
-            mainTextHold.setTextSize(25);
-        }
-
-
-
-        // Go to home
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent tohome = new Intent(bibleReader.this, MainActivity.class);
-                startActivity(tohome);
-
+            // when smaller then 500 px
+            if(width <= 500){
+                scrollview.setPadding(5,0,5,0);
+                bibleText.setPadding(8,8,8,8);
+                bibleText.setTextSize(20);
             }
-        });
 
+            // When between 500 px and 1100 px
+            if(width > 500 && width <= 1100){
+                scrollview.setPadding(30,0,30,0);
+                bibleText.setPadding(20,20,20,20);
+                bibleText.setTextSize(22);
+            }
 
-            setText(pickFromBible(bibleReader.this, "text", "bible/", ".json"), pickFromBible(bibleReader.this, "chapter", "bible/", ".json"));
+            // when more then 1100 px
+            if(width > 1101){
+                scrollview.setPadding(35,0,35,0);
+                bibleText.setPadding(30,30,30,30);
+                bibleText.setTextSize(25);
+            }
 
+            // Go to home
+            home.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent back = new Intent(BibleReader.this, MainActivity.class);
+                    startActivity(back);
 
-    }
+                }
+            });
 
-    // Set the text
-    public void setText(String bibleText, String bibleChapter){
-            mainTextHold.setText(bibleText);
-            verseText.setText(bibleChapter.toUpperCase());
-    }
+            setText(pickFromBible(BibleReader.this, "text", "bible/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/", ".json"));
 
+        }
+
+        // Set the text
+        public void setText(String bibleChapterText, String bibleChapter){
+            bibleText.setText(bibleChapterText);
+            chapterText.setText(bibleChapter.toUpperCase());
+        }
 
     // Get The Bible Verse
     public String pickFromBible(Context context, String whichpart, String pathOne, String pathTwo) {
@@ -146,6 +143,9 @@ public class bibleReader extends Activity {
     }
 
 }
+
+
+
 
 
 

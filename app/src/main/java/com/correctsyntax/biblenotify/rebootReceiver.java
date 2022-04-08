@@ -1,15 +1,11 @@
 package com.correctsyntax.biblenotify;
 
-import android.content.Intent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 
-import android.widget.Toast;
-
-import com.correctsyntax.biblenotify.setAlarm;
-
-public class rebootReceiver extends BroadcastReceiver {
+public class RebootReceiver extends BroadcastReceiver {
 
 
     @Override
@@ -17,10 +13,7 @@ public class rebootReceiver extends BroadcastReceiver {
 
         if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
             final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
-            setAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
+            SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
         }
     }
-
-
 }
-

@@ -1,97 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/main_hold"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reader_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F5F5F5"
-        android:orientation="vertical">
-        <LinearLayout
-            android:id="@+id/top_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#81C784"
-            android:orientation="horizontal">
-            <ImageButton
-                android:id="@+id/back_button_read"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#81C784"
-                android:src="@drawable/home"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingBottom="4dp"
-                android:paddingRight="4dp"
-                android:scaleType="centerInside"/>
-            <TextView
-                android:id="@+id/textview1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:padding="8dp"
-                android:gravity="left|top"
-                android:text="Bible Notify - Reader"
-                android:textSize="18sp"
-                android:textColor="#FFFFFF"
-                android:layout_gravity="left|top"/>
-            <LinearLayout
-                android:id="@+id/linear1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:gravity="right|top"
-                android:orientation="vertical"
-                android:layout_gravity="right|top"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/verse_hold"
+        android:layout_height="0dp"
+        android:background="@color/mode_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/top_bar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="4dp"
-            android:paddingTop="8dp"
-            android:paddingRight="8dp"
-            android:paddingBottom="8dp"
-            android:background="@android:color/transparent"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/verse_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="Verse"
-                android:textSize="20sp"
-                android:textColor="#696969"/>
-        </LinearLayout>
-        <ScrollView
-            android:id="@+id/scroll_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp">
-            <TextView
-                android:id="@+id/main_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="0dp"
-                android:layout_marginBottom="0dp"
-                android:padding="20dp"
-                android:background="#FFFFFF"
-                android:gravity="left|top"
-                android:text="Bible Notify has encountered an error."
-                android:textSize="20sp"
-                android:textColor="#000000"
-                android:layout_gravity="center_horizontal"/>
-        </ScrollView>
-    </LinearLayout>
-</LinearLayout>
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/reader_screen_title"
+            android:textColor="@color/mode_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/mode_white"
+            android:tint="@color/mode_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sub_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/mode_white"
+        app:layout_constraintBottom_toTopOf="@+id/bible_text_scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reader_top_bar">
+
+        <TextView
+            android:id="@+id/chapter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Psalms 19"
+            android:textColor="@color/mode_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <WebView
+        android:layout_width="409dp"
+        android:layout_height="625dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,37 +1,34 @@
 package com.correctsyntax.biblenotify;
 
-import android.content.Intent;
+import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.app.NotificationManager;
-import android.app.Notification;
-import android.app.PendingIntent;
+import android.widget.Toast;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
-import android.content.SharedPreferences;
-import android.app.AlarmManager;
-import android.widget.Toast;
-import android.app.NotificationChannel;
 
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
-
-
 
     // Notification
     String CHANNEL_ID = "biblenotify";
     NotificationChannel notificationChannel;
     CharSequence name = "Bible Notify";
-
-
-
 
     // make a random number
     Random rand = new Random();
@@ -50,72 +47,76 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         }
 
 
-            // Start a new alarm
-        Intent intent1 = new Intent(context, AlarmBroadcastReceiver.class);
-        final PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 100, intent1, 0);
-        final AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * 60 * 60 * 24), pendingIntent);
+        // Start a new alarm
+        final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
+        SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
+
+       // Intent intent1 = new Intent(context, AlarmBroadcastReceiver.class);
+       // final PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 100, intent1, 0);
+        //final AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+       // alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * 60), pendingIntent);
+        // alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * 60 * 60 * 24), pendingIntent);
 
 
     }
 
-        // build Notification
+    // build Notification
     public void showNotification(Context context, String bibleText, String bibleVerse, String data) {
 
-            Intent notificationIntent = new Intent(context, bibleReader.class);
-            Bundle bundle = new Bundle();
-            notificationIntent.putExtras(bundle);
-            notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-            PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        Intent notificationIntent = new Intent(context, BibleReader.class);
+        Bundle bundle = new Bundle();
+        notificationIntent.putExtras(bundle);
+        notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-            if(android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
-                notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
-            }
+        if(android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
+            notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
+        }
 
-            NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-            if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
-                mNotificationManager.createNotificationChannel(notificationChannel);
-            }
+        if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
+            mNotificationManager.createNotificationChannel(notificationChannel);
+        }
 
 
 
-            /** save verse data so we know what
-             to show when user opens reader  **/
-            final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
+        /** save verse data so we know what
+         to show when user opens reader  **/
+        final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
 
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("readerData", data);
-            editor.commit();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("readerData", data);
+        editor.apply();
 
-            // More for Notification
-            Notification.BigTextStyle bigText = new Notification.BigTextStyle();
-            bigText.bigText(bibleText);
-            bigText.setSummaryText(bibleVerse);
+        // More for Notification
+        Notification.BigTextStyle bigText = new Notification.BigTextStyle();
+        bigText.bigText(bibleText);
+        bigText.setSummaryText(bibleVerse);
 
-            Notification.Builder NotificationBuilder;
+        Notification.Builder NotificationBuilder;
 
-            // check Android API and do as needed
+        // check Android API and do as needed
 
-            if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
-                NotificationBuilder = new Notification.Builder(context, CHANNEL_ID);
-            } else {
-                NotificationBuilder = new Notification.Builder(context);
-            }
-            Notification.Builder mBuilder = NotificationBuilder;
+        if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
+            NotificationBuilder = new Notification.Builder(context, CHANNEL_ID);
+        } else {
+            NotificationBuilder = new Notification.Builder(context);
+        }
+        Notification.Builder mBuilder = NotificationBuilder;
 
-            mBuilder.setSmallIcon(R.drawable.nicon);
-            mBuilder.setContentTitle("A Word From The Scriptures");
-            mBuilder.setContentText(bibleVerse);
-            mBuilder.setStyle(bigText);
-            mBuilder.setAutoCancel(true);
-            mBuilder.setContentIntent(contentIntent);
+        mBuilder.setSmallIcon(R.drawable.nicon);
+        mBuilder.setContentTitle("A Word From The Scriptures");
+        mBuilder.setContentText(bibleVerse);
+        mBuilder.setStyle(bigText);
+        mBuilder.setAutoCancel(true);
+        mBuilder.setContentIntent(contentIntent);
 
-            if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
-                mBuilder.setChannelId(CHANNEL_ID);
-            }
+        if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
+            mBuilder.setChannelId(CHANNEL_ID);
+        }
 
-            mNotificationManager.notify(1, mBuilder.build());
+        mNotificationManager.notify(1, mBuilder.build());
 
     }
 
@@ -155,7 +156,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         String json = null;
         try {
 
-            InputStream is = context.getAssets().open("bible/Verses/bible_verse.json");
+            InputStream is = context.getAssets().open("bible/Verses/bible_verses.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -163,7 +164,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 json = new String(buffer, StandardCharsets.UTF_8);
             }else{
-                json = new String(buffer,Charset.forName("UTF-8"));
+                json = new String(buffer, Charset.forName("UTF-8"));
             }
         } catch (IOException ex) {
 

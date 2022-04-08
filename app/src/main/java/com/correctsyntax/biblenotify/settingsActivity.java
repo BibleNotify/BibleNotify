@@ -1,19 +1,20 @@
 package com.correctsyntax.biblenotify;
 
-import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import android.widget.ImageButton;
-import android.content.SharedPreferences;
 
-public class settingsActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    TimePicker input;
-    Button saveButton;
-    ImageButton back;
+public class SettingsActivity extends AppCompatActivity {
+
+    TimePicker timePicker;
+    ImageButton cancel, saveButton, help;
 
     public static int Hour = 12;
     public static int Min = 0;
@@ -25,9 +26,12 @@ public class settingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
-        input = findViewById(R.id.input);
-        saveButton = findViewById(R.id.savebutton);
-        back = findViewById(R.id.back_button);
+
+        timePicker = findViewById(R.id.time_picker);
+        saveButton = findViewById(R.id.set_time_button);
+        cancel = findViewById(R.id.cancel_button);
+        help = findViewById(R.id.set_help_button);
+
 
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("bibleNotify",MODE_PRIVATE);
 
@@ -42,15 +46,15 @@ public class settingsActivity extends Activity {
         }
 
         if (android.os.Build.VERSION.SDK_INT  <= android.os.Build.VERSION_CODES.LOLLIPOP_MR1) {
-            input.setCurrentHour(HourToSet);
-            input.setCurrentMinute(MinToSet);
+            timePicker.setCurrentHour(HourToSet);
+            timePicker.setCurrentMinute(MinToSet);
         }else{
-            input.setHour(HourToSet);
-            input.setMinute(MinToSet);
+            timePicker.setHour(HourToSet);
+            timePicker.setMinute(MinToSet);
         }
 
         // Time picker
-        input.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
+        timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             public void onTimeChanged(TimePicker timePicker, int H, int M) {
                 Hour = H;
@@ -68,15 +72,15 @@ public class settingsActivity extends Activity {
                 editor.putInt("SetTimeM", Min);
                 editor.commit();
 
-                setAlarm.startAlarmBroadcastReceiver(settingsActivity.this, sharedPreferences);
+                SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);
 
                 Toast.makeText(getApplicationContext(),"Saved",Toast.LENGTH_SHORT).show();
-
+                finish();
             }
         });
 
-        // Back Button
-        back.setOnClickListener(new View.OnClickListener() {
+        // Cancel Button
+        cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -84,10 +88,21 @@ public class settingsActivity extends Activity {
             }
         });
 
+        // Help
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent help_Intent=new Intent(SettingsActivity.this, HelpActivity.class);
+                startActivity(help_Intent);
+            }
+        });
+
+
 
     }
 
 
+
+
+
 }
-
-

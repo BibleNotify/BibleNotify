@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen_title">Bible Notify</string>
+    <string name="reader_screen_title">Reader</string>
+    <string name="bottom_text">Bible Notify © 2022 Bible Notify Contributors</string>
+</resources>

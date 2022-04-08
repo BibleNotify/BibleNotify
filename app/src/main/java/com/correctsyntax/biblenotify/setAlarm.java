@@ -1,19 +1,21 @@
 package com.correctsyntax.biblenotify;
 
-
-import android.content.Intent;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.SharedPreferences;
-import java.util.Calendar;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
+import android.widget.Toast;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class SetAlarm {
 
 
-public class setAlarm {
     public static int hour = 12;
     public static int min = 0;
-    /* for sec */
-    public static int sec = 0;
 
 
     public static void startAlarmBroadcastReceiver(Context context, SharedPreferences sharedPreferences) {
@@ -26,22 +28,40 @@ public class setAlarm {
 
 
         // Start Alarm
-            Intent _intent = new Intent(context, AlarmBroadcastReceiver.class);
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, _intent, PendingIntent.FLAG_UPDATE_CURRENT);
-            AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+        Intent _intent = new Intent(context, AlarmBroadcastReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, _intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 
 
-            alarmManager.cancel(pendingIntent);
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTimeInMillis(System.currentTimeMillis());
-            calendar.set(Calendar.HOUR_OF_DAY, hour);
-            calendar.set(Calendar.MINUTE, min);
-            calendar.set(Calendar.SECOND, sec);
+        alarmManager.cancel(pendingIntent);
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, hour);
+        calendar.set(Calendar.MINUTE, min);
+
+        if(calendar.getTime().compareTo(new Date()) < 0){
+            calendar.add(Calendar.DAY_OF_MONTH, 1);
+            System.out.print("OLD  ########");
+
+        }
+
+        // 18 and below
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        }
+        // 19 to 22
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        }
+        // 23 + (to 30)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        }
+
+        System.out.print("TIME >>>>>>");
+
+        System.out.print("text " + (calendar.getTimeInMillis() / 1000) / 60);
 
     }
 
 
 }
-
-

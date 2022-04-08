@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent settings_Intent = new Intent(MainActivity.this, SettingsActivity.class);
                     startActivity(settings_Intent);
                 }else {
-                    Toast.makeText(getApplicationContext(),"You must enable notifications first",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"You must start sending notifications first",Toast.LENGTH_LONG).show();
                 }
 
             }

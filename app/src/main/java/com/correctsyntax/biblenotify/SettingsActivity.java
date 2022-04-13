@@ -3,8 +3,6 @@ package com.correctsyntax.biblenotify;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -54,47 +52,31 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         // Time picker
-        timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
-            @Override
-            public void onTimeChanged(TimePicker timePicker, int H, int M) {
-                Hour = H;
-                Min = M;
-            }
-
+        timePicker.setOnTimeChangedListener((timePicker, H, M) -> {
+            Hour = H;
+            Min = M;
         });
 
         // Save Button
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putInt("SetTimeH", Hour);
-                editor.putInt("SetTimeM", Min);
-                editor.commit();
+        saveButton.setOnClickListener(v -> {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putInt("SetTimeH", Hour);
+            editor.putInt("SetTimeM", Min);
+            editor.commit();
 
-                SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);
+            SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);
 
-                Toast.makeText(getApplicationContext(),"Saved",Toast.LENGTH_SHORT).show();
-                finish();
-            }
+            Toast.makeText(getApplicationContext(),"Saved",Toast.LENGTH_SHORT).show();
+            finish();
         });
 
         // Cancel Button
-        cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-
-            }
-        });
+        cancel.setOnClickListener(v -> finish());
 
         // Help
-        help.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent help_Intent=new Intent(SettingsActivity.this, HelpActivity.class);
-                startActivity(help_Intent);
-            }
+        help.setOnClickListener(v -> {
+            Intent help_Intent=new Intent(SettingsActivity.this, HelpActivity.class);
+            startActivity(help_Intent);
         });
 
 

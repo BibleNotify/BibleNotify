@@ -10,10 +10,16 @@
         <entry key="..\:/Users/Acer/BibleNotify/app/src/main/res/layout/activity_main.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/Acer/BibleNotify/app/src/main/res/layout/reader_activity.xml" value="0.1" />
         <entry key="..\:/Users/Acer/BibleNotify/app/src/main/res/layout/settings_activity.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout-v21/dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout/dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout/help_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout/reader_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/doall/AndroidStudioProjects/BibleNotify/app/src/main/res/layout/settings_activity.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

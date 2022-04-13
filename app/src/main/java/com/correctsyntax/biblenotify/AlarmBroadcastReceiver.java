@@ -1,6 +1,5 @@
 package com.correctsyntax.biblenotify;
 
-import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -26,7 +25,7 @@ import java.util.Random;
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
     // Notification
-    String CHANNEL_ID = "biblenotify";
+    String CHANNEL_ID = "bibleNotify";
     NotificationChannel notificationChannel;
     CharSequence name = "Bible Notify";
 
@@ -51,13 +50,6 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
         SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
 
-       // Intent intent1 = new Intent(context, AlarmBroadcastReceiver.class);
-       // final PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 100, intent1, 0);
-        //final AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-       // alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * 60), pendingIntent);
-        // alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * 60 * 60 * 24), pendingIntent);
-
-
     }
 
     // build Notification
@@ -67,7 +59,23 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         Bundle bundle = new Bundle();
         notificationIntent.putExtras(bundle);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+
+
+
+        PendingIntent contentIntent;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            contentIntent = PendingIntent.getActivity(context,
+                    0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+        }else {
+            contentIntent = PendingIntent.getActivity(context,
+                    0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        }
+
+
+      // old //  PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         if(android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
             notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
@@ -81,8 +89,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
 
 
-        /** save verse data so we know what
-         to show when user opens reader  **/
+        /* save verse data so we know what
+         to show when user opens reader  */
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -121,8 +129,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     }
 
     //  Parse Json file to get verse data
-    public String pickBibleVerse(Context context, String whichpart) {
-        String name = null;
+    public String pickBibleVerse(Context context, String whichPart) {
+        String name;
 
         try {
             // get JSONObject from JSON file
@@ -133,19 +141,15 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
             try {
                 JSONObject userDetail = userArray.getJSONObject(rand_num);
-                name = userDetail.getString(whichpart);
+                name = userDetail.getString(whichPart);
 
             }catch (JSONException e){
-
-                String s= "ERROR: " + e.toString();
-                return s;
+                return "ERROR: " + e;
             }
 
         }
         catch (JSONException e) {
-
-            String k= "ERROR: " + e.toString();
-            return k;
+            return "ERROR: " + e;
         }
 
         return name;
@@ -153,7 +157,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     }
     // load json file from App Asset
     public String loadJSONFromAsset(Context context) {
-        String json = null;
+        String json;
         try {
 
             InputStream is = context.getAssets().open("bible/Verses/bible_verses.json");

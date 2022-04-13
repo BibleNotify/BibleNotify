@@ -40,11 +40,12 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:background="@color/mode_white"
-            android:tint="@color/mode_black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_info_circle" />
+            app:srcCompat="@drawable/ic_info_circle"
+            app:tint="@color/mode_black"
+            android:contentDescription="Help Button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

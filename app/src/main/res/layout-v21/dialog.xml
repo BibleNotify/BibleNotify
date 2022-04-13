@@ -16,7 +16,5 @@
         android:paddingTop="8dp"
         android:paddingRight="30dp"
         android:paddingBottom="8dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingEnd="30dp"
-        android:paddingStart="8dp" />
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

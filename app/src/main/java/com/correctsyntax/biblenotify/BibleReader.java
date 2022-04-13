@@ -5,9 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,9 +23,9 @@ import java.nio.charset.StandardCharsets;
 
 public class BibleReader extends AppCompatActivity {
 
-    TextView bibleText, chapterText;
+    TextView chapterText;
+    WebView bibleTextWebView;
     ImageButton home;
-    ScrollView scrollview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,57 +33,41 @@ public class BibleReader extends AppCompatActivity {
         setContentView(R.layout.reader_activity);
 
 
-            bibleText = findViewById(R.id.bible_text);
-            chapterText = findViewById(R.id.chapter_text);
-            home = findViewById(R.id.home_button);
-            scrollview = findViewById(R.id.bible_text_scrollView);
+        bibleTextWebView = findViewById(R.id.reader_webview);
+        chapterText = findViewById(R.id.chapter_text);
+        home = findViewById(R.id.home_button);
 
-            // set padding
-            int width = getResources().getDisplayMetrics().widthPixels;
+        bibleTextWebView.getSettings().setJavaScriptEnabled(true);
 
-            // when smaller then 500 px
-            if(width <= 500){
-                scrollview.setPadding(5,0,5,0);
-                bibleText.setPadding(8,8,8,8);
-                bibleText.setTextSize(20);
-            }
 
-            // When between 500 px and 1100 px
-            if(width > 500 && width <= 1100){
-                scrollview.setPadding(30,0,30,0);
-                bibleText.setPadding(20,20,20,20);
-                bibleText.setTextSize(22);
-            }
+        // Go to home
+        home.setOnClickListener(v -> {
+            Intent back = new Intent(BibleReader.this, MainActivity.class);
+            startActivity(back);
 
-            // when more then 1100 px
-            if(width > 1101){
-                scrollview.setPadding(35,0,35,0);
-                bibleText.setPadding(30,30,30,30);
-                bibleText.setTextSize(25);
-            }
+        });
 
-            // Go to home
-            home.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent back = new Intent(BibleReader.this, MainActivity.class);
-                    startActivity(back);
+        setText(pickFromBible(BibleReader.this, "text", "bible/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/", ".json"));
 
-                }
-            });
+    }
 
-            setText(pickFromBible(BibleReader.this, "text", "bible/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/", ".json"));
+    // Set the text
+    public void setText(String bibleChapterText, String bibleChapter){
+        chapterText.setText(bibleChapter.toUpperCase());
 
-        }
+        String html = "<html> <p>" + bibleChapterText + "</p> </html>";
 
-        // Set the text
-        public void setText(String bibleChapterText, String bibleChapter){
-            bibleText.setText(bibleChapterText);
-            chapterText.setText(bibleChapter.toUpperCase());
-        }
+
+        bibleTextWebView.loadData(html, "text/html", "UTF-8");
+
+
+
+    }
+
+
 
     // Get The Bible Verse
-    public String pickFromBible(Context context, String whichpart, String pathOne, String pathTwo) {
+    public String pickFromBible(Context context, String whichPart, String pathOne, String pathTwo) {
         String name = null;
         try {
             // get JSONObject from JSON file
@@ -95,7 +78,7 @@ public class BibleReader extends AppCompatActivity {
 
             try {
                 JSONObject userDetail = userArray.getJSONObject(0);
-                name = userDetail.getString(whichpart);
+                name = userDetail.getString(whichPart);
 
             }catch (JSONException e){
                 Toast.makeText(getApplicationContext(),"Bible Notify has encountered an error.",Toast.LENGTH_SHORT).show();
@@ -112,8 +95,9 @@ public class BibleReader extends AppCompatActivity {
     }
 
 
+
     public String loadJSONFromAsset(Context context, String partOne, String partTwo) {
-        String json = null;
+        String json;
         String path = "book/ch";
         //  get value
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify",MODE_PRIVATE);
@@ -143,6 +127,14 @@ public class BibleReader extends AppCompatActivity {
     }
 
 }
+
+
+
+
+
+
+
+
 
 
 

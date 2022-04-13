@@ -19,5 +19,11 @@
 
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see [https://www.gnu.org/licenses].</string>
+    <string name="help_icon">help_icon</string>
+    <string name="help_text">Bible Notify is a free Android app that sends you inspiring daily bible verses in notification form. You can also tap on the notifications to read the chapter in which the verse is found.</string>
+    <string name="visit_our_website">Click here to visit our website</string>
+    <string name="thank_you_text">Thank you for using Bible Notify.</string>
+    <string name="close_text">Close</string>
+    <string name="view_license">View Bible Notify License</string>
 
 </resources>

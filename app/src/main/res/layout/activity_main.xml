@@ -26,13 +26,13 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:background="@color/mode_white"
-            android:contentDescription="help_icon"
-            android:tint="@color/mode_black"
+            android:contentDescription="@string/help_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_info_circle"
-            tools:srcCompat="@drawable/ic_info_circle" />
+            tools:srcCompat="@drawable/ic_info_circle"
+            app:tint="@color/mode_black" />
 
         <TextView
             android:id="@+id/top_bar_text"

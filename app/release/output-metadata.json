@@ -1,18 +1,20 @@
 {
-  "version": 2,
+  "version": 3,
   "artifactType": {
     "type": "APK",
     "kind": "Directory"
   },
   "applicationId": "com.correctsyntax.biblenotify",
-  "variantName": "processReleaseResources",
+  "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 8,
-      "versionName": "3.0",
+      "attributes": [],
+      "versionCode": 12,
+      "versionName": "4.0",
       "outputFile": "app-release.apk"
     }
-  ]
+  ],
+  "elementType": "File"
 }

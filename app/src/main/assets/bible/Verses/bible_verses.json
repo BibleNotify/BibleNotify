@@ -1,19 +1,11 @@
-/**** Bible Notify ******/
-/*** text version 1.4 ***/
-
 {
   "all":
   [
-/******* Start **********/
-
-/** Genesis **/
     {
       "verse": "In the beginning Elohim created the heaven and the earth.",
       "place": "Genesis 1:1 (story)",
       "data": "Gn/1"
     },
-
-/** Genesis **/
     {
       "verse": "And Elohim blessed the seventh day, and sanctified it: because that in it he had rested from all his work which Elohim created and made.",
       "place": "Genesis 2:3",
@@ -29,7 +21,6 @@
       "place": "Genesis 8:22",
             "data": "Gn/8"
     },
-/** Exodus **/
 {
 "verse": "And I, behold, I will harden the hearts of the Egyptians, and they shall follow them: and I will get me honour upon Pharaoh, and upon all his host, upon his chariots, and upon his horsemen.",
       "place": "Exodus 14:17 (story)",
@@ -105,7 +96,6 @@
       "place": "Exodus 20:16",
             "data": "Ex/20"
     },
-/** Numbers **/
     {
 "verse": "Yahweh bless thee, and keep thee:",
       "place": "Numbers 6:24",
@@ -126,13 +116,11 @@
       "place": "Numbers 6:27",
             "data": "Nm/6"
     },
-/** Deuteronomy **/
     {
 "verse": "Be strong and of a good courage, fear not, nor be afraid of them: for Yahweh thy Elohim, he it is that doth go with thee; he will not fail thee, nor forsake thee.",
       "place": "Deuteronomy 31:6",
             "data": "Dt/31"
     },
-/** 1 kings **/
     {
 "verse": "In Gibeon Yahweh appeared to Solomon in a dream by night: and Elohim said, Ask what I shall give thee.",
       "place": "1 kings 3:5 (story)",
@@ -148,13 +136,11 @@
       "place": "1 kings 19:18 (story)",
             "data": "1Kgs/19"
     },
-/** 1 Chronicles **/
     {
 "verse": "If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.",
       "place": "1 Chronicles 7:14",
             "data": "1Chr/7"
     },
-/** Job **/
     {
 "verse": "And said, Naked came I out of my mother's womb, and naked shall I return thither: Yahweh gave, and Yahweh hath taken away; blessed be the name of Yahweh.",
       "place": "Job 1:21 (story)",
@@ -175,7 +161,6 @@
       "place": "Job 42:2",
             "data": "Jb/42"
     },
-/** Psalms **/
     {
 "verse": "Why do the heathen rage, and the people imagine a vain thing?",
       "place": "psalms 2:1",
@@ -221,9 +206,6 @@
       "place": "psalms 144:15",
             "data": "Ps/144"
     },
-
-
-/** Cut Psalms **/
     {
       "verse": "Thy word have I hid in mine heart, that I might not sin against thee.",
       "place": "Psalms 119:11",
@@ -234,9 +216,6 @@
       "place": "Psalms 119:105",
             "data": "Ps/119"
     },
-
-
-/** Proverbs **/
     {
       "verse": "Trust in Yahweh with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
       "place": "Proverbs 3:5-6",
@@ -337,7 +316,6 @@
       "place": "Proverbs 31:30",
             "data": "Prv/31"
     },
-/** Ecclesiastes **/
     {
       "verse": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.",
       "place": "Ecclesiastes 9:10",
@@ -358,7 +336,6 @@
       "place": "Ecclesiastes 12:13",
             "data": "Eccl/12"
     },
-/** Isaiah **/
     {
       "verse": "The grass withereth, the flower fadeth: but the word of our Elohim shall stand for ever.",
       "place": "Isaiah 40:8",
@@ -384,7 +361,6 @@
       "place": "Isaiah 58:13-14",
             "data": "Is/58"
     },
-/** Jeremiah **/
     {
       "verse": "Blessed is the man that trusteth in Yahweh, and whose hope Yahweh is.",
       "place": "Jeremiah 17:7",
@@ -395,13 +371,11 @@
       "place": "Jeremiah 17:9",
             "data": "Jer/17"
     },
-/** Habakkuk **/
  {
       "verse": "Although the fig tree shall not blossom, neither shall fruit be in the vines; the labour of the olive shall fail, and the fields shall yield no meat; the flock shall be cut off from the fold, and there shall be no herd in the stalls: Yet I will rejoice in Yahweh, I will joy in the Elohim of my salvation.",
       "place": "Habakkuk 3",
             "data": "Hb/3"
     },
-/** Amos **/
  {
       "verse": "Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth: Yahweh is his name:",
       "place": "Amos 5:8",
@@ -412,7 +386,6 @@
       "place": "Amos 5:18",
             "data": "Am/5"
     },
-/** Matthew **/
     {
       "verse": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.",
       "place": "Matthew 5:13",
@@ -468,7 +441,6 @@
       "place": "Matthew 7:13-14",
             "data": "Mt/7"
     },
-/** Luke **/
     {
       "verse": "And he lifted up his eyes on his disciples, and said, Blessed be ye poor: for yours is the kingdom of Elohim.",
       "place": "Luke 6:20",
@@ -514,7 +486,6 @@
       "place": "Luke 23:34 (story)",
             "data": "Lk/23"
     },
-/** John **/
     {
       "verse": "Greater love hath no man than this, that a man lay down his life for his friends.",
       "place": "John 15:13",
@@ -530,7 +501,6 @@
       "place": "John 15:18",
             "data": "Jn/15"
     },
-/** Romans **/
     {
       "verse": "What shall we say then? Shall we continue in sin, that grace may abound? Elohim forbid. How shall we, that are dead to sin, live any longer therein?",
       "place": "Romans 6:1-2",
@@ -591,13 +561,11 @@
       "place": "Romans 13:12",
             "data": "Rom/13"
     },
-/** 1 Corinthians **/
     {
       "verse": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
       "place": "1 Corinthians 13:1",
             "data": "1Cor/13"
     },
-/** 2 Corinthians **/
     {
       "verse": "Therefore seeing we have this ministry, as we have received mercy, we faint not;",
       "place": "2 Corinthians 4:1",
@@ -618,7 +586,6 @@
       "place": "2 Corinthians 4:17",
             "data": "2Cor/4"
     },
-/** Galatians **/
     {
       "verse": "I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of Elohim, who loved me, and gave himself for me.",
       "place": "Galatians 2:20",
@@ -639,7 +606,6 @@
       "place": "Galatians 6:9",
             "data": "Gal/6"
     },
-/** Philippians **/
     {
       "verse": "Rejoice in Yahweh alway: and again I say, Rejoice.",
       "place": "Philippians 4:4",
@@ -660,7 +626,6 @@
       "place": "Philippians 4:13",
             "data": "Phil/4"
     },
-/** 1 Thessalonians **/
     {
       "verse": "Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.",
       "place": "1 Thessalonians 5:14",
@@ -691,7 +656,6 @@
       "place": "1 Thessalonians 5:22",
             "data": "1Thes/5"
     },
-/** 1 Timothy **/
     {
       "verse": "But righteousness with contentment is great gain.",
       "place": "1 Timothy 6:6",
@@ -702,7 +666,6 @@
       "place": "1 Timothy 6:10",
             "data": "1Tm/6"
     },
-/** Hebrews **/
     {
       "verse": "Now faith is the substance of things hoped for, the evidence of things not seen.",
       "place": "Hebrews 11:1",
@@ -724,7 +687,7 @@
             "data": "Heb/11"
     },
 
-/** James **/
+
     {
 "verse": "James, a servant of Elohim and of the master Yahushua messiah to the twelve tribes which are scattered abroad, greeting.",
       "place": "James 1:1",
@@ -765,15 +728,13 @@
       "place": "James 1:27",
             "data": "Jas/1"
     },
-/** Revelation **/
     {
 "verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
       "place": "Revelations 14:12",
             "data": "Rv/14"
     },
 
-/*** copy ***/
-{
+    {
 "verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
       "place": "Revelations 14:12",
             "data": "Rv/14"

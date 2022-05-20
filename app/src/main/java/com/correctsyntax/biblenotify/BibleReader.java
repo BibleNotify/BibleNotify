@@ -3,6 +3,7 @@ package com.correctsyntax.biblenotify;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -51,11 +52,78 @@ public class BibleReader extends AppCompatActivity {
 
     }
 
+
+
+
     // Set the text
     public void setText(String bibleChapterText, String bibleChapter){
         chapterText.setText(bibleChapter.toUpperCase());
 
-        String html = "<html> <p>" + bibleChapterText + "</p> </html>";
+        // Set Colors
+        String AppBlack = "Black";
+        String AppWhite = "white";
+
+        // Check for dark mode and change colors to mach
+        String backgroundColor = AppWhite;
+        String textColor = AppBlack;
+
+
+        int nightModeFlags = home.getContext().getResources().getConfiguration().uiMode &
+                        Configuration.UI_MODE_NIGHT_MASK;
+
+        switch (nightModeFlags) {
+            case Configuration.UI_MODE_NIGHT_YES:
+                System.out.print("UI_MODE_NIGHT_YES");
+                backgroundColor = AppBlack;
+                textColor = AppWhite;
+                break;
+
+            case Configuration.UI_MODE_NIGHT_NO:
+                System.out.print("UI_MODE_NIGHT_NO");
+                backgroundColor = AppWhite;
+                textColor = AppBlack;
+                break;
+
+            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+                System.out.print("UI_MODE_NIGHT_UNDEFINED");
+                backgroundColor = AppWhite;
+                textColor = AppBlack;
+                break;
+        }
+
+
+
+        String html = "<!DOCTYPE html>\n" +
+                "<html lang=\"en\">\n" +
+                "  <head>\n" +
+                "    <meta charset=\"UTF-8\" />\n" +
+                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n" +
+                "    <title>app</title>\n" +
+                "  </head>\n" +
+                "  <body>\n" +
+                "    <style>\n" +
+                "      body {\n" +
+                "        margin: 50px 10% 100px 10%;" +
+                "        color:" + textColor + ";" +
+                "        background-color:" + backgroundColor + ";" +
+                "      }\n" +
+                "      p {\n" +
+                "        font-size: 18px;\n" +
+                "        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n" +
+                "        color:" + textColor + ";" +
+                "        background-color:" + backgroundColor + ";" +
+                "      }\n" +
+                "      @media (min-width: 768px) {\n" + //768px
+                "        p {\n" +
+                "          font-size: 19px;\n" +
+                "        }\n" +
+                "      }\n" +
+                "      sup {\n" +
+                "        font-weight: bold;\n" +
+                "      }\n" +
+                "    </style>" + bibleChapterText +
+                "  </body>\n" +
+                "</html>";
 
 
         bibleTextWebView.loadData(html, "text/html", "UTF-8");

@@ -39,12 +39,14 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:background="@color/mode_white"
+            android:contentDescription="Home Button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/top_bar_title"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_home_icon"
-            app:tint="@color/mode_black"
-            android:contentDescription="Home Button" />
+            app:tint="@color/mode_black" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/mode_white"
-        app:layout_constraintBottom_toTopOf="@+id/bible_text_scrollView"
+        app:layout_constraintBottom_toTopOf="@id/reader_webview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reader_top_bar">
@@ -76,8 +78,8 @@
 
     <WebView
         android:id="@+id/reader_webview"
-        android:layout_width="409dp"
-        android:layout_height="625dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

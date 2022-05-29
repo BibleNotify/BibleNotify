@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
+import android.util.Log;
+
 import java.util.Calendar;
 import java.util.Date;
 
@@ -41,11 +43,18 @@ public class SetAlarm {
         calendar.set(Calendar.HOUR_OF_DAY, hour);
         calendar.set(Calendar.MINUTE, min);
 
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+
         if(calendar.getTime().compareTo(new Date()) < 0){
             calendar.add(Calendar.DAY_OF_MONTH, 1);
-            System.out.print("OLD  ########");
+            //Log.d("DEBUG SetAlarm >>>>>>>>", "OLD  ########");
 
         }
+
+       // Log.d("DEBUG SetAlarm >>>>>>>>", ">>>>>>>>>>>> calendar.getTimeInMillis(:: " + calendar.getTimeInMillis());
+
+
 
         // 18 and below
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
@@ -57,12 +66,14 @@ public class SetAlarm {
         }
         // 23 + (to 30)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+         //   Log.d("DEBUG SetAlarm >>>>>>>>", "Build.VERSION 23 + (to 30) ");
             alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
         }
 
-        System.out.print("TIME >>>>>>");
+        //Log.d("DEBUG SetAlarm >>>>>>>>", ">>>>>>>>>>>>>>>>>>>>>>> TIME >>>>>>");
 
-        System.out.print("text " + (calendar.getTimeInMillis() / 1000) / 60);
+       // Log.d("DEBUG SetAlarm >>>>>>>>", " ");
+
 
     }
 

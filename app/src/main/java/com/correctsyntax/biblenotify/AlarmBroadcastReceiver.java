@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -49,12 +50,12 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         // Start a new alarm
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
         SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
-
+      //  Log.d("DEBUG ABR class >>>>>", "startAlarmBroadcastReceiver ");
     }
 
     // build Notification
     public void showNotification(Context context, String bibleText, String bibleVerse, String data) {
-
+       // Log.d("DEBUG ABR class >>>>>", ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> showNotification");
         Intent notificationIntent = new Intent(context, BibleReader.class);
         Bundle bundle = new Bundle();
         notificationIntent.putExtras(bundle);

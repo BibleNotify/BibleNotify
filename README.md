@@ -21,7 +21,7 @@ Bible Notify is a free, daily Bible verse notification application for Android d
 
 ## Desktop version
 
-[Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop) is a desktop version (currently in development) for Linux, Windows and macOS platforms.
+Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows and macOS platforms.
 
 
 ## Element chat
@@ -31,7 +31,7 @@ Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-
 
 ## Running the code
 
-Open in Android Studio (tested on Windows 10). Bible Notify uses minimal dependencies.
+Open in Android Studio (tested on Windows 10) and sync gradle. Bible Notify uses minimal dependencies.
 
 
 ## Contributing

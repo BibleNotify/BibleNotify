@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
@@ -35,27 +34,11 @@
         android:text="@string/visit_our_website"
         android:textColor="@color/blue"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/thank_you_text"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/close_help_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/website_link" />
 
     <Button
         android:id="@+id/close_help_button"
@@ -71,7 +54,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view_license_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/website_link" />
 
     <TextView
         android:id="@+id/view_license_button"
@@ -84,8 +67,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif"
-        android:text="@string/view_license"
-        android:textSize="14sp"
+        android:text="@string/bottom_text"
+        android:textSize="10sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

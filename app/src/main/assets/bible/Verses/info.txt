@@ -1,4 +1,4 @@
-Bible Notify verses v1.4
+Bible Notify verses v1.5
 ------------------------
 
 All chapters: 68

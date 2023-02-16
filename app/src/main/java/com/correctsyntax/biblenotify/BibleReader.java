@@ -33,7 +33,6 @@ public class BibleReader extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reader_activity);
 
-
         bibleTextWebView = findViewById(R.id.reader_webview);
         chapterText = findViewById(R.id.chapter_text);
         home = findViewById(R.id.home_button);
@@ -45,14 +44,10 @@ public class BibleReader extends AppCompatActivity {
         home.setOnClickListener(v -> {
             Intent back = new Intent(BibleReader.this, MainActivity.class);
             startActivity(back);
-
         });
 
         setText(pickFromBible(BibleReader.this, "text", "bible/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/", ".json"));
-
     }
-
-
 
 
     // Set the text
@@ -60,7 +55,7 @@ public class BibleReader extends AppCompatActivity {
         chapterText.setText(bibleChapter.toUpperCase());
 
         // Set Colors
-        String AppBlack = "Black";
+        String AppBlack = "black";
         String AppWhite = "white";
 
         // Check for dark mode and change colors to mach
@@ -92,6 +87,15 @@ public class BibleReader extends AppCompatActivity {
         }
 
 
+        // Verse Highlighting
+        final SharedPreferences sharedPreferences = BibleReader.this.getSharedPreferences("bibleNotify",MODE_PRIVATE);
+       String readerDataVerseNumber = "";
+        if (sharedPreferences.contains("readerDataVerseNumber")) {
+            readerDataVerseNumber = sharedPreferences.getString("readerDataVerseNumber", "");
+        }
+
+        bibleChapterText = bibleChapterText.replace("<p><sup>" + readerDataVerseNumber + "</sup>", "<p class='hv'><sup>" + readerDataVerseNumber + "</sup>");
+
 
         String html = "<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
@@ -109,7 +113,7 @@ public class BibleReader extends AppCompatActivity {
                 "      }\n" +
                 "      p {\n" +
                 "        font-size: 18px;\n" +
-                "        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n" +
+                "        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n" +
                 "        color:" + textColor + ";" +
                 "        background-color:" + backgroundColor + ";" +
                 "      }\n" +
@@ -121,14 +125,19 @@ public class BibleReader extends AppCompatActivity {
                 "      sup {\n" +
                 "        font-weight: bold;\n" +
                 "      }\n" +
-                "    </style>" + bibleChapterText +
-                "  </body>\n" +
+                "      .hv{\n" + // WebView won't allow ids
+                "      border-left-style: solid;\n" +
+                "      padding-left: 12px;\n" +
+                "      border-left-width: 3px;\n" +
+                "      border-left-color: LightGreen;\n" + //#43A047 WebView won't take hex numbers
+                "      }\n" +
+                "    </style>" +
+                bibleChapterText +
+                "</body>\n" +
                 "</html>";
 
 
         bibleTextWebView.loadData(html, "text/html", "UTF-8");
-
-
 
     }
 

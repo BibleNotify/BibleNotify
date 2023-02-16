@@ -6,17 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
-import android.util.Log;
 
 import java.util.Calendar;
 import java.util.Date;
 
 public class SetAlarm {
 
-
     public static int hour = 12;
     public static int min = 0;
-
 
     public static void startAlarmBroadcastReceiver(Context context, SharedPreferences sharedPreferences) {
 
@@ -25,7 +22,6 @@ public class SetAlarm {
             min = sharedPreferences.getInt("SetTimeM", 0);
             hour = sharedPreferences.getInt("SetTimeH", 0);
         }
-
 
         // Start Alarm
         Intent _intent = new Intent(context, AlarmBroadcastReceiver.class);
@@ -37,24 +33,16 @@ public class SetAlarm {
         }
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 
-
         alarmManager.cancel(pendingIntent);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, hour);
         calendar.set(Calendar.MINUTE, min);
-
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
 
         if(calendar.getTime().compareTo(new Date()) < 0){
             calendar.add(Calendar.DAY_OF_MONTH, 1);
-            //Log.d("DEBUG SetAlarm >>>>>>>>", "OLD  ########");
-
         }
-
-       // Log.d("DEBUG SetAlarm >>>>>>>>", ">>>>>>>>>>>> calendar.getTimeInMillis(:: " + calendar.getTimeInMillis());
-
-
 
         // 18 and below
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
@@ -66,13 +54,9 @@ public class SetAlarm {
         }
         // 23 + (to 30)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-         //   Log.d("DEBUG SetAlarm >>>>>>>>", "Build.VERSION 23 + (to 30) ");
             alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
         }
 
-        //Log.d("DEBUG SetAlarm >>>>>>>>", ">>>>>>>>>>>>>>>>>>>>>>> TIME >>>>>>");
-
-       // Log.d("DEBUG SetAlarm >>>>>>>>", " ");
 
 
     }

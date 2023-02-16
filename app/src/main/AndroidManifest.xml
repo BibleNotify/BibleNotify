@@ -3,6 +3,8 @@
     package="com.correctsyntax.biblenotify">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
     <application
         android:allowBackup="false"
@@ -11,19 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BibleNotify">
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity android:name=".BibleReader" android:screenOrientation="sensor" />
+       <activity android:name=".BibleReader" android:screenOrientation="user" />
         <activity android:name=".SettingsActivity" android:screenOrientation="portrait" />
         <activity android:name=".HelpActivity" android:theme="@style/Dialog" />
 
          <receiver android:name=".AlarmBroadcastReceiver" />
-         <receiver android:name=".RebootReceiver" android:enabled="true">
+         <receiver android:name=".RebootReceiver" android:enabled="true"
+             android:exported="true">
              <intent-filter>
                  <action android:name="android.intent.action.BOOT_COMPLETED" />
              </intent-filter>

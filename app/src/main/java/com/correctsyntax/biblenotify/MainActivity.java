@@ -17,7 +17,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton startBtn, changeBtn, helpBtn;
-
     Animation animFadeOut;
 
     public static int HourToSet = 12;
@@ -26,12 +25,10 @@ public class MainActivity extends AppCompatActivity {
     public static int HourToBeSaved = 12;
     public static int MinToBeSaved = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         startBtn = findViewById(R.id.start_button);
         changeBtn = findViewById(R.id.change_button);
@@ -39,13 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("bibleNotify",MODE_PRIVATE);
 
-
-
-// If enabled set image to done
+       // If enabled set image to done
         if(sharedPreferences.contains("Started")) {
             startBtn.setImageResource(R.drawable.ic_pause_sending_button);
         }
-
 
         // Start Button
         startBtn.setOnClickListener(v -> {
@@ -56,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("Started", "yes");
                 editor.commit();
-
 
                 /* Make Alert dialog */
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -97,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     MinToBeSaved = M;
                 });
 
-
                 // set time
 
                 // get currently set time from sharedPreferences
@@ -113,12 +105,9 @@ public class MainActivity extends AppCompatActivity {
                     input.setHour(HourToSet);
                     input.setMinute(MinToSet);
                 }
-
-
             }
 
         });
-
 
         // Settings (Change time)
         changeBtn.setOnClickListener(v -> {

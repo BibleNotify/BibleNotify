@@ -1,23 +1,23 @@
 {
   "all":
   [
-    {
+{
       "verse": "In the beginning Elohim created the heaven and the earth.",
       "place": "Genesis 1:1 (story)",
       "data": "Gn/1"
     },
-    {
+{
       "verse": "And Elohim blessed the seventh day, and sanctified it: because that in it he had rested from all his work which Elohim created and made.",
-      "place": "Genesis 2:3",
+      "place": "Genesis 2:3 (story)",
       "data": "Gn/2"
     },
-    {
+{
       "verse": "If thou doest well, shalt thou not be accepted? and if thou doest not well, sin lieth at the door. And unto thee shall be his desire, and thou shalt rule over him. ",
       "place": "Genesis 4:7 (story)",
-            "data": "Gn/4"
+      "data": "Gn/4"
     },
 {
-"verse": " While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.",
+"verse": "While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.",
       "place": "Genesis 8:22",
             "data": "Gn/8"
     },
@@ -27,7 +27,7 @@
             "data": "Ex/14"
     },
     {
-"verse": "Thou shalt have no other Elohims before me.",
+"verse": "Thou shalt have no other Elohim before me.",
       "place": "Exodus 14:17",
             "data": "Ex/14"
     },
@@ -153,12 +153,12 @@
     },
     {
 "verse": "Once have I spoken; but I will not answer: yea, twice; but I will proceed no further.",
-      "place": "Job 40:5",
+      "place": "Job 40:5 (story)",
             "data": "Jb/40"
     },
     {
 "verse": "I know that thou canst do every thing, and that no thought can be withholden from thee.",
-      "place": "Job 42:2",
+      "place": "Job 42:2 (story)",
             "data": "Jb/42"
     },
     {
@@ -289,7 +289,7 @@
     {
       "verse": "Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
       "place": "Proverbs 23",
-            "data": "Prv/23:5"
+            "data": "Prv/23"
     },
     {
       "verse": "Buy the truth, and sell it not; also wisdom, and instruction, and understanding.",
@@ -482,7 +482,7 @@
             "data": "Lk/13"
     },
     {
-      "verse": "Then said yahushua, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
+      "verse": "Then said Yahushua, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
       "place": "Luke 23:34 (story)",
             "data": "Lk/23"
     },
@@ -686,8 +686,6 @@
       "place": "Hebrews 11:25",
             "data": "Heb/11"
     },
-
-
     {
 "verse": "James, a servant of Elohim and of the master Yahushua messiah to the twelve tribes which are scattered abroad, greeting.",
       "place": "James 1:1",
@@ -719,7 +717,7 @@
             "data": "Jas/1"
     },
     {
-"verse": " Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:",
+"verse": "Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:",
       "place": "James 1:19",
             "data": "Jas/1"
     },

@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -29,17 +28,40 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     String CHANNEL_ID = "bibleNotify";
     NotificationChannel notificationChannel;
     CharSequence name = "Bible Notify";
-
     // make a random number
     Random rand = new Random();
-    int rand_num = rand.nextInt(146);
+    int rand_num = 0;
+
 
     @Override
     public void onReceive(Context context, Intent intent) {
         // build and show notification
 
-        try{
 
+        final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
+
+        // Random verse algorithm
+        if(rand.nextInt(3) < 1){
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        int verseNumber = 0;
+        if(sharedPreferences.contains("currentVerseNumber")) {
+            verseNumber = sharedPreferences.getInt("currentVerseNumber", 0);
+            editor.putInt("currentVerseNumber", verseNumber + 1);
+        }else{
+            editor.putInt("currentVerseNumber", verseNumber + 1);
+        }
+        editor.apply();
+
+        rand_num = verseNumber;
+
+          }else{
+            rand_num = rand.nextInt(146);
+         }
+
+
+        try{
             showNotification(context, pickBibleVerse(context, "verse"), pickBibleVerse(context, "place"), pickBibleVerse(context, "data"));
 
         }catch (Exception e){
@@ -48,14 +70,11 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
 
         // Start a new alarm
-        final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
         SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
-      //  Log.d("DEBUG ABR class >>>>>", "startAlarmBroadcastReceiver ");
     }
 
     // build Notification
     public void showNotification(Context context, String bibleText, String bibleVerse, String data) {
-       // Log.d("DEBUG ABR class >>>>>", ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> showNotification");
         Intent notificationIntent = new Intent(context, BibleReader.class);
         Bundle bundle = new Bundle();
         notificationIntent.putExtras(bundle);
@@ -75,9 +94,6 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
         }
 
-
-      // old //  PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
         if(android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
             notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
         }
@@ -90,12 +106,13 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
 
 
-        /* save verse data so we know what
+        /* save verse data(date) so we know what
          to show when user opens reader  */
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("readerData", data);
+        editor.putString("readerDataVerseNumber", bibleVerse.split(":")[1]);
         editor.apply();
 
         // More for Notification

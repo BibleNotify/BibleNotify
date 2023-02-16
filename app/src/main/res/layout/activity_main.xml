@@ -26,13 +26,13 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:background="@color/mode_white"
-            android:contentDescription="@string/help_icon"
+            android:contentDescription="@string/info_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_info_circle"
-            tools:srcCompat="@drawable/ic_info_circle"
-            app:tint="@color/mode_black" />
+            app:tint="@color/mode_black"
+            tools:srcCompat="@drawable/ic_info_circle" />
 
         <TextView
             android:id="@+id/top_bar_text"
@@ -95,6 +95,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:background="@color/mode_white"
+        android:contentDescription="@string/StartButton"
         app:layout_constraintBottom_toTopOf="@+id/change_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/mode_white"
+        android:contentDescription="@string/ChangeTimeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/start_button"

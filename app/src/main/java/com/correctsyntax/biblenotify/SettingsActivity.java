@@ -33,10 +33,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("bibleNotify",MODE_PRIVATE);
 
-
-
         // set time
-
         // get currently set time from sharedPreferences
         if(sharedPreferences.contains("Started")) {
             HourToSet = sharedPreferences.getInt("SetTimeH", 0);
@@ -80,11 +77,6 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
 
-
     }
-
-
-
-
 
 }

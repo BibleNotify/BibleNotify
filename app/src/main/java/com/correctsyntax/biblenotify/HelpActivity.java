@@ -13,7 +13,6 @@ public class HelpActivity extends AppCompatActivity {
 
     Button back;
     TextView licenseLink, webPageLink;
-
     Intent webIntent = null, webChooser = null;
 
     @Override
@@ -25,12 +24,10 @@ public class HelpActivity extends AppCompatActivity {
         licenseLink = findViewById(R.id.view_license_button);
         webPageLink = findViewById(R.id.website_link);
 
-
         // Back
         back.setOnClickListener(v -> finish());
         // license Link
         licenseLink.setOnClickListener(v -> {
-
             AlertDialog.Builder builder = new AlertDialog.Builder(HelpActivity.this);
             builder.setTitle("Bible Notify License");
             builder.setMessage(R.string.license);
@@ -42,7 +39,6 @@ public class HelpActivity extends AppCompatActivity {
             final AlertDialog alert = builder.create();
             alert.show();
         });
-
 
         // OUR Web Page Link
         webPageLink.setOnClickListener(v -> {

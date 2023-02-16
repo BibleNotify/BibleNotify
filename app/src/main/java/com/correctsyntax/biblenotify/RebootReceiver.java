@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 
 public class RebootReceiver extends BroadcastReceiver {
 
-
     @Override
     public void onReceive(Context context, Intent intent) {
 

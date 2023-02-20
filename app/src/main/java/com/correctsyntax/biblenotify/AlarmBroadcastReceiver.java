@@ -94,9 +94,10 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
         }
 
-        if(android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
+        if (android.os.Build.VERSION.SDK_INT  >= android.os.Build.VERSION_CODES.O) {
             notificationChannel = new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
         }
+
 
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
@@ -105,14 +106,13 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         }
 
 
-
         /* save verse data(date) so we know what
          to show when user opens reader  */
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("readerData", data);
-        editor.putString("readerDataVerseNumber", bibleVerse.split(":")[1]);
+        editor.putString("readerDataVerseNumber", bibleVerse.split(":")[1].replace(" (story)", ""));
         editor.apply();
 
         // More for Notification
@@ -189,7 +189,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
                 json = new String(buffer, Charset.forName("UTF-8"));
             }
         } catch (IOException ex) {
-
+            Toast.makeText(context, "Bible Verse Text Files Not Found: " + ex,Toast.LENGTH_SHORT).show();
             return null;
         }
         return json;

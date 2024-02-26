@@ -7,12 +7,12 @@ import android.content.SharedPreferences;
 
 public class RebootReceiver extends BroadcastReceiver {
 
-    @Override
-    public void onReceive(Context context, Intent intent) {
+  @Override
+  public void onReceive(Context context, Intent intent) {
 
-        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
-            final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
-            SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
-        }
+    if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
+      final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
+      SetAlarm.startAlarmBroadcastReceiver(context, sharedPreferences);
     }
+  }
 }

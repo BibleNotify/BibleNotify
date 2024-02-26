@@ -10,17 +10,13 @@ import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 
 public class BibleReader extends AppCompatActivity {
 
@@ -201,7 +197,7 @@ public class BibleReader extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 json = new String(buffer, StandardCharsets.UTF_8);
             }else{
-                json = new String(buffer, Charset.forName("UTF-8"));
+                json = new String(buffer, StandardCharsets.UTF_8);
             }
         } catch (IOException ex) {
             return null;

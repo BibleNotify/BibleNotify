@@ -1,7 +1,5 @@
 package com.correctsyntax.biblenotify;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlarmManager;
 import android.content.Context;
 import android.content.Intent;
@@ -16,18 +14,20 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-  ImageButton startBtn, changeBtn, helpBtn;
+  ImageButton startBtn, changeBtn, helpBtn, languagesBtn;
   Animation animFadeOut;
 
-  public static int HourToSet = 12;
-  public static int MinToSet = 0;
+  public static int hourToSet = 12;
+  public static int minToSet = 0;
 
-  public static int HourToBeSaved = 12;
-  public static int MinToBeSaved = 0;
+  public static int hourToBeSaved = 12;
+  public static int minToBeSaved = 0;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     startBtn = findViewById(R.id.start_button);
     changeBtn = findViewById(R.id.change_button);
     helpBtn = findViewById(R.id.help_button);
+    languagesBtn = findViewById(R.id.languages_button);
 
     final SharedPreferences sharedPreferences =
         getApplicationContext().getSharedPreferences("bibleNotify", MODE_PRIVATE);
@@ -78,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
                     (dialog, id) -> {
                       // save time
                       SharedPreferences.Editor editor1 = sharedPreferences.edit();
-                      editor1.putInt("SetTimeH", HourToBeSaved);
-                      editor1.putInt("SetTimeM", MinToBeSaved);
+                      editor1.putInt("SetTimeH", hourToBeSaved);
+                      editor1.putInt("SetTimeM", minToBeSaved);
                       editor1.commit();
 
                       SetAlarm.startAlarmBroadcastReceiver(MainActivity.this, sharedPreferences);
@@ -107,24 +108,24 @@ public class MainActivity extends AppCompatActivity {
             // set event Listener on Time picker
             input.setOnTimeChangedListener(
                 (timePicker, H, M) -> {
-                  HourToBeSaved = H;
-                  MinToBeSaved = M;
+                  hourToBeSaved = H;
+                  minToBeSaved = M;
                 });
 
             // set time
 
             // get currently set time from sharedPreferences
             if (sharedPreferences.getString("Started", "no").equals("yes")) {
-              HourToSet = sharedPreferences.getInt("SetTimeH", 0);
-              MinToSet = sharedPreferences.getInt("SetTimeM", 0);
+              hourToSet = sharedPreferences.getInt("SetTimeH", 0);
+              minToSet = sharedPreferences.getInt("SetTimeM", 0);
             }
 
             if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.LOLLIPOP_MR1) {
-              input.setCurrentHour(HourToSet);
-              input.setCurrentMinute(MinToSet);
+              input.setCurrentHour(hourToSet);
+              input.setCurrentMinute(minToSet);
             } else {
-              input.setHour(HourToSet);
-              input.setMinute(MinToSet);
+              input.setHour(hourToSet);
+              input.setMinute(minToSet);
             }
           }
         });
@@ -134,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         v -> {
           if (sharedPreferences.contains("Started")
               && sharedPreferences.getString("Started", "no").equals("yes")) {
-            Intent settings_Intent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(settings_Intent);
+            Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(settingsIntent);
           } else {
             Toast.makeText(
                     getApplicationContext(),
@@ -148,8 +149,15 @@ public class MainActivity extends AppCompatActivity {
     // Help
     helpBtn.setOnClickListener(
         v -> {
-          Intent help_Intent = new Intent(MainActivity.this, LanguageSettings.class);
-          startActivity(help_Intent);
+          Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
+          startActivity(helpIntent);
+        });
+
+    // Languages
+    languagesBtn.setOnClickListener(
+        v -> {
+          Intent languagesIntent = new Intent(MainActivity.this, LanguageSettings.class);
+          startActivity(languagesIntent);
         });
   }
 
@@ -162,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
       // If not, request the SCHEDULE_EXACT_ALARM permission
       Toast.makeText(
               getApplicationContext(),
-              "Permission needed for notifications needed on Android 14+",
+              "Permission for notifications needed on Android 14+",
               Toast.LENGTH_LONG)
           .show();
       Intent intent = new Intent(android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);

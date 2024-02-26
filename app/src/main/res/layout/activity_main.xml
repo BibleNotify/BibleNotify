@@ -34,6 +34,24 @@
             app:tint="@color/mode_black"
             tools:srcCompat="@drawable/ic_info_circle" />
 
+        <ImageButton
+            android:id="@+id/languages_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/mode_white"
+            android:contentDescription="@string/languages_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/translate"
+            app:tint="@color/mode_black"
+            tools:srcCompat="@drawable/translate" />
+
         <TextView
             android:id="@+id/top_bar_text"
             android:layout_width="wrap_content"

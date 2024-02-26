@@ -12,16 +12,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
-
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Random;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Random;
 
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
@@ -31,7 +28,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
   CharSequence name = "Bible Notify";
   // make a random number
   Random rand = new Random();
-  int rand_num = 0;
+  int randomNum = 0;
 
   String languagePath = "en";
 
@@ -59,10 +56,10 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
       }
       editor.apply();
 
-      rand_num = verseNumber;
+      randomNum = verseNumber;
 
     } else {
-      rand_num = rand.nextInt(146);
+      randomNum = rand.nextInt(146);
     }
 
     try {
@@ -166,7 +163,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
       JSONArray userArray = obj.getJSONArray("all");
 
       try {
-        JSONObject userDetail = userArray.getJSONObject(rand_num);
+        JSONObject userDetail = userArray.getJSONObject(randomNum);
         name = userDetail.getString(whichPart);
 
       } catch (JSONException e) {

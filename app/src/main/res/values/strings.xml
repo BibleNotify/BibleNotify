@@ -32,5 +32,6 @@
     <string name="SetTimeButton">Set Time Here</string>
     <string name="CancelButton">Cancel</string>
     <string name="info_button">Info</string>
+    <string name="languages_button">Languages</string>
 
 </resources>

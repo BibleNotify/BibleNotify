@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.correctsyntax.biblenotify">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
     <application
-        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -22,6 +20,7 @@
         </activity>
        <activity android:name=".BibleReader" android:screenOrientation="user" />
         <activity android:name=".SettingsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".LanguageSettings" />
         <activity android:name=".HelpActivity" android:theme="@style/Dialog" />
 
          <receiver android:name=".AlarmBroadcastReceiver" />

@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -32,11 +33,13 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     Random rand = new Random();
     int rand_num = 0;
 
+    String languagePath = "en";
+
 
     @Override
     public void onReceive(Context context, Intent intent) {
         // build and show notification
-
+     //   Toast.makeText(context, " onReceive",Toast.LENGTH_SHORT).show();
 
         final SharedPreferences sharedPreferences = context.getSharedPreferences("bibleNotify", 0);
 
@@ -44,6 +47,10 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         if(rand.nextInt(3) < 1){
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        // lang
+        languagePath = sharedPreferences.getString("languagePath", "en");
+
 
         int verseNumber = 0;
         if(sharedPreferences.contains("currentVerseNumber")) {
@@ -162,11 +169,13 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
                 name = userDetail.getString(whichPart);
 
             }catch (JSONException e){
+                Log.d("ERROR", String.valueOf(e));
                 return "ERROR: " + e;
             }
 
         }
         catch (JSONException e) {
+            Log.d("ERROR", String.valueOf(e));
             return "ERROR: " + e;
         }
 
@@ -178,7 +187,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         String json;
         try {
 
-            InputStream is = context.getAssets().open("bible/Verses/bible_verses.json");
+            InputStream is = context.getAssets().open("bible/en/Verses/bible_verses.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -189,6 +198,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
                 json = new String(buffer, Charset.forName("UTF-8"));
             }
         } catch (IOException ex) {
+            Log.d("ERROR", String.valueOf(ex));
             Toast.makeText(context, "Bible Verse Text Files Not Found: " + ex,Toast.LENGTH_SHORT).show();
             return null;
         }

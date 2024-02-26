@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.correctsyntax.biblenotify"
         minSdkVersion 16
-        targetSdk 33
+        targetSdk 34
         versionCode 16
         versionName '4.4'
 
@@ -26,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.correctsyntax.biblenotify'
 }
 
 dependencies {

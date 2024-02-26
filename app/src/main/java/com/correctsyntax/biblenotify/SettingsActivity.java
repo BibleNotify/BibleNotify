@@ -3,11 +3,19 @@ package com.correctsyntax.biblenotify;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -29,7 +37,6 @@ public class SettingsActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.set_time_button);
         cancel = findViewById(R.id.cancel_button);
         help = findViewById(R.id.set_help_button);
-
 
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("bibleNotify",MODE_PRIVATE);
 

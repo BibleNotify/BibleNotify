@@ -1,11 +1,19 @@
 package com.correctsyntax.biblenotify;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.app.AlarmManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
@@ -13,6 +21,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,13 +51,20 @@ public class MainActivity extends AppCompatActivity {
             startBtn.setImageResource(R.drawable.ic_pause_sending_button);
         }
 
+        // Auto set the language
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("language", Locale.getDefault().getDisplayLanguage());
+        editor.putString("languagePath", Locale.getDefault().getLanguage());
+        editor.apply();
+
+
+
         // Start Button
         startBtn.setOnClickListener(v -> {
             if(sharedPreferences.contains("Started") && sharedPreferences.getString("Started", "no").equals("yes")){
                 Toast.makeText(getApplicationContext(),"Bible Notify is running",Toast.LENGTH_SHORT).show();
             }else{
                 // tell that it has been enabled
-                SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("Started", "yes");
                 editor.commit();
 
@@ -122,12 +139,29 @@ public class MainActivity extends AppCompatActivity {
 
         // Help
         helpBtn.setOnClickListener(v -> {
-            Intent help_Intent=new Intent(MainActivity.this, HelpActivity.class);
+            Intent help_Intent=new Intent(MainActivity.this, LanguageSettings.class);
             startActivity(help_Intent);
         });
 
 
     }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Check if the app can schedule exact alarms
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
+            // If not, request the SCHEDULE_EXACT_ALARM permission
+            Toast.makeText(getApplicationContext(),"Permission needed for notifications needed on Android 14+",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
+            intent.setData(Uri.fromParts("package", getPackageName(), null));
+            startActivity(intent);
+        }
+    }
+
+
 
 
 

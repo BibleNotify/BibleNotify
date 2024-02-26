@@ -28,6 +28,8 @@ public class BibleReader extends AppCompatActivity {
     WebView bibleTextWebView;
     ImageButton home;
 
+    String languagePath = "en";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,13 +42,17 @@ public class BibleReader extends AppCompatActivity {
         bibleTextWebView.getSettings().setJavaScriptEnabled(true);
 
 
+        // lang
+        final SharedPreferences sharedPreferences = BibleReader.this.getSharedPreferences("bibleNotify", 0);
+        languagePath = sharedPreferences.getString("languagePath", "en");
+
         // Go to home
         home.setOnClickListener(v -> {
             Intent back = new Intent(BibleReader.this, MainActivity.class);
             startActivity(back);
         });
 
-        setText(pickFromBible(BibleReader.this, "text", "bible/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/", ".json"));
+        setText(pickFromBible(BibleReader.this, "text", "bible/" + languagePath + "/", ".json"), pickFromBible(BibleReader.this, "chapter", "bible/" + languagePath + "/", ".json"));
     }
 
 
@@ -182,11 +188,11 @@ public class BibleReader extends AppCompatActivity {
         if (sharedPreferences.contains("readerData")) {
             path = sharedPreferences.getString("readerData", "");
         }
-
+        String languagePath = sharedPreferences.getString("languagePath", "en");
 
         try {
 
-            InputStream is = context.getAssets().open(partOne + path + partTwo);
+            InputStream is = context.getAssets().open( partOne + path + partTwo);
 
             int size = is.available();
             byte[] buffer = new byte[size];

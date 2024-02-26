@@ -3,7 +3,7 @@
     <string name="main_screen_title">Bible Notify</string>
     <string name="reader_screen_title">Reader</string>
     <string name="bottom_text">Bible Notify © 2023 Bible Notify Contributors</string>
-    <string name="settings_screen_title">Set Time</string>
+    <string name="settings_screen_title">Settings</string>
     <string name="time_picker_text">Send daily notification at:</string>
     <string name="license">Bible Notify Copyright © 2023 Bible Notify contributors.\n\n
 

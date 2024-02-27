@@ -3,7 +3,6 @@
   <h1>Bible Notify</h1>
   <p>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL_v3-green.svg" /></a>
-  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/BibleNotify/BibleNotify" />
   </p>
   <p>Daily Scripture Verse Notifications for Android devices.</p>
   <p><i>Thy word is a lamp unto my feet, and a light unto my path." -Psalms 119:105</i></p>
@@ -21,7 +20,7 @@ Bible Notify is a free, daily Bible verse notification application for Android d
 
 ## Desktop version
 
-Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows and macOS platforms.
+Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows and macOS.
 
 
 ## Element chat
@@ -31,7 +30,7 @@ Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-
 
 ## Running the code
 
-Open in Android Studio (tested on Windows 10) and sync gradle. Bible Notify uses minimal dependencies.
+Open the project in Android Studio and sync Gradle. Bible Notify uses minimal dependencies.
 
 
 ## Contributing

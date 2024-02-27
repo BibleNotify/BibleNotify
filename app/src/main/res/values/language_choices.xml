@@ -2,7 +2,7 @@
 <resources>
     <string-array name="language_array">
         <item>English</item>
-        <item>French</item>
+        <item>Français</item>
     </string-array>
 </resources>
 

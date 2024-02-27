@@ -34,7 +34,7 @@ public class LanguageSettings extends AppCompatActivity
 
     // Add languages
     languages.put("English", "en");
-    languages.put("French", "fr");
+    languages.put("Français", "fr");
 
     // Create an ArrayAdapter using the string array and a default spinner layout.
     ArrayAdapter<CharSequence> adapter =

@@ -3,10 +3,10 @@
     <string name="app_name">Bible Notify</string>
     <string name="main_screen_title">Bible Notify</string>
     <string name="reader_screen_title">Reader</string>
-    <string name="bottom_text">Bible Notify © 2023 Bible Notify Contributors</string>
+    <string name="bottom_text">Bible Notify © 2024 Bible Notify Contributors</string>
     <string name="settings_screen_title">Settings</string>
     <string name="time_picker_text">Send daily notification at:</string>
-    <string name="license">Bible Notify Copyright © 2023 Bible Notify contributors.\n\n
+    <string name="license">Bible Notify Copyright © 2024 Bible Notify contributors.\n\n
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
@@ -34,5 +34,6 @@
     <string name="CancelButton">Cancel</string>
     <string name="info_button">Info</string>
     <string name="languages_button">Languages</string>
+    <string name="languages_text">Language:</string>
 
 </resources>

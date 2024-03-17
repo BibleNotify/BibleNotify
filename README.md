@@ -17,6 +17,10 @@ Bible Notify is a free, daily Bible verse notification application for Android d
      alt="Get it on F-Droid"
      height="80">](https://f-droid.org/packages/com.correctsyntax.biblenotify/)
 
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=com.biblenotify.biblenotify)
+
 
 ## Desktop version
 

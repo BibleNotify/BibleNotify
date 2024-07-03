@@ -4,9 +4,11 @@ import android.app.AlarmManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
@@ -14,12 +16,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-
   ImageButton startBtn, changeBtn, helpBtn, languagesBtn;
   Animation animFadeOut;
 
@@ -42,6 +46,16 @@ public class MainActivity extends AppCompatActivity {
     final SharedPreferences sharedPreferences =
         getApplicationContext().getSharedPreferences("bibleNotify", MODE_PRIVATE);
 
+    // Request exact alarm permission
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+      AlarmManager alarmManager = ContextCompat.getSystemService(MainActivity.this, AlarmManager.class);
+      assert alarmManager != null;
+      if (!alarmManager.canScheduleExactAlarms()) {
+        Intent intent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
+        startActivity(intent);
+      }
+    }
+
     // If enabled set image to done
     if (sharedPreferences.contains("Started")) {
       startBtn.setImageResource(R.drawable.ic_pause_sending_button);
@@ -54,111 +68,108 @@ public class MainActivity extends AppCompatActivity {
     editor.apply();
 
     // Start Button
-    startBtn.setOnClickListener(
-        v -> {
-          if (sharedPreferences.contains("Started")
-              && sharedPreferences.getString("Started", "no").equals("yes")) {
-            Toast.makeText(getApplicationContext(), "Bible Notify is running", Toast.LENGTH_SHORT)
-                .show();
-          } else {
-            // tell that it has been enabled
-            editor.putString("Started", "yes");
-            editor.commit();
+    startBtn.setOnClickListener(v -> {
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        checkNotificationPermission();
+      }
 
-            /* Make Alert dialog */
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            LayoutInflater inflater = MainActivity.this.getLayoutInflater();
-            builder.setCancelable(false);
-            View v_ = inflater.inflate(R.layout.start_dialog, null);
-            builder.setView(v_);
-            builder.setTitle("Set Time");
-            builder
-                .setMessage("Send notification at:")
-                .setPositiveButton(
-                    "ok",
-                    (dialog, id) -> {
-                      // save time
-                      SharedPreferences.Editor editor1 = sharedPreferences.edit();
-                      editor1.putInt("SetTimeH", hourToBeSaved);
-                      editor1.putInt("SetTimeM", minToBeSaved);
-                      editor1.commit();
+      if (sharedPreferences.contains("Started") && sharedPreferences.getString("Started", "no").equals("yes")) {
+        Toast.makeText(getApplicationContext(), "Bible Notify is running", Toast.LENGTH_SHORT).show();
+      } else {
+        // tell that it has been enabled
+        editor.putString("Started", "yes");
+        editor.commit();
 
-                      SetAlarm.startAlarmBroadcastReceiver(MainActivity.this, sharedPreferences);
-                      Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
+        /* Make Alert dialog */
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        LayoutInflater inflater = MainActivity.this.getLayoutInflater();
+        builder.setCancelable(false);
+        View v_ = inflater.inflate(R.layout.start_dialog, null);
+        builder.setView(v_);
+        builder.setTitle("Set Time");
+        builder.setMessage("Send notification at:")
+            .setPositiveButton("ok",
+                (dialog, id) -> {
+                  // save time
+                  SharedPreferences.Editor editor1 = sharedPreferences.edit();
+                  editor1.putInt("SetTimeH", hourToBeSaved);
+                  editor1.putInt("SetTimeM", minToBeSaved);
+                  editor1.apply();
 
-                      // Animation
-                      animFadeOut =
-                          AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
-                      startBtn.setVisibility(View.VISIBLE);
-                      startBtn.startAnimation(animFadeOut);
-                      startBtn.setImageResource(R.drawable.ic_pause_sending_button);
-                    })
-                .setNeutralButton(
-                    "Cancel",
-                    (dialog, id) -> {
-                      SharedPreferences.Editor editor12 = sharedPreferences.edit();
-                      editor12.putString("Started", "No");
-                      editor12.commit();
-                    })
-                .create()
-                .show();
-            // get time picker object
-            TimePicker input = v_.findViewById(R.id.start_time_picker);
+                  SetAlarm.startAlarmBroadcastReceiver(MainActivity.this, sharedPreferences);
+                  Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
 
-            // set event Listener on Time picker
-            input.setOnTimeChangedListener(
-                (timePicker, H, M) -> {
-                  hourToBeSaved = H;
-                  minToBeSaved = M;
-                });
+                  // Animation
+                  animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
+                  startBtn.setVisibility(View.VISIBLE);
+                  startBtn.startAnimation(animFadeOut);
+                  startBtn.setImageResource(R.drawable.ic_pause_sending_button);
+                })
+            .setNeutralButton("Cancel",
+                (dialog, id) -> {
+                  SharedPreferences.Editor editor12 = sharedPreferences.edit();
+                  editor12.putString("Started", "No");
+                  editor12.apply();
+                })
+            .create()
+            .show();
+        // get time picker object
+        TimePicker input = v_.findViewById(R.id.start_time_picker);
 
-            // set time
-
-            // get currently set time from sharedPreferences
-            if (sharedPreferences.getString("Started", "no").equals("yes")) {
-              hourToSet = sharedPreferences.getInt("SetTimeH", 0);
-              minToSet = sharedPreferences.getInt("SetTimeM", 0);
-            }
-
-            if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.LOLLIPOP_MR1) {
-              input.setCurrentHour(hourToSet);
-              input.setCurrentMinute(minToSet);
-            } else {
-              input.setHour(hourToSet);
-              input.setMinute(minToSet);
-            }
-          }
+        // set event Listener on Time picker
+        input.setOnTimeChangedListener((timePicker, H, M) -> {
+          hourToBeSaved = H;
+          minToBeSaved = M;
         });
+
+        // set time
+
+        // get currently set time from sharedPreferences
+        if (sharedPreferences.getString("Started", "no").equals("yes")) {
+          hourToSet = sharedPreferences.getInt("SetTimeH", 0);
+          minToSet = sharedPreferences.getInt("SetTimeM", 0);
+        }
+
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
+          input.setCurrentHour(hourToSet);
+          input.setCurrentMinute(minToSet);
+        } else {
+          input.setHour(hourToSet);
+          input.setMinute(minToSet);
+        }
+      }
+    });
 
     // Settings (Change time)
-    changeBtn.setOnClickListener(
-        v -> {
-          if (sharedPreferences.contains("Started")
-              && sharedPreferences.getString("Started", "no").equals("yes")) {
-            Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(settingsIntent);
-          } else {
-            Toast.makeText(
-                    getApplicationContext(),
-                    "You must start sending notifications first",
-                    Toast.LENGTH_LONG)
-                .show();
-          }
-        });
+    changeBtn.setOnClickListener(v -> {
+      if (sharedPreferences.contains("Started") && sharedPreferences.getString("Started", "no").equals("yes")) {
+        Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(settingsIntent);
+      } else {
+        Toast.makeText(getApplicationContext(), "You must start sending notifications first", Toast.LENGTH_LONG).show();
+      }
+    });
 
     // Help
-    helpBtn.setOnClickListener(
-        v -> {
-          Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
-          startActivity(helpIntent);
-        });
+    helpBtn.setOnClickListener(v -> {
+      Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
+      startActivity(helpIntent);
+    });
 
     // Languages
-    languagesBtn.setOnClickListener(
-        v -> {
-          Intent languagesIntent = new Intent(MainActivity.this, LanguageSettings.class);
-          startActivity(languagesIntent);
-        });
+    languagesBtn.setOnClickListener(v -> {
+      Intent languagesIntent = new Intent(MainActivity.this, LanguageSettings.class);
+      startActivity(languagesIntent);
+    });
+  }
+
+  @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
+  void checkNotificationPermission() {
+    int permissionState = ContextCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS);
+    // If the permission is not granted, request it.
+    if (permissionState == PackageManager.PERMISSION_DENIED) {
+      ActivityCompat.requestPermissions(this, new String[] {android.Manifest.permission.POST_NOTIFICATIONS}, 1);
+    }
   }
 
   @Override
@@ -168,10 +179,7 @@ public class MainActivity extends AppCompatActivity {
     AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !alarmManager.canScheduleExactAlarms()) {
       // If not, request the SCHEDULE_EXACT_ALARM permission
-      Toast.makeText(
-              getApplicationContext(),
-              "Permission for notifications needed on Android 14+",
-              Toast.LENGTH_LONG)
+      Toast.makeText(getApplicationContext(), "Permission for notifications needed on Android 14+", Toast.LENGTH_LONG)
           .show();
       Intent intent = new Intent(android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
       intent.setData(Uri.fromParts("package", getPackageName(), null));

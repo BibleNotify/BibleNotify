@@ -50,17 +50,25 @@ public class SetAlarm {
       calendar.add(Calendar.DAY_OF_MONTH, 1);
     }
 
-    // 18 and below
+    boolean canScheduleExactAlarms;
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+      canScheduleExactAlarms = alarmManager.canScheduleExactAlarms();
+    } else {
+      canScheduleExactAlarms = true;
+    }
+
+    // SDK 18 and below
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
       alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
     }
-    // 19 to 22
+    // SDK 19 to 22
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT
         && Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
       alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
     }
-    // 23 + (to 30)
+    // SDK 23 +
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+      if (!canScheduleExactAlarms) return;
       alarmManager.setExactAndAllowWhileIdle(
           AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
     }

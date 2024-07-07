@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.correctsyntax.biblenotify'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.correctsyntax.biblenotify"
-        minSdkVersion 16
-        targetSdk 34
+        minSdkVersion 17
+        targetSdk 35
         versionCode 16
         versionName '4.4'
 
@@ -30,10 +30,11 @@ android {
 }
 
 dependencies {
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }

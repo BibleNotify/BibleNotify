@@ -21,6 +21,8 @@ Bible Notify is a free, daily Bible verse notification application for Android d
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=com.biblenotify.biblenotify)
 
+Please note that the application package name is different on Google Play than other app stores and the apk in releases.
+
 
 ## Desktop version
 

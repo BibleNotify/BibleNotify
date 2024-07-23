@@ -59,7 +59,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
       randomNum = verseNumber;
 
     } else {
-      randomNum = rand.nextInt(146);
+      randomNum = rand.nextInt(147);
     }
 
     try {

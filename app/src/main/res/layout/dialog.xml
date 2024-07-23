@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:background="@android:color/transparent"
     android:padding="10dp">
+
     <TimePicker
         android:timePickerMode="spinner"
         android:id="@+id/picktime"
@@ -12,9 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        android:paddingLeft="8dp"
         android:paddingTop="8dp"
-        android:paddingRight="30dp"
         android:paddingBottom="8dp"
         android:layout_gravity="center_horizontal"
         android:paddingEnd="30dp"

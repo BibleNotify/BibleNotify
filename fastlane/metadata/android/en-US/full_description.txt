@@ -7,4 +7,4 @@ Bible notify is a free and open-source, offline, privacy-friendly daily Bible ve
 - Bible Notify is fully functional offline.
 - No tracking or data collection whatsoever.
 
-A desktop version of Bible Notify is a also available for Windows, Linux and macOS (see website for downloads).
+A desktop version of Bible Notify is a also available for Windows, Linux and macOS (see https://biblenotify.github.io for downloads).

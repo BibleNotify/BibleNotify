@@ -25,13 +25,13 @@
         Additionally, you must remove all references to \"Bible Notify\" and \"Correct Syntax\"
         if you release an app based on the Bible Notify open source project.
         Including the apps package name, as this is reserved for the official app.</string>
-    <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d'accéder au chapitre dont est tiré le verset.</string>
+    <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d\'accéder au chapitre dont est tiré le verset.</string>
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_text">Fermer</string>
     <string name="view_license">Licence</string>
     <string name="StartButton">Commencer à envoyer des notifications</string>
-    <string name="ChangeTimeButton">Changer l'heure des notifications</string>
-    <string name="SetTimeButton">Définir l'heure ici :</string>
+    <string name="ChangeTimeButton">Changer l\'heure des notifications</string>
+    <string name="SetTimeButton">Définir l\'heure ici :</string>
     <string name="CancelButton">Annuler</string>
     <string name="info_button">Info</string>
     <string name="languages_button">Langues</string>

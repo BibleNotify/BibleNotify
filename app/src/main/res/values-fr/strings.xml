@@ -25,7 +25,7 @@
         Additionally, you must remove all references to \"Bible Notify\" and \"Correct Syntax\"
         if you release an app based on the Bible Notify open source project.
         Including the apps package name, as this is reserved for the official app.</string>
-    <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d\'accéder au chapitre dont est tiré le verset.</string>
+    <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d\'accéder au chapitre dont est tiré le verset.\n Texte francais de la traduction litturgique de la bible reproduits avec l'accord de l'AELF, pour toute question ou demande, rendez-vous sur www.aelf.org. </string>
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_text">Fermer</string>
     <string name="view_license">Licence</string>

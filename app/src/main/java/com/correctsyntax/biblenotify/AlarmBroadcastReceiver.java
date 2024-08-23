@@ -100,7 +100,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
               context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
-    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       notificationChannel =
           new NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH);
     }
@@ -108,7 +108,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     NotificationManager mNotificationManager =
         (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       mNotificationManager.createNotificationChannel(notificationChannel);
     }
 
@@ -130,7 +130,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
     // check Android API and do as needed
 
-    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       NotificationBuilder = new Notification.Builder(context, CHANNEL_ID);
     } else {
       NotificationBuilder = new Notification.Builder(context);
@@ -138,13 +138,13 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
     Notification.Builder mBuilder = NotificationBuilder;
 
     mBuilder.setSmallIcon(R.drawable.nicon);
-    mBuilder.setContentTitle("A Word From The Scriptures");
+    mBuilder.setContentTitle(context.getString(R.string.notification_title));
     mBuilder.setContentText(bibleVerse);
     mBuilder.setStyle(bigText);
     mBuilder.setAutoCancel(true);
     mBuilder.setContentIntent(contentIntent);
 
-    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       mBuilder.setChannelId(CHANNEL_ID);
     }
 
@@ -183,8 +183,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
   public String loadJSONFromAsset(Context context) {
     String json;
     try {
-
-      InputStream is = context.getAssets().open("bible/en/Verses/bible_verses.json");
+      InputStream is =
+          context.getAssets().open("bible/" + languagePath + "/Verses/bible_verses.json");
       int size = is.available();
       byte[] buffer = new byte[size];
       is.read(buffer);

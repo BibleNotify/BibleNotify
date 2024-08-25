@@ -2,7 +2,8 @@
 <resources>
     <string name="app_name">Bible Notify</string>
     <string name="main_screen_title">Bible Notify</string>
-    <string name="reader_screen_title">Ambon</string>
+    <string name="reader_screen_title">l'Ambon</string>
+    <string name="notification_title">Lecture d'un livre des Écritures</string>
     <string name="bottom_text">Bible Notify © 2024 Contributeurs de Bible Notify</string>
     <string name="settings_screen_title">Paramètres</string>
     <string name="time_picker_text">Envoyer une notification quotidienne à:</string>

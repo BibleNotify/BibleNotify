@@ -25,16 +25,16 @@ public class HelpActivity extends AppCompatActivity {
 
     // Back
     back.setOnClickListener(v -> finish());
-    // license Link
+    // License link
     licenseLink.setOnClickListener(
         v -> {
           AlertDialog.Builder builder = new AlertDialog.Builder(HelpActivity.this);
-          builder.setTitle("Bible Notify License");
+          builder.setTitle(R.string.biblenotify_license);
           builder.setMessage(R.string.license);
           builder.setPositiveButton(
-              "close",
+              R.string.close_btn,
               (dialog, id) -> {
-                // User clicked OK button !!!
+                // User tapped the button
               });
 
           builder.setCancelable(true);
@@ -42,12 +42,14 @@ public class HelpActivity extends AppCompatActivity {
           alert.show();
         });
 
-    // OUR Web Page Link
+    // Website link
     webPageLink.setOnClickListener(
         v -> {
           webIntent = new Intent(Intent.ACTION_VIEW);
           webIntent.setData(Uri.parse("https://biblenotify.github.io"));
-          webChooser = Intent.createChooser(webIntent, "View our website");
+          webChooser =
+              Intent.createChooser(
+                  webIntent, HelpActivity.this.getString(R.string.visit_our_website));
           startActivity(webChooser);
         });
   }

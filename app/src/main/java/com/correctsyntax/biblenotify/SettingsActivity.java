@@ -64,7 +64,8 @@ public class SettingsActivity extends AppCompatActivity {
 
           SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);
 
-          Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
+          Toast.makeText(getApplicationContext(), R.string.time_saved_toast, Toast.LENGTH_SHORT)
+              .show();
           finish();
         });
 

@@ -34,7 +34,6 @@
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_btn">Fermer</string>
     <string name="copyright_text">Bible Notify © 2024 Contributeurs de Bible Notify</string>
-
     <string name="alarm_permission_dialog_title">L'application a besoin de la permission \"Notifications\" pour fonctionner</string>
     <string name="allow_permission_btn">Donner la permission</string>
 

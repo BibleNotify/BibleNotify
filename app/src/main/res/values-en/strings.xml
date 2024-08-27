@@ -3,9 +3,15 @@
     <string name="app_name">Bible Notify</string>
     <string name="main_screen_title">Bible Notify</string>
     <string name="reader_screen_title">Reader</string>
-    <string name="bottom_text">Bible Notify © 2024 Bible Notify Contributors</string>
     <string name="settings_screen_title">Settings</string>
-    <string name="time_picker_text">Send daily notification at:</string>
+
+    <string name="notification_title">A Word From The Scriptures</string>
+
+    <string name="send_daily_notification_at">Send daily notification at:</string>
+
+    <string name="help_text">Bible Notify sends you inspiring daily Bible verses in notification form. You can also tap on the notifications to read the chapter in which the verse is found.</string>
+    <string name="biblenotify_license">Bible Notify License</string>
+    <string name="view_license">View Bible Notify License</string>
     <string name="license">Bible Notify Copyright © 2024 Bible Notify contributors.\n\n
 
         This program is free software: you can redistribute it and/or modify
@@ -24,16 +30,26 @@
         Additionally, you must remove all references to \"Bible Notify\" and \"Correct Syntax\"
         if you release an app based on the Bible Notify open source project.
         Including the apps package name, as this is reserved for the official app.</string>
-    <string name="help_text">Bible Notify sends you inspiring daily Bible verses in notification form. You can also tap on the notifications to read the chapter in which the verse is found.</string>
     <string name="visit_our_website">Visit the Bible Notify website</string>
-    <string name="close_text">Close Dialog</string>
-    <string name="view_license">View Bible Notify License</string>
-    <string name="StartButton">Start Sending Notifications</string>
-    <string name="ChangeTimeButton">Change Notification Time</string>
-    <string name="SetTimeButton">Set Time Here</string>
-    <string name="CancelButton">Cancel</string>
-    <string name="info_button">Info</string>
-    <string name="languages_button">Languages</string>
-    <string name="languages_text">Language:</string>
+    <string name="close_btn">Close</string>
+    <string name="copyright_text">Bible Notify © 2024 Bible Notify Contributors</string>
 
+    <string name="alarm_permission_dialog_title">Alarm Permission Needed</string>
+    <string name="allow_permission_btn">Allow Permission</string>
+
+    <string name="start_sending_notifications_btn">Start Sending Notifications</string>
+    <string name="change_notification_time_btn">Change Notification Time</string>
+    <string name="set_time_btn">Set Time</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="okay_btn">OK</string>
+
+    <string name="biblenotify_is_running">Bible Notify is running…</string>
+
+    <string name="time_saved_toast">Time saved</string>
+    <string name="start_sending_notifications_first_toast">You must start sending notifications first</string>
+    <string name="error_toast">Bible Notify has encountered an error</string>
+
+    <string name="info_btn">Info</string>
+    <string name="languages_btn">Languages</string>
+    <string name="languages_text">Language:</string>
 </resources>

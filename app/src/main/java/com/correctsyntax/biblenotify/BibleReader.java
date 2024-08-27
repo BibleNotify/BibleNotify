@@ -105,6 +105,7 @@ public class BibleReader extends AppCompatActivity {
             "<p><sup>" + readerDataVerseNumber + "</sup>",
             "<p class='hv'><sup>" + readerDataVerseNumber + "</sup>");
 
+    // WebView won't allow ids or hex numbers
     String html =
         "<!DOCTYPE html>\n"
             + "<html lang=\"en\">\n"
@@ -144,13 +145,8 @@ public class BibleReader extends AppCompatActivity {
             + "        font-weight: bold;\n"
             + "      }\n"
             + "      .hv{\n"
-            + // WebView won't allow ids
-            "      border-left-style: solid;\n"
-            + "      padding-left: 12px;\n"
-            + "      border-left-width: 3px;\n"
-            + "      border-left-color: LightGreen;\n"
-            + // #43A047 WebView won't take hex numbers
-            "      }\n"
+            + "      font-weight: bold;"
+            + "      }\n"
             + "    </style>"
             + bibleChapterText
             + "</body>\n"
@@ -174,17 +170,11 @@ public class BibleReader extends AppCompatActivity {
         name = userDetail.getString(whichPart);
 
       } catch (JSONException e) {
-        Toast.makeText(
-                getApplicationContext(),
-                "Bible Notify has encountered an error.",
-                Toast.LENGTH_SHORT)
-            .show();
+        Toast.makeText(getApplicationContext(), R.string.error_toast, Toast.LENGTH_SHORT).show();
       }
 
     } catch (JSONException e) {
-      Toast.makeText(
-              getApplicationContext(), "Bible Notify has encountered an error.", Toast.LENGTH_SHORT)
-          .show();
+      Toast.makeText(getApplicationContext(), R.string.error_toast, Toast.LENGTH_SHORT).show();
     }
 
     return name;

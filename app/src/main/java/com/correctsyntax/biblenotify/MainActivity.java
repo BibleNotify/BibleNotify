@@ -25,7 +25,6 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
   ImageButton startBtn, changeBtn, helpBtn, languagesBtn;
   Animation animFadeOut;
-  //ImageView alarmPermisionGif;
 
   public static int hourToSet = 12;
   public static int minToSet = 0;
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     startBtn = findViewById(R.id.start_button);
     changeBtn = findViewById(R.id.change_button);
     helpBtn = findViewById(R.id.help_button);
-    languagesBtn = findViewById(R.id.languages_button);
+    languagesBtn = findViewById(R.id.languages_btn);
 
     final SharedPreferences sharedPreferences =
         getApplicationContext().getSharedPreferences("bibleNotify", MODE_PRIVATE);
@@ -59,14 +58,13 @@ public class MainActivity extends AppCompatActivity {
         LayoutInflater inflater = MainActivity.this.getLayoutInflater();
         builder.setCancelable(false);
         View v_ = inflater.inflate(R.layout.permission_dialog, null);
-        //alarmPermisionGif = findViewById(R.id.alarm_permission_gif);
 
         builder.setView(v_);
-        builder.setTitle("Alarm Permission Needed");
+        builder.setTitle(MainActivity.this.getString(R.string.alarm_permission_dialog_title));
         builder
             // .setMessage("")
             .setPositiveButton(
-                "Allow Permission",
+                MainActivity.this.getString(R.string.allow_permission_btn),
                 (dialog, id) -> {
                   // Get permission
                   Intent intent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
@@ -98,7 +96,10 @@ public class MainActivity extends AppCompatActivity {
 
           if (sharedPreferences.contains("Started")
               && sharedPreferences.getString("Started", "no").equals("yes")) {
-            Toast.makeText(getApplicationContext(), "Bible Notify is running", Toast.LENGTH_SHORT)
+            Toast.makeText(
+                    getApplicationContext(),
+                    MainActivity.this.getString(R.string.biblenotify_is_running),
+                    Toast.LENGTH_SHORT)
                 .show();
           } else {
             // tell that it has been enabled
@@ -113,11 +114,11 @@ public class MainActivity extends AppCompatActivity {
             builder.setView(v_);
             builder.setTitle("Set Time");
             builder
-                .setMessage("Send notification at:")
+                .setMessage(R.string.send_daily_notification_at)
                 .setPositiveButton(
                     "ok",
                     (dialog, id) -> {
-                      // save time
+                      // Save the time
                       SharedPreferences.Editor editor1 = sharedPreferences.edit();
                       editor1.putInt("SetTimeH", hourToBeSaved);
                       editor1.putInt("SetTimeM", minToBeSaved);
@@ -152,9 +153,9 @@ public class MainActivity extends AppCompatActivity {
                   minToBeSaved = M;
                 });
 
-            // set time
+            // Set time
 
-            // get currently set time from sharedPreferences
+            // Get the currently set time from sharedPreferences
             if (sharedPreferences.getString("Started", "no").equals("yes")) {
               hourToSet = sharedPreferences.getInt("SetTimeH", 0);
               minToSet = sharedPreferences.getInt("SetTimeM", 0);
@@ -180,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
           } else {
             Toast.makeText(
                     getApplicationContext(),
-                    "You must start sending notifications first",
+                    MainActivity.this.getString(R.string.start_sending_notifications_first_toast),
                     Toast.LENGTH_LONG)
                 .show();
           }

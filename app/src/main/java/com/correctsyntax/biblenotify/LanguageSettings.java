@@ -29,7 +29,7 @@ public class LanguageSettings extends AppCompatActivity
     // 2. Add language to HashMap below (i.e `languages.put("English", "en");`)
     // 3. Create folder with language short hand as the name (i.e "en", "fr") in "assets/bible/"
     // (i.e "assets/bible/fr/")
-    // 4. Put bible files in language folder
+    // 4. Put the Bible files in the language folder
     // ***********************
 
     // Add languages

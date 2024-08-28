@@ -10,8 +10,8 @@
     <string name="send_daily_notification_at">Envoyer une notification quotidienne à:</string>
 
     <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d\'accéder au chapitre dont est tiré le verset.\n\n  Les textes de la Bible présents sur cette application sont tirés de la Bible de la liturgie, et reproduits avec l\'accord de l\'Association Episcopale Liturgique pour les pays Francophones - pour toute question ou demande, rendez-vous sur www.aelf.org. </string>
-    <string name="biblenotify_license">Bible Notify License</string>
-    <string name="view_license">View Bible Notify License</string>
+    <string name="biblenotify_license">Licence Bible Notify</string>
+    <string name="view_license">Voir la licence Bible Notify</string>
     <string name="license">Bible Notify © 2024 Contributeurs de Bible Notify.\n\n
 
         Licence:
@@ -34,9 +34,8 @@
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_btn">Fermer</string>
     <string name="copyright_text">Bible Notify © 2024 Contributeurs de Bible Notify</string>
-
-    <string name="alarm_permission_dialog_title">Alarm Permission Needed</string>
-    <string name="allow_permission_btn">Allow Permission</string>
+    <string name="alarm_permission_dialog_title">L'application a besoin de la permission \"Notifications\" pour fonctionner</string>
+    <string name="allow_permission_btn">Donner la permission</string>
 
     <string name="start_sending_notifications_btn">Commencer à envoyer des notifications</string>
     <string name="change_notification_time_btn">Changer l\'heure des notifications</string>
@@ -44,11 +43,11 @@
     <string name="cancel_btn">Annuler</string>
     <string name="okay_btn">OK</string>
 
-    <string name="biblenotify_is_running">Bible Notify is running…</string>
+    <string name="biblenotify_is_running">Bible Notify s'exécute ...</string>
 
-    <string name="time_saved_toast">Time saved</string>
-    <string name="start_sending_notifications_first_toast">You must start sending notifications first</string>
-    <string name="error_toast">Bible Notify has encountered an error</string>
+    <string name="time_saved_toast">Nouvelle heure enregistrée</string>
+    <string name="start_sending_notifications_first_toast">Il faut activer les notifications d'abbord !</string>
+    <string name="error_toast">Bible Notify a rencontré une erreur</string>
 
     <string name="info_btn">Info</string>
     <string name="languages_btn">Langues</string>

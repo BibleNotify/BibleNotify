@@ -1,0 +1,10 @@
+Application Android Open-Source gratuite et hors-ligne de notification quotidienne d'un verset inspirant de la Bible
+
+- Envoie une notification content un verset aléatoire tiré d'une sélection de plus de 140 versets de la Bible
+- Possibilité de régler l'heure de la notification (à la minute près, si tu as besoin de tant de précision !)
+- La notification permet d'accéder au chapitre entier pour le lire dans l'application.
+- Utilise La Bible Litturgique d'AELF (ou la Bible RKJV pour le texte en Anglais).
+- Bible Notify fonctionne 100% hors-ligne (pas besoin de connexion à internet)
+- Bible Notify ne collecte aucun donnée sur vous
+
+Une version de bureau est également disponible pour Windows, Linux, et mac à l'adresse suivante : https://biblenotify.github.io

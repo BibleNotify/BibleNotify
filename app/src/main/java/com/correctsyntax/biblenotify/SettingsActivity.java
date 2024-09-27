@@ -3,6 +3,7 @@ package com.correctsyntax.biblenotify;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -11,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SettingsActivity extends AppCompatActivity {
 
   TimePicker timePicker;
-  ImageButton cancel, saveButton, help;
+  ImageButton  help;
+  Button cancel, saveButton;
 
   public static int Hour = 12;
   public static int Min = 0;

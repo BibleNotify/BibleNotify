@@ -2,12 +2,15 @@ package com.correctsyntax.biblenotify;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashMap;
+import java.util.Locale;
+import java.util.Objects;
 
 public class LanguageSettings extends AppCompatActivity
     implements AdapterView.OnItemSelectedListener {
@@ -49,9 +52,21 @@ public class LanguageSettings extends AppCompatActivity
     final SharedPreferences sharedPreferences =
         getApplicationContext().getSharedPreferences("bibleNotify", MODE_PRIVATE);
 
+//
+//    Log.d("2%%%%%", String.valueOf(sharedPreferences.getString("language", "")));
+//    Log.d("3%%%%%", String.valueOf(languageSelector.getCount()));
+//
+
+
     // set the spinner val
-    languageSelector.setSelection(
-        adapter.getPosition(sharedPreferences.getString("language", "en")));
+    for (int i = 0; i < languageSelector.getCount(); i++) {
+      if (languageSelector.getItemAtPosition(i).equals(sharedPreferences.getString("language", Locale.getDefault().getLanguage()))) {
+        languageSelector.setSelection(i);
+        break;
+      }
+    }
+
+
   }
 
   public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
@@ -59,10 +74,10 @@ public class LanguageSettings extends AppCompatActivity
     final SharedPreferences sharedPreferences =
         getApplicationContext().getSharedPreferences("bibleNotify", MODE_PRIVATE);
 
-    // Log.d("++++++", (String) parent.getItemAtPosition(pos));
-
     SharedPreferences.Editor editor = sharedPreferences.edit();
     editor.putString("language", (String) parent.getItemAtPosition(pos));
+//    Log.d("####SAVED###", Objects.requireNonNull((String) parent.getItemAtPosition(pos)));
+//    Log.d("####SAVED2###", Objects.requireNonNull(languages.get((String) parent.getItemAtPosition(pos))));
     editor.putString("languagePath", languages.get((String) parent.getItemAtPosition(pos)));
     editor.apply();
 

@@ -34,7 +34,7 @@
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_btn">Fermer</string>
     <string name="copyright_text">Bible Notify © 2024 Contributeurs de Bible Notify</string>
-    <string name="alarm_permission_dialog_title">L'application a besoin de la permission \"Notifications\" pour fonctionner</string>
+    <string name="alarm_permission_dialog_title">L\'application a besoin de la permission \"Notifications\" pour fonctionner</string>
     <string name="allow_permission_btn">Donner la permission</string>
 
     <string name="start_sending_notifications_btn">Commencer à envoyer des notifications</string>
@@ -43,10 +43,10 @@
     <string name="cancel_btn">Annuler</string>
     <string name="okay_btn">OK</string>
 
-    <string name="biblenotify_is_running">Bible Notify s'exécute ...</string>
+    <string name="biblenotify_is_running">Bible Notify s\'exécute …</string>
 
     <string name="time_saved_toast">Nouvelle heure enregistrée</string>
-    <string name="start_sending_notifications_first_toast">Il faut activer les notifications d'abbord !</string>
+    <string name="start_sending_notifications_first_toast">Il faut activer les notifications d\'abbord !</string>
     <string name="error_toast">Bible Notify a rencontré une erreur</string>
 
     <string name="info_btn">Info</string>

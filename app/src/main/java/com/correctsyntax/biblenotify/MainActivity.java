@@ -4,6 +4,7 @@ import android.app.AlarmManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -23,7 +25,8 @@ import androidx.core.content.ContextCompat;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-  ImageButton startBtn, changeBtn, helpBtn, languagesBtn;
+  ImageButton helpBtn, languagesBtn;
+  Button startBtn, changeBtn;
   Animation animFadeOut;
 
   public static int hourToSet = 12;
@@ -78,14 +81,19 @@ public class MainActivity extends AppCompatActivity {
 
     // If enabled set image to done
     if (sharedPreferences.contains("Started")) {
-      startBtn.setImageResource(R.drawable.ic_pause_sending_button);
+      startBtn.setText(R.string.biblenotify_is_running);
+      startBtn.setBackgroundColor(Color.BLACK);
+      startBtn.setTextColor(Color.WHITE);
     }
 
     // Auto set the language
     SharedPreferences.Editor editor = sharedPreferences.edit();
-    editor.putString("language", Locale.getDefault().getDisplayLanguage());
-    editor.putString("languagePath", Locale.getDefault().getLanguage());
-    editor.apply();
+      if (!sharedPreferences.contains("languagePath")) {
+        editor.putString("language", Locale.getDefault().getDisplayLanguage());
+        editor.putString("languagePath", Locale.getDefault().getLanguage());
+        editor.apply();
+    }
+
 
     // Start Button
     startBtn.setOnClickListener(
@@ -128,11 +136,9 @@ public class MainActivity extends AppCompatActivity {
                       Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
 
                       // Animation
-                      animFadeOut =
-                          AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
-                      startBtn.setVisibility(View.VISIBLE);
-                      startBtn.startAnimation(animFadeOut);
-                      startBtn.setImageResource(R.drawable.ic_pause_sending_button);
+                        startBtn.setText(R.string.biblenotify_is_running);
+                        startBtn.setBackgroundColor(Color.BLACK);
+                        startBtn.setTextColor(Color.WHITE);
                     })
                 .setNeutralButton(
                     "Cancel",

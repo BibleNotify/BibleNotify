@@ -145,19 +145,19 @@
         android:paddingBottom="12dp"
         android:text="@string/change_notification_time_btn"
         android:textAllCaps="false"
-        android:textColor="#000000"
+        android:textColor="@color/button_black"
         android:textSize="16sp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="30dp"
         app:icon="@drawable/ic_gear"
         app:iconGravity="end"
         app:iconPadding="6dp"
-        app:iconTint="#000000"
+        app:iconTint="@color/button_black"
         app:layout_constraintEnd_toStartOf="@+id/guideline_2"
         app:layout_constraintStart_toStartOf="@+id/guideline_one"
         app:layout_constraintTop_toBottomOf="@+id/start_button"
         app:rippleColor="#33AAAAAA"
-        app:strokeColor="@color/black"
+        app:strokeColor="@color/button_black"
         app:strokeWidth="2dp" />
 
     <androidx.constraintlayout.widget.Guideline

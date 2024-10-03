@@ -4,7 +4,9 @@ import android.app.AlarmManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,6 +24,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import com.google.android.material.button.MaterialButton;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -84,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
       startBtn.setText(R.string.biblenotify_is_running);
       startBtn.setBackgroundColor(Color.BLACK);
       startBtn.setTextColor(Color.WHITE);
+      MaterialButton MButton = (MaterialButton) startBtn;
+      MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
+
     }
 
     // Auto set the language
@@ -139,6 +147,8 @@ public class MainActivity extends AppCompatActivity {
                         startBtn.setText(R.string.biblenotify_is_running);
                         startBtn.setBackgroundColor(Color.BLACK);
                         startBtn.setTextColor(Color.WHITE);
+                        MaterialButton MButton = (MaterialButton) startBtn;
+                        MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
                     })
                 .setNeutralButton(
                     "Cancel",

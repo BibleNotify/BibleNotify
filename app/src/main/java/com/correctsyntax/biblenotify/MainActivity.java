@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
       startBtn.setTextColor(Color.WHITE);
       MaterialButton MButton = (MaterialButton) startBtn;
       MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
+      MButton.setIconTint(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
 
     }
 
@@ -149,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
                         startBtn.setTextColor(Color.WHITE);
                         MaterialButton MButton = (MaterialButton) startBtn;
                         MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
+                        MButton.setIconTint(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
                     })
                 .setNeutralButton(
                     "Cancel",

@@ -1,6 +1,6 @@
 Application Android Open-Source gratuite et hors-ligne de notification quotidienne d'un verset inspirant de la Bible
 
-- Envoie une notification content un verset aléatoire tiré d'une sélection de plus de 140 versets de la Bible
+- Envoie une notification content un verset aléatoire tiré d'une sélection de plus de 150 versets de la Bible
 - Possibilité de régler l'heure de la notification (à la minute près, si tu as besoin de tant de précision !)
 - La notification permet d'accéder au chapitre entier pour le lire dans l'application.
 - Utilise La Bible Litturgique d'AELF (ou la Bible RKJV pour le texte en Anglais).

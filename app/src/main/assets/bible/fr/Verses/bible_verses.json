@@ -96,6 +96,11 @@
       "data": "Ex/20"
     },
     {
+      "verse": "Tu ne convoiteras pas la maison de ton prochain ; tu ne convoiteras pas la femme de ton prochain, ni son serviteur, ni sa servante, ni son bœuf, ni son âne : rien de ce qui lui appartient. »",
+      "place": "Exodus 20:17",
+      "data": "Ex/20"
+    },
+    {
       "verse": "Que le Seigneur te bénisse et te garde !",
       "place": "Numbers 6:24",
       "data": "Nm/6"
@@ -176,6 +181,21 @@
       "data": "Ps/23"
     },
     {
+      "verse": "Dirige-moi par ta vérité, enseigne-moi, car tu es le Dieu qui me sauve. C'est toi que j'espère tout le jour en raison de ta bonté, Seigneur.",
+      "place": "Psalms 25:5",
+      "data": "Ps/25"
+    },
+    {
+      "verse": "Est-il un homme qui craigne le Seigneur ? Dieu lui montre le chemin qu'il doit prendre.",
+      "place": "Psalms 25:12",
+      "data": "Ps/25"
+    },
+    {
+      "verse": "Vois ma misère et ma peine, enlève tous mes péchés.",
+      "place": "Psalms 25:18",
+      "data": "Ps/25"
+    },
+    {
       "verse": "Heureux l'homme dont la faute est enlevée, et le péché remis !",
       "place": "Psalms 32:1",
       "data": "Ps/32"
@@ -184,6 +204,11 @@
       "verse": "Garde ta langue du mal et tes lèvres des paroles perfides.",
       "place": "Psalms 34:13",
       "data": "Ps/34"
+    },
+    {
+      "verse": "Ils s'acharnent, ils me guettent tout le jour ; mais là-haut, une armée combat pour moi.",
+      "place": "Psalms 56:3",
+      "data": "Ps/56"
     },
     {
       "verse": "sur Dieu, je prends appui : plus rien ne me fait peur ! Que peuvent sur moi des humains ?",
@@ -198,6 +223,11 @@
     {
       "verse": "aussi loin qu'est l'orient de l'occident, il met loin de nous nos péchés ;",
       "place": "Psalms 103:12",
+      "data": "Ps/103"
+    },
+    {
+      "verse": "Comme le ciel domine la terre, fort est son amour pour qui le craint ;",
+      "place": "Psalms 103:11",
       "data": "Ps/103"
     },
     {
@@ -631,6 +661,16 @@
       "data": "Phil/4"
     },
     {
+      "verse": "Quand les gens diront : « Quelle paix ! Quelle tranquillité ! », c'est alors que, tout à coup, la catastrophe s'abattra sur eux, comme les douleurs sur la femme enceinte : ils ne pourront pas y échapper.",
+      "place": "1 Thessalonians 5:3",
+      "data": "1Thes/5"
+    },
+    {
+      "verse": "mais nous qui sommes du jour, restons sobres ; mettons la cuirasse de la foi et de l'amour et le casque de l'espérance du salut.",
+      "place": "1 Thessalonians 5:8",
+      "data": "1Thes/5"
+    },
+    {
       "verse": "Nous vous en prions, frères : avertissez ceux qui vivent de façon désordonnée, donnez du courage à ceux qui en ont peu, soutenez les faibles, soyez patients envers tous.",
       "place": "1 Thessalonians 5:14",
       "data": "1Thes/5"
@@ -734,6 +774,21 @@
       "verse": "C'est ici qu'on reconnaît la persévérance des saints, ceux-là qui gardent les commandements de Dieu et la foi de Jésus.",
       "place": "Revelations 14:12",
       "data": "Rv/14"
+    },
+    {
+      "verse": "La nuit aura disparu, ils n’auront plus besoin de la lumière d’une lampe ni de la lumière du soleil, parce que le Seigneur Dieu les illuminera ; ils régneront pour les siècles des siècles.",
+      "place": "Revelations 22:5",
+      "data": "Rv/22"
+    },
+    {
+      "verse": "Que celui qui fait le mal fasse encore le mal, et que l’homme sali se salisse encore ; que le juste pratique encore la justice, et que le saint se sanctifie encore.",
+      "place": "Revelations 22:11",
+      "data": "Rv/22"
+    },
+    {
+      "verse": "Voici que je viens sans tarder, et j’apporte avec moi le salaire que je vais donner à chacun selon ce qu’il a fait.",
+      "place": "Revelations 22:12",
+      "data": "Rv/22"
     }
   ]
 }

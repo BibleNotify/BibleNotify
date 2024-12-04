@@ -1,6 +1,6 @@
-Bible Notify verses v1.5
+Bible Notify verses v1.6
 ------------------------
 
-All chapters: 68
-All verses: 147
+All chapters: 70
+All verses: 158
 All books: 27

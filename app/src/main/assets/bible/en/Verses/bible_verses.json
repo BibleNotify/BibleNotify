@@ -96,6 +96,11 @@
       "data": "Ex/20"
     },
     {
+      "verse": "Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.",
+      "place": "Exodus 20:17",
+      "data": "Ex/20"
+    },
+    {
       "verse": "Yahweh bless thee, and keep thee:",
       "place": "Numbers 6:24",
       "data": "Nm/6"
@@ -176,6 +181,21 @@
       "data": "Ps/23"
     },
     {
+      "verse": "Lead me in thy truth, and teach me: for thou art the Elohim of my salvation; on thee do I wait all the day.",
+      "place": "Psalms 25:5",
+      "data": "Ps/25"
+    },
+    {
+      "verse": "What man is he that feareth Yahweh? him shall he teach in the way that he shall choose.",
+      "place": "Psalms 25:12",
+      "data": "Ps/25"
+    },
+    {
+      "verse": "Look upon mine affliction and my pain; and forgive all my sins.",
+      "place": "Psalms 25:18",
+      "data": "Ps/25"
+    },
+    {
       "verse": "Blessed is he whose transgression is forgiven, whose sin is covered.",
       "place": "Psalms 32:1",
       "data": "Ps/32"
@@ -184,6 +204,11 @@
       "verse": "Keep thy tongue from evil, and thy lips from speaking guile.",
       "place": "Psalms 34:13",
       "data": "Ps/34"
+    },
+    {
+      "verse": "What time I am afraid, I will trust in thee.",
+      "place": "Psalms 56:3",
+      "data": "Ps/56"
     },
     {
       "verse": "In Elohim have I put my trust: I will not be afraid what man can do unto me.",
@@ -196,12 +221,17 @@
       "data": "Ps/101"
     },
     {
+      "verse": "For as the heaven is high above the earth, so great is his mercy toward them that fear him.",
+      "place": "Psalms 103:11",
+      "data": "Ps/103"
+    },
+    {
       "verse": "As far as the east is from the west, so far hath he removed our transgressions from us.",
       "place": "Psalms 103:12",
       "data": "Ps/103"
     },
     {
-      "verse": "Happy is that people, that is in such a case: yea, happy is that people, whose mighty one is the Yahweh.",
+      "verse": "Happy is that people, that is in such a case: yea, happy is that people, whose mighty one is Yahweh.",
       "place": "Psalms 144:15",
       "data": "Ps/144"
     },
@@ -631,6 +661,16 @@
       "data": "Phil/4"
     },
     {
+      "verse": "For when they shall say, Peace and safety; then sudden destruction cometh upon them, as travail upon a woman with child; and they shall not escape.",
+      "place": "1 Thessalonians 5:3",
+      "data": "1Thes/5"
+    },
+    {
+      "verse": "But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.",
+      "place": "1 Thessalonians 5:8",
+      "data": "1Thes/5"
+    },
+    {
       "verse": "Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.",
       "place": "1 Thessalonians 5:14",
       "data": "1Thes/5"
@@ -734,6 +774,21 @@
       "verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
       "place": "Revelations 14:12",
       "data": "Rv/14"
+    },
+    {
+      "verse": "And there shall be no night there; and they need no candle, neither light of the sun; for Yahweh Elohim giveth them light: and they shall reign for ever and ever.",
+      "place": "Revelations 22:5",
+      "data": "Rv/22"
+    },
+    {
+      "verse": "He that is unjust, let him be unjust still: and he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still: and he that is holy, let him be holy still.",
+      "place": "Revelations 22:11",
+      "data": "Rv/22"
+    },
+    {
+      "verse": "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.",
+      "place": "Revelations 22:12",
+      "data": "Rv/22"
     }
   ]
 }

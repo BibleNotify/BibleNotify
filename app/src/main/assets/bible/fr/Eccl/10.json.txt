@@ -1,20 +1,20 @@
-01 Une seule mouche morte infeste et gâte l'huile du parfumeur. Un petit grain de folie pèse plus que sagesse et plus que gloire.
+1 Une seule mouche morte infeste et gâte l'huile du parfumeur. Un petit grain de folie pèse plus que sagesse et plus que gloire.
 
-02 Le raisonnement du sage est droit, le raisonnement du fou va de travers.
+2 Le raisonnement du sage est droit, le raisonnement du fou va de travers.
 
-03 Quand le fou marche sur la route, le bon sens lui fait défaut, et il dit aux autres qu'ils sont fous.
+3 Quand le fou marche sur la route, le bon sens lui fait défaut, et il dit aux autres qu'ils sont fous.
 
-04 Si la colère du chef s'allume contre toi, ne quitte pas ton poste : le sang-froid fait éviter de grandes fautes.
+4 Si la colère du chef s'allume contre toi, ne quitte pas ton poste : le sang-froid fait éviter de grandes fautes.
 
-05 Il est un mal que j'ai vu sous le soleil, comme une erreur échappée au souverain :
+5 Il est un mal que j'ai vu sous le soleil, comme une erreur échappée au souverain :
 
-06 la folie placée au plus haut rang et des riches assis au plus bas.
+6 la folie placée au plus haut rang et des riches assis au plus bas.
 
-07 J'ai vu des esclaves sur des chevaux, et des princes aller à pied comme des esclaves.
+7 J'ai vu des esclaves sur des chevaux, et des princes aller à pied comme des esclaves.
 
-08 Qui creuse un trou tombera dedans ; qui perce un mur, un serpent le mordra.
+8 Qui creuse un trou tombera dedans ; qui perce un mur, un serpent le mordra.
 
-09 Qui extrait des pierres s'y blessera ; qui fend du bois court un danger.
+9 Qui extrait des pierres s'y blessera ; qui fend du bois court un danger.
 
 10 Si la lame est émoussée, que son tranchant n'est pas affûté, il faut redoubler d'efforts. Y remédier est sagesse.
 

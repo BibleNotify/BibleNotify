@@ -1,20 +1,20 @@
-01 Une réponse paisible calme la fureur, un mot blessant déclenche la colère.
+1 Une réponse paisible calme la fureur, un mot blessant déclenche la colère.
 
-02 La langue des sages rend la science aimable, la bouche des insensés ne débite que des sottises.
+2 La langue des sages rend la science aimable, la bouche des insensés ne débite que des sottises.
 
-03 En tout lieu, les yeux du Seigneur : ils observent les méchants et les bons.
+3 En tout lieu, les yeux du Seigneur : ils observent les méchants et les bons.
 
-04 La langue qui réconforte est un arbre de vie ; perfide, elle vous coupe le souffle.
+4 La langue qui réconforte est un arbre de vie ; perfide, elle vous coupe le souffle.
 
-05 Un sot se moque des leçons de son père ; bien avisé qui tient compte des avertissements !
+5 Un sot se moque des leçons de son père ; bien avisé qui tient compte des avertissements !
 
-06 La maison du juste regorge de richesse, les gains du méchant sont précaires !
+6 La maison du juste regorge de richesse, les gains du méchant sont précaires !
 
-07 Les lèvres des sages sèment le savoir ; pour le cœur des insensés, il n'en va pas ainsi !
+7 Les lèvres des sages sèment le savoir ; pour le cœur des insensés, il n'en va pas ainsi !
 
-08 Le sacrifice des méchants, le Seigneur l'a en horreur, mais il accueille la prière des honnêtes gens.
+8 Le sacrifice des méchants, le Seigneur l'a en horreur, mais il accueille la prière des honnêtes gens.
 
-09 Le chemin du méchant fait horreur au Seigneur ; il aime celui qui recherche la justice.
+9 Le chemin du méchant fait horreur au Seigneur ; il aime celui qui recherche la justice.
 
 10 Rude leçon pour qui s'écarte du sentier : refuser l'avertissement, c'est la mort !
 

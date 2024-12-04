@@ -1,20 +1,20 @@
-01 N'envie pas les méchants, ne rêve pas d'être avec eux,
+1 N'envie pas les méchants, ne rêve pas d'être avec eux,
 
-02 car ils n'ont dans le cœur que violence et sur les lèvres, des paroles menaçantes.
+2 car ils n'ont dans le cœur que violence et sur les lèvres, des paroles menaçantes.
 
-03 Avec la sagesse on se bâtit une maison, avec l'intelligence on la rend solide,
+3 Avec la sagesse on se bâtit une maison, avec l'intelligence on la rend solide,
 
-04 avec du savoir-faire on remplit les pièces de mille biens précieux et beaux.
+4 avec du savoir-faire on remplit les pièces de mille biens précieux et beaux.
 
-05 Au sage appartient la force, celui qui a l'expérience augmente son pouvoir.
+5 Au sage appartient la force, celui qui a l'expérience augmente son pouvoir.
 
-06 C'est en bon stratège que tu dois mener la guerre : élargis ton conseil et tu réussiras !
+6 C'est en bon stratège que tu dois mener la guerre : élargis ton conseil et tu réussiras !
 
-07 La sagesse vole trop haut pour le fou : au conseil de la cité, il ne dit mot.
+7 La sagesse vole trop haut pour le fou : au conseil de la cité, il ne dit mot.
 
-08 Qui fait le mal avec préméditation mérite le nom de roi des rusés.
+8 Qui fait le mal avec préméditation mérite le nom de roi des rusés.
 
-09 Le fou n'a de ruse que pour le péché ; l'insolent, les gens l'ont en horreur.
+9 Le fou n'a de ruse que pour le péché ; l'insolent, les gens l'ont en horreur.
 
 10 Tu faiblis aux jours difficiles ? Difficile de croire à ta force !
 

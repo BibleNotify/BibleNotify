@@ -56,6 +56,7 @@ For the Google Play version since it has a different package name:
 - [ ] Find and replace all instances of ``com.correctsyntax.biblenotify`` with ``com.biblenotify.biblenotify`` 
 - [ ] Build a signed appbundle.
 - [ ] Create new release and upload the appbundle to Google Play.
+- [ ] **Revert all of the changes via git so that the source code is back to using ``com.correctsyntax.biblenotify``**.
 
 
 ## License

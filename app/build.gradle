@@ -10,7 +10,7 @@ android {
         applicationId "com.correctsyntax.biblenotify"
         minSdkVersion 17
         targetSdk 35
-        versionCode 19
+        versionCode 20
         versionName '4.9'
     }
 

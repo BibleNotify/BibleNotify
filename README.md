@@ -44,6 +44,20 @@ Open the project in Android Studio and sync Gradle. Bible Notify uses minimal de
 Contributions are always welcome! Feel free to open a PR or ask questions.
 
 
+## Release process
+
+- [ ] Update ``versionName`` in ``build.gradle``.
+- [ ] Update  ``versonCode`` to +1 of the previous number in ``build.gradle``.
+- [ ] Build a signed apk ``com.correctsyntax.biblenotify``.
+- [ ] Write release notes and create new GitHub release with built apk attached.
+
+For the Google Play version since it has a different package name:
+- [ ] Locally, move the java files from ``correctsyntax/biblenotify`` to ``biblenotify/biblenotify``
+- [ ] Find and replace all instances of ``com.correctsyntax.biblenotify`` with ``com.biblenotify.biblenotify`` 
+- [ ] Build a signed appbundle.
+- [ ] Create new release and upload the appbundle to Google Play.
+
+
 ## License
 
 Bible Notify is licensed under the GPL-3.0 License.

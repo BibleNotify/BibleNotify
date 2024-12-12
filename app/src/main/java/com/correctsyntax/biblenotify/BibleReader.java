@@ -7,11 +7,16 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -32,6 +37,28 @@ public class BibleReader extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.reader_activity);
+
+    ConstraintLayout topbar = findViewById(R.id.reader_top_bar);
+
+    ViewCompat.setOnApplyWindowInsetsListener(
+        topbar,
+        (v, windowInsets) -> {
+          Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+          // Apply the insets as a margin to the view. This solution sets only the
+          // bottom, left, and right dimensions, but you can apply whichever insets are
+          // appropriate to your layout. You can also update the view padding if that's
+          // more appropriate.
+          ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+          mlp.topMargin = insets.top;
+          mlp.leftMargin = insets.left;
+          mlp.bottomMargin = insets.bottom;
+          mlp.rightMargin = insets.right;
+          v.setLayoutParams(mlp);
+
+          // Return CONSUMED if you don't want want the window insets to keep passing
+          // down to descendant views.
+          return WindowInsetsCompat.CONSUMED;
+        });
 
     bibleTextWebView = findViewById(R.id.reader_webview);
     chapterText = findViewById(R.id.chapter_text);
@@ -61,12 +88,15 @@ public class BibleReader extends AppCompatActivity {
     chapterText.setText(bibleChapter.toUpperCase());
 
     // Set Colors
-    String AppBlack = "black";
-    String AppWhite = "white";
+    String appBlack = "black";
+    String appDarkGray = "DimGray";
+    String appLightGray = "Gainsboro";
+    String appWhite = "white";
 
     // Check for dark mode and change colors to mach
-    String backgroundColor = AppWhite;
-    String textColor = AppBlack;
+    String backgroundColor = appWhite;
+    String textColor = appDarkGray;
+    String highlightColor = appBlack;
 
     int nightModeFlags =
         home.getContext().getResources().getConfiguration().uiMode
@@ -75,20 +105,23 @@ public class BibleReader extends AppCompatActivity {
     switch (nightModeFlags) {
       case Configuration.UI_MODE_NIGHT_YES:
         System.out.print("UI_MODE_NIGHT_YES");
-        backgroundColor = AppBlack;
-        textColor = AppWhite;
+        backgroundColor = appBlack;
+        textColor = appLightGray;
+        highlightColor = appWhite;
         break;
 
       case Configuration.UI_MODE_NIGHT_NO:
         System.out.print("UI_MODE_NIGHT_NO");
-        backgroundColor = AppWhite;
-        textColor = AppBlack;
+        backgroundColor = appWhite;
+        textColor = appDarkGray;
+        highlightColor = appBlack;
         break;
 
       case Configuration.UI_MODE_NIGHT_UNDEFINED:
         System.out.print("UI_MODE_NIGHT_UNDEFINED");
-        backgroundColor = AppWhite;
-        textColor = AppBlack;
+        backgroundColor = appWhite;
+        textColor = appDarkGray;
+        highlightColor = appBlack;
         break;
     }
 
@@ -145,6 +178,9 @@ public class BibleReader extends AppCompatActivity {
             + "        font-weight: bold;\n"
             + "      }\n"
             + "      .hv{\n"
+            + "color:"
+            + highlightColor
+            + ";"
             + "      font-weight: bold;"
             + "      }\n"
             + "    </style>"
@@ -156,11 +192,11 @@ public class BibleReader extends AppCompatActivity {
   }
 
   // Get The Bible Verse
-  public String pickFromBible(Context context, String whichPart, String pathOne, String pathTwo) {
+  public String pickFromBible(Context context, String whichPart, String path, String extension) {
     String name = null;
     try {
       // get JSONObject from JSON file
-      JSONObject obj = new JSONObject(loadJSONFromAsset(context, pathOne, pathTwo));
+      JSONObject obj = new JSONObject(loadJSONFromAsset(context, path, extension));
 
       // fetch JSONArray named users
       JSONArray userArray = obj.getJSONArray("read");
@@ -180,21 +216,19 @@ public class BibleReader extends AppCompatActivity {
     return name;
   }
 
-  public String loadJSONFromAsset(Context context, String partOne, String partTwo) {
+  public String loadJSONFromAsset(Context context, String path, String extension) {
     String json;
-    String path = "book/ch";
+    String bookChapter = "book/ch";
     //  get value
     final SharedPreferences sharedPreferences =
         context.getSharedPreferences("bibleNotify", MODE_PRIVATE);
 
     if (sharedPreferences.contains("readerData")) {
-      path = sharedPreferences.getString("readerData", "");
+      bookChapter = sharedPreferences.getString("readerData", "");
     }
-    String languagePath = sharedPreferences.getString("languagePath", "en");
 
     try {
-
-      InputStream is = context.getAssets().open(partOne + path + partTwo);
+      InputStream is = context.getAssets().open(path + bookChapter + extension);
 
       int size = is.available();
       byte[] buffer = new byte[size];

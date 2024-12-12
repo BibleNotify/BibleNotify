@@ -6,15 +6,13 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.graphics.drawable.ShapeDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
@@ -22,17 +20,18 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
-
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
   ImageButton helpBtn, languagesBtn;
   Button startBtn, changeBtn;
-  Animation animFadeOut;
 
   public static int hourToSet = 12;
   public static int minToSet = 0;
@@ -44,6 +43,28 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    ConstraintLayout topbar = findViewById(R.id.top_bar);
+
+    ViewCompat.setOnApplyWindowInsetsListener(
+        topbar,
+        (v, windowInsets) -> {
+          Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+          // Apply the insets as a margin to the view. This solution sets only the
+          // bottom, left, and right dimensions, but you can apply whichever insets are
+          // appropriate to your layout. You can also update the view padding if that's
+          // more appropriate.
+          ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+          mlp.topMargin = insets.top;
+          mlp.leftMargin = insets.left;
+          mlp.bottomMargin = insets.bottom;
+          mlp.rightMargin = insets.right;
+          v.setLayoutParams(mlp);
+
+          // Return CONSUMED if you don't want want the window insets to keep passing
+          // down to descendant views.
+          return WindowInsetsCompat.CONSUMED;
+        });
 
     startBtn = findViewById(R.id.start_button);
     changeBtn = findViewById(R.id.change_button);
@@ -92,17 +113,15 @@ public class MainActivity extends AppCompatActivity {
       MaterialButton MButton = (MaterialButton) startBtn;
       MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
       MButton.setIconTint(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
-
     }
 
     // Auto set the language
     SharedPreferences.Editor editor = sharedPreferences.edit();
-      if (!sharedPreferences.contains("languagePath")) {
-        editor.putString("language", Locale.getDefault().getDisplayLanguage());
-        editor.putString("languagePath", Locale.getDefault().getLanguage());
-        editor.apply();
+    if (!sharedPreferences.contains("languagePath")) {
+      editor.putString("language", Locale.getDefault().getDisplayLanguage());
+      editor.putString("languagePath", Locale.getDefault().getLanguage());
+      editor.apply();
     }
-
 
     // Start Button
     startBtn.setOnClickListener(
@@ -145,12 +164,14 @@ public class MainActivity extends AppCompatActivity {
                       Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
 
                       // Animation
-                        startBtn.setText(R.string.biblenotify_is_running);
-                        startBtn.setBackgroundColor(Color.BLACK);
-                        startBtn.setTextColor(Color.WHITE);
-                        MaterialButton MButton = (MaterialButton) startBtn;
-                        MButton.setStrokeColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
-                        MButton.setIconTint(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
+                      startBtn.setText(R.string.biblenotify_is_running);
+                      startBtn.setBackgroundColor(Color.BLACK);
+                      startBtn.setTextColor(Color.WHITE);
+                      MaterialButton MButton = (MaterialButton) startBtn;
+                      MButton.setStrokeColor(
+                          ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
+                      MButton.setIconTint(
+                          ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black)));
                     })
                 .setNeutralButton(
                     "Cancel",

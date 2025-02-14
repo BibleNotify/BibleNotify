@@ -20,11 +20,11 @@ public class SettingsActivity extends AppCompatActivity {
   ImageButton help;
   Button cancel, saveButton;
 
-  public static int Hour = 12;
-  public static int Min = 0;
+  public static int hour = 12;
+  public static int min = 0;
 
-  public static int HourToSet = 12;
-  public static int MinToSet = 0;
+  public static int hourToSet = 12;
+  public static int minToSet = 0;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -64,31 +64,31 @@ public class SettingsActivity extends AppCompatActivity {
     // set time
     // get currently set time from sharedPreferences
     if (sharedPreferences.contains("Started")) {
-      HourToSet = sharedPreferences.getInt("SetTimeH", 0);
-      MinToSet = sharedPreferences.getInt("SetTimeM", 0);
+      hourToSet = sharedPreferences.getInt("SetTimeH", 0);
+      minToSet = sharedPreferences.getInt("SetTimeM", 0);
     }
 
     if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.LOLLIPOP_MR1) {
-      timePicker.setCurrentHour(HourToSet);
-      timePicker.setCurrentMinute(MinToSet);
+      timePicker.setCurrentHour(hourToSet);
+      timePicker.setCurrentMinute(minToSet);
     } else {
-      timePicker.setHour(HourToSet);
-      timePicker.setMinute(MinToSet);
+      timePicker.setHour(hourToSet);
+      timePicker.setMinute(minToSet);
     }
 
     // Time picker
     timePicker.setOnTimeChangedListener(
-        (timePicker, H, M) -> {
-          Hour = H;
-          Min = M;
+        (timePicker, h, m) -> {
+          hour = h;
+          min = m;
         });
 
     // Save Button
     saveButton.setOnClickListener(
         v -> {
           SharedPreferences.Editor editor = sharedPreferences.edit();
-          editor.putInt("SetTimeH", Hour);
-          editor.putInt("SetTimeM", Min);
+          editor.putInt("SetTimeH", hour);
+          editor.putInt("SetTimeM", min);
           editor.commit();
 
           SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);

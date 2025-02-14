@@ -11,8 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HelpActivity extends AppCompatActivity {
 
   Button back;
-  TextView licenseLink, webPageLink;
-  Intent webIntent = null, webChooser = null;
+  TextView licenseLink;
+  TextView webPageLink;
+  Intent webIntent = null;
+  Intent webChooser = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

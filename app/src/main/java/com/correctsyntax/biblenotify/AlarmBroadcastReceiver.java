@@ -21,6 +21,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
+  // Set to the total number of verses in bible_verse.json
+  int NUM_OF_VERSES = 158;
 
   // Notification
   String CHANNEL_ID = "bibleNotify";
@@ -59,7 +61,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
       randomNum = verseNumber;
 
     } else {
-      randomNum = rand.nextInt(158);
+      randomNum = rand.nextInt(NUM_OF_VERSES - 1);
     }
 
     try {

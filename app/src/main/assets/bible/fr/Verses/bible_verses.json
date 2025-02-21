@@ -221,14 +221,19 @@
       "data": "Ps/101"
     },
     {
+      "verse": "Comme le ciel domine la terre, fort est son amour pour qui le craint ;",
+      "place": "Psalms 103:11",
+      "data": "Ps/103"
+    },
+    {
       "verse": "aussi loin qu'est l'orient de l'occident, il met loin de nous nos péchés ;",
       "place": "Psalms 103:12",
       "data": "Ps/103"
     },
     {
-      "verse": "Comme le ciel domine la terre, fort est son amour pour qui le craint ;",
-      "place": "Psalms 103:11",
-      "data": "Ps/103"
+      "verse": "Heureux le peuple ainsi comblé ! Heureux le peuple qui a pour Dieu « Le Seigneur » !",
+      "place": "Psalms 144:15",
+      "data": "Ps/144"
     },
     {
       "verse": "Dans mon coeur, je conserve tes promesses pour ne pas faillir envers toi.",
@@ -239,11 +244,6 @@
       "verse": "Ta parole est la lumière de mes pas, la lampe de ma route.",
       "place": "Psalms 119:105",
       "data": "Ps/119"
-    },
-    {
-      "verse": "Heureux le peuple ainsi comblé ! Heureux le peuple qui a pour Dieu « Le Seigneur » !",
-      "place": "Psalms 144:15",
-      "data": "Ps/144"
     },
     {
       "verse": "De tout ton cœur, fais confiance au Seigneur, ne t'appuie pas sur ton intelligence.",
@@ -316,7 +316,7 @@
       "data": "Prv/18"
     },
     {
-      "verse": "Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
+      "verse": "L'as-tu suivie des yeux ? Elle a disparu ! Car elle se donne des ailes ; comme un aigle, elle s'envole vers le ciel !",
       "place": "Proverbs 23:5",
       "data": "Prv/23"
     },
@@ -416,17 +416,17 @@
       "data": "Am/5"
     },
     {
-      "verse": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.",
+      "verse": "« Vous êtes le sel de la terre. Mais si le sel devient fade, comment lui rendre de la saveur ? Il ne vaut plus rien : on le jette dehors et il est piétiné par les gens.",
       "place": "Matthew 5:13",
       "data": "Mt/5"
     },
     {
-      "verse": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+      "verse": "De même, que votre lumière brille devant les hommes : alors, voyant ce que vous faites de bien, ils rendront gloire à votre Père qui est aux cieux.",
       "place": "Matthew 5:16",
       "data": "Mt/5"
     },
     {
-      "verse": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil.",
+      "verse": "« Ne pensez pas que je sois venu abolir la Loi ou les Prophètes : je ne suis pas venu abolir, mais accomplir.",
       "place": "Matthew 5:17",
       "data": "Mt/5"
     },
@@ -676,7 +676,7 @@
       "data": "1Thes/5"
     },
     {
-      "verse": "See that none render evil for evil unto any man; but ever follow that which is good, both among yourselves, and to all men.",
+      "verse": "Prenez garde que personne ne rende le mal pour le mal, mais recherchez toujours ce qui est bien, entre vous et avec tous.",
       "place": "1 Thessalonians 5:15",
       "data": "1Thes/5"
     },

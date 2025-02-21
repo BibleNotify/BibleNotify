@@ -21,7 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
-  // Set to the total number of verses in bible_verse.json
+  // Set to the total number of verses in bible_verses.json (see info.txt)
   int NUM_OF_VERSES = 158;
 
   // Notification

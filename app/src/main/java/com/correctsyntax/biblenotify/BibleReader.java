@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.webkit.WebView;
@@ -234,11 +233,7 @@ public class BibleReader extends AppCompatActivity {
       byte[] buffer = new byte[size];
       is.read(buffer);
       is.close();
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-        json = new String(buffer, StandardCharsets.UTF_8);
-      } else {
-        json = new String(buffer, StandardCharsets.UTF_8);
-      }
+      json = new String(buffer, StandardCharsets.UTF_8);
     } catch (IOException ex) {
       return null;
     }

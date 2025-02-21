@@ -191,11 +191,7 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
       byte[] buffer = new byte[size];
       is.read(buffer);
       is.close();
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-        json = new String(buffer, StandardCharsets.UTF_8);
-      } else {
-        json = new String(buffer, StandardCharsets.UTF_8);
-      }
+      json = new String(buffer, StandardCharsets.UTF_8);
     } catch (IOException ex) {
       Log.d("ERROR", String.valueOf(ex));
       Toast.makeText(context, "Bible Verse Text Files Not Found: " + ex, Toast.LENGTH_SHORT).show();

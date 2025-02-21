@@ -89,7 +89,7 @@ public class SettingsActivity extends AppCompatActivity {
           SharedPreferences.Editor editor = sharedPreferences.edit();
           editor.putInt("SetTimeH", hour);
           editor.putInt("SetTimeM", min);
-          editor.commit();
+          editor.apply();
 
           SetAlarm.startAlarmBroadcastReceiver(SettingsActivity.this, sharedPreferences);
 

@@ -12,7 +12,7 @@
     <string name="help_text">Bible Notify envoie des versets de manière quotidienne sous forme de notification. La notification permet d\'accéder au chapitre dont est tiré le verset.\n\n  Les textes de la Bible présents sur cette application sont tirés de la Bible de la liturgie, et reproduits avec l\'accord de l\'Association Episcopale Liturgique pour les pays Francophones - pour toute question ou demande, rendez-vous sur www.aelf.org. </string>
     <string name="biblenotify_license">Licence Bible Notify</string>
     <string name="view_license">Voir la licence Bible Notify</string>
-    <string name="license">Bible Notify © 2024 Contributeurs de Bible Notify.\n\n
+    <string name="license">Bible Notify © 2025 Contributeurs de Bible Notify.\n\n
 
         Licence:
         This program is free software: you can redistribute it and/or modify
@@ -33,7 +33,7 @@
         Including the apps package name, as this is reserved for the official app.</string>
     <string name="visit_our_website">Le site de Bible Notify</string>
     <string name="close_btn">Fermer</string>
-    <string name="copyright_text">Bible Notify © 2024 Contributeurs de Bible Notify</string>
+    <string name="copyright_text">Bible Notify © 2025 Contributeurs de Bible Notify</string>
     <string name="alarm_permission_dialog_title">L\'application a besoin de la permission \"Notifications\" pour fonctionner</string>
     <string name="allow_permission_btn">Donner la permission</string>
 

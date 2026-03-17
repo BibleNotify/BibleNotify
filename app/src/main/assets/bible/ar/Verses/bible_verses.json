@@ -141,8 +141,8 @@
       "data": "1Kgs/19"
     },
     {
-      "verse": "If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.",
-      "place": "2 Chronicles 7:14",
+      "verse": "فَإِذَا تَوَاضَعَ شَعْبِي الَّذِينَ دُعِيَ اسْمِي عَلَيْهِمْ وَصَلَّوْا وَطَلَبُوا وَجْهِي، وَرَجَعُوا عَنْ طُرُقِهِمِ الرَّدِيةِ فَإِنَّنِي أَسْمَعُ مِنَ السَّمَاءِ وَأَغْفِرُ خَطِيَّتَهُمْ وَأُبْرِئُ أَرْضَهُمْ",
+      "place": "سفر أخبار الأيام الثاني 7:14",
       "data": "2Chr/7"
     },
     {
@@ -166,47 +166,47 @@
       "data": "Jb/42"
     },
     {
-      "verse": "Why do the heathen rage, and the people imagine a vain thing?",
+      "verse": "لِمَاذَا ارْتَجَّتِ الأُمَمُ، وَتَفَكَّرَ الشُّعُوبُ فِي الْبَاطِلِ؟",
       "place": "سفر المزامير 2:1",
       "data": "Ps/2"
     },
     {
-      "verse": "The heavens declare the glory of Elohim, and the firmament sheweth his handywork.",
+      "verse": "اَلسَّمَاوَاتُ تُحَدِّثُ بِمَجْدِ اللهِ، وَالْفَلَكُ يُخْبِرُ بِعَمَلِ يَدَيْهِ",
       "place": "سفر المزامير 19:1",
       "data": "Ps/19"
     },
     {
-      "verse": "Yahweh is my shepherd; I shall not want.",
+      "verse": "الرَّبُّ رَاعِيَّ فَلَا يُعْوِزُنِي شَيْءٌ",
       "place": "سفر المزامير 23:1",
       "data": "Ps/23"
     },
     {
-      "verse": "Lead me in thy truth, and teach me: for thou art the Elohim of my salvation; on thee do I wait all the day.",
-      "place": "Psalms 25:5",
+      "verse": "دَرِّبْنِي فِي حَقِّكَ وَعَلِّمْنِي، لأَنَّكَ أَنْتَ إِلَهُ خَلاَصِي. إِيَّاكَ انْتَظَرْتُ الْيَوْمَ كُلَّهُ",
+      "place": "سفر المزامير 25:5",
       "data": "Ps/25"
     },
     {
-      "verse": "What man is he that feareth Yahweh? him shall he teach in the way that he shall choose.",
+      "verse": "مَنْ هُوَ الإِنْسَانُ الْخَائِفُ الرَّبَّ؟ يُعَلِّمُهُ طَرِيقًا يَخْتَارُهُ",
       "place": "سفر المزامير 25:12",
       "data": "Ps/25"
     },
     {
-      "verse": "Look upon mine affliction and my pain; and forgive all my sins.",
+      "verse": "انْظُرْ إِلَى ذُلِّي وَتَعَبِي، وَاغْفِرْ جَمِيعَ خَطَايَايَ",
       "place": "سفر المزامير 25:18",
       "data": "Ps/25"
     },
     {
-      "verse": "Blessed is he whose transgression is forgiven, whose sin is covered.",
+      "verse": "طُوبَى لِلَّذِي غُفِرَ إِثْمُهُ وَسُتِرَتْ خَطِيَّتُهُ",
       "place": "سفر المزامير 32:1",
       "data": "Ps/32"
     },
     {
-      "verse": "Keep thy tongue from evil, and thy lips from speaking guile.",
+      "verse": "صُنْ لِسَانَكَ عَنِ الشَّرِّ، وَشَفَتَيْكَ عَنِ التَّكَلُّمِ بِالْغِشِّ",
       "place": "سفر المزامير 34:13",
       "data": "Ps/34"
     },
     {
-      "verse": "What time I am afraid, I will trust in thee.",
+      "verse": "فِي يَوْمِ خَوْفِي، أَنَا عَلَيْكَ أَتَّكِلُ",
       "place": "سفر المزامير 56:3",
       "data": "Ps/56"
     },
@@ -596,28 +596,28 @@
       "data": "Rom/13"
     },
     {
-      "verse": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
-      "place": "1 Corinthians 13:1",
+      "verse": "إن كنت أتكلم بألسنة الناس والملائكة ولكن ليس لي محبة، فقد صرت نحاسا يطن أو صنجا يرن",
+      "place": "رسالة بولس الرسول الأولى إلى أهل كورنثوس 13:1",
       "data": "1Cor/13"
     },
     {
-      "verse": "Therefore seeing we have this ministry, as we have received mercy, we faint not;",
-      "place": "2 Corinthians 4:1",
+      "verse": "مِنْ أَجْلِ ذَلِكَ، - إِذْ لَنَا هَذِهِ الْخِدْمَةُ - كَمَا رُحِمْنَا­ لَا نَفْشَلُ،",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:1",
       "data": "2Cor/4"
     },
     {
-      "verse": "For Elohim, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of Elohim in the face of Yahushua Messiah.",
-      "place": "2 Corinthians 4:6",
+      "verse": "لأَنَّ اللهَ الَّذِي قَالَ: «أَنْ يُشْرِقَ نُورٌ مِنْ ظُلْمَةٍ»، هُوَ الَّذِي أَشْرَقَ فِي قُلُوبِنَا، لإِنَارَةِ مَعْرِفَةِ مَجْدِ اللهِ فِي وَجْهِ يَسُوعَ الْمَسِيحِ",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:6",
       "data": "2Cor/4"
     },
     {
-      "verse": "We are troubled on every side, yet not distressed; we are perplexed, but not in despair;",
-      "place": "2 Corinthians 4:8",
+      "verse": "مُكْتَئِبِينَ فِي كُلِّ شَيْءٍ، لكِنْ غَيْرَ مُتَضَايِقِينَ. مُتَحَيِّرِينَ، لكِنْ غَيْرَ يَائِسِينَ",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:8",
       "data": "2Cor/4"
     },
     {
-      "verse": "For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory;",
-      "place": "2 Corinthians 4:17",
+      "verse": "لأَنَّ خِفَّةَ ضِيقَتِنَا الْوَقْتِيَّةَ تُنْشِئُ لَنَا أَكْثَرَ فَأَكْثَرَ ثِقَلَ مَجْدٍ أَبَدِيًّا",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:17",
       "data": "2Cor/4"
     },
     {

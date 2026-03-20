@@ -9,7 +9,7 @@
 </div>
 
 
-## What is Bible Notify?
+## What Is Bible Notify?
 
 Bible Notify is a free, daily Bible verse notification application for Android devices. Get daily Bible verse notifications from your mobile device with the free & open-source Bible Notify app and meditate on the Scriptures. 
 
@@ -24,17 +24,17 @@ Bible Notify is a free, daily Bible verse notification application for Android d
 Please note that the application package name is different on Google Play than other app stores and the apk in releases.
 
 
-## Desktop version
+## Desktop Version
 
 Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows and macOS.
 
 
-## Element chat
+## Element Chat
 
 Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-notify:matrix.org) to chat with the developers or get support.
 
 
-## Running the code
+## Running the Code
 
 Open the project in Android Studio and sync Gradle. Bible Notify uses minimal dependencies.
 
@@ -44,7 +44,7 @@ Open the project in Android Studio and sync Gradle. Bible Notify uses minimal de
 Contributions are always welcome! Feel free to open a PR or ask questions.
 
 
-## Release process
+## Release Process
 
 - [ ] Update ``versionName`` in ``build.gradle``.
 - [ ] Update  ``versonCode`` to +1 of the previous number in ``build.gradle``.
@@ -64,3 +64,5 @@ For the Google Play version since it has a different package name:
 Bible Notify is licensed under the GPL-3.0 License.
 
 The French text used in this app is the [AELF](https://www.aelf.org/) translation. Please [contact them](https://www.aelf.org/contact) for any question or inquiry.
+
+The Arabic text used in this app is the [SVD Translation](https://st-takla.org/) provided by The Coptic Orthodox Church with a free license.

@@ -15,3 +15,6 @@
 .key
 local.properties
 key.properties
+app/googlePlay/*
+app/otherStores/*
+app/release/*

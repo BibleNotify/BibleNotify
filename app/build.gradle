@@ -4,13 +4,13 @@ plugins {
 
 android {
     namespace 'com.correctsyntax.biblenotify'
-    compileSdk 36
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.correctsyntax.biblenotify"
         minSdkVersion 21
         targetSdk 36
-        versionCode 22
+        versionCode 23
         versionName '4.12.0'
     }
 
@@ -25,6 +25,19 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.correctsyntax.biblenotify'
+
+    flavorDimensions "distribution"
+
+    productFlavors {
+        googlePlay {
+            dimension "distribution"
+            applicationId "com.biblenotify.biblenotify"
+        }
+        otherStores {
+            dimension "distribution"
+            applicationId "com.correctsyntax.biblenotify"
+        }
+    }
 }
 
 dependencies {

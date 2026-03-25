@@ -26,7 +26,7 @@ Please note that the application package name is different on Google Play than o
 
 ## Desktop Version
 
-Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows and macOS.
+Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a desktop version of Bible Notify for Linux, Windows, and macOS.
 
 
 ## Element Chat
@@ -47,16 +47,13 @@ Contributions are always welcome! Feel free to open a PR or ask questions.
 ## Release Process
 
 - [ ] Update ``versionName`` in ``build.gradle``.
-- [ ] Update  ``versonCode`` to +1 of the previous number in ``build.gradle``.
-- [ ] Build a signed apk ``com.correctsyntax.biblenotify``.
+- [ ] Update ``versonCode`` to +1 of the previous number in ``build.gradle``.
+- [ ] Build a signed apk ``com.correctsyntax.biblenotify`` by choosing the ``otherStoresRelease`` Build Variant in Android Studio.
 - [ ] Write release notes and create new GitHub release with built apk attached.
 
 For the Google Play version since it has a different package name:
-- [ ] Locally, move the java files from ``correctsyntax/biblenotify`` to ``biblenotify/biblenotify``
-- [ ] Find and replace all instances of ``com.correctsyntax.biblenotify`` with ``com.biblenotify.biblenotify`` 
-- [ ] Build a signed appbundle.
+- [ ] Build a signed appbundle ``com.biblenotify.biblenotify`` by choosing the ``googlePlayRelease`` Build Variant in Android Studio.
 - [ ] Create new release and upload the appbundle to Google Play.
-- [ ] **Revert all of the changes via git so that the source code is back to using ``com.correctsyntax.biblenotify``**.
 
 
 ## License

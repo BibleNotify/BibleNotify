@@ -1,3 +1,7 @@
+import java.util.Properties
+import java.io.FileInputStream
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -11,18 +15,25 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.fromTarget("17")
+    }
+}
+
+
 android {
-    namespace 'com.correctsyntax.biblenotify'
-    flavorDimensions "distribution"
+    namespace = "com.correctsyntax.biblenotify"
+    flavorDimensions.add("distribution")
 
     productFlavors {
-        googlePlay {
-            dimension "distribution"
-            applicationId "com.biblenotify.biblenotify"
+        create("googlePlay") {
+            dimension = "distribution"
+            applicationId = "com.biblenotify.biblenotify"
         }
-        otherStores {
-            dimension "distribution"
-            applicationId "com.correctsyntax.biblenotify"
+        create("otherStores") {
+            dimension = "distribution"
+            applicationId = "com.correctsyntax.biblenotify"
         }
     }
 
@@ -36,10 +47,6 @@ android {
 
         // Flag to enable support for the new language APIs
         isCoreLibraryDesugaringEnabled = true
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     defaultConfig {
@@ -73,5 +80,5 @@ flutter {
 }
 
 dependencies {
-  coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5");
+  coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
 }

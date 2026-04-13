@@ -1,0 +1,30 @@
+{
+    "@@locale": "en",
+
+    "notification__title": "A Word from the Scriptures",
+    "@notification__title": {
+        "type": "text"
+    },
+    "home__dailyVerseNotificationAt": "Daily verse notification at",
+    "@home__dailyVerseNotificationAt": {
+        "type": "text"
+    },
+    "settings__title": "Settings",
+    "@settings__title": {
+        "type": "text"
+    },
+    "settings__bibleTranslation": "Bible translation",
+    "@settings__bibleTranslation": {
+        "type": "text"
+    },
+    "settings__interfaceLanguage": "Interface language",
+    "@settings__interfaceLanguage": {
+        "type": "text"
+    },
+    "settings__licenseAndContributors": "License and contributors",
+    "@settings__licenseAndContributors": {
+        "type": "text"
+    }
+
+    
+}

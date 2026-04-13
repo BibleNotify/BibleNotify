@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="language_array">
-        <item>English</item>
-        <item>Français</item>
-    </string-array>
-</resources>
-

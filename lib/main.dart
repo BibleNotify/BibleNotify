@@ -28,36 +28,37 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<AppViewModel>.reactive(
-        viewModelBuilder: () => AppViewModel(),
-        builder: (context, model, child) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            locale: locator<L10nService>().currentLocale,
-            localizationsDelegates: const [
-              AppLocalizations.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: const [
-              Locale('ar'), // Arabic
-              Locale('en'), // English
-              Locale('fr'), // French
-            ],
-            initialRoute: Routes.startupView,
-            onGenerateRoute: StackedRouter().onGenerateRoute,
-            navigatorKey: StackedService.navigatorKey,
-            navigatorObservers: [StackedService.routeObserver],
-            theme: ThemeData(
-              //7DD273
-              //242424
-              colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF7DD273)),
-            ),
-            builder: (context, child) {
-              locator<L10nService>().capture(context);
-              return child!;
-            },
-          );
-        });
+      viewModelBuilder: () => AppViewModel(),
+      builder: (context, model, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          locale: locator<L10nService>().currentLocale,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [
+            Locale('ar'), // Arabic
+            Locale('en'), // English
+            Locale('fr'), // French
+          ],
+          initialRoute: Routes.startupView,
+          onGenerateRoute: StackedRouter().onGenerateRoute,
+          navigatorKey: StackedService.navigatorKey,
+          navigatorObservers: [StackedService.routeObserver],
+          theme: ThemeData(
+            //7DD273
+            //242424
+            colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF7DD273)),
+          ),
+          builder: (context, child) {
+            locator<L10nService>().capture(context);
+            return child!;
+          },
+        );
+      },
+    );
   }
 }

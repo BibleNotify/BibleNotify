@@ -14,7 +14,7 @@ dependencies:
 
   # Meta
   url_launcher: ^6.3.2
-  package_info_plus: ^9.0.0
+  package_info_plus: ^10.0.0
 
   # Architecture
   stacked: ^3.4.0

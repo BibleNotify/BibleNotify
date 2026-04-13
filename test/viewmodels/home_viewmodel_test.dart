@@ -11,6 +11,6 @@ void main() {
 
   group('HomeViewmodelTest -', () {
     setUp(() => registerServices());
-    tearDown(() => locator.reset());
+    tearDown(() => locator.reset()); 
   });
 }

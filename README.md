@@ -4,14 +4,14 @@
   <p>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL_v3-green.svg" /></a>
   </p>
-  <p>Daily Scripture Verse Notifications for Android devices.</p>
+  <p>Daily Scripture Verse Notifications for Android.</p>
   <p><i>Thy word is a lamp unto my feet, and a light unto my path." -Psalms 119:105</i></p>
 </div>
 
 
 ## What Is Bible Notify?
 
-Bible Notify is a free, daily Bible verse notification application for Android devices. Get daily Bible verse notifications from your mobile device with the free & open-source Bible Notify app and meditate on the Scriptures. 
+Bible Notify is a free, daily Bible verse notification application for Android. Get daily Bible verse notifications from your mobile device with the free & open-source Bible Notify app and meditate on the Scriptures. 
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"

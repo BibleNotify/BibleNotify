@@ -1,4 +1,4 @@
-package com.example.biblenotify
+package com.correctsyntax.biblenotify
 
 import io.flutter.embedding.android.FlutterActivity
 

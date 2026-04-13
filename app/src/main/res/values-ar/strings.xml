@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bible Notify</string>
+    <string name="main_screen_title">Bible Notify</string>
+    <string name="reader_screen_title">قارئ</string>
+    <string name="settings_screen_title">الإعدادات</string>
+
+    <string name="notification_title">كملة من الكتاب المقدس</string>
+
+    <string name="send_daily_notification_at">إرسال إشعارات يومية في الوقت:</string>
+
+    <string name="help_text">يرسل لك هذا التطبيق آيات الكتاب المقدس اليومية الملهمة في شكل إشعار. يمكنك أيضًا النقر على الإشعارات لقراءة الفصل الذي توجد فيه الآية
+</string>
+    <string name="biblenotify_license">رخصة التطبيق</string>
+    <string name="view_license">عرض رخصة التطبيق</string>
+    <string name="license">Bible Notify Copyright © 2026 Bible Notify contributors.\n\n
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.\n
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.\n
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see [https://www.gnu.org/licenses].\n\n
+
+        Additionally, you must remove all references to \"Bible Notify\" and \"Correct Syntax\"
+        if you release an app based on the Bible Notify open source project.
+        Including the apps package name, as this is reserved for the official app.</string>
+    <string name="visit_our_website">زر موقع التطبيق</string>
+    <string name="close_btn">إغلاق</string>
+    <string name="copyright_text">Bible Notify © 2026 Bible Notify Contributors</string>
+
+    <string name="alarm_permission_dialog_title">مطلوب إذن إرسال التنبيهات</string>
+    <string name="allow_permission_btn">السماح بالإذن</string>
+
+    <string name="start_sending_notifications_btn">بدأ إرسال الإشعارات</string>
+    <string name="change_notification_time_btn">تغيير وقت الإشعار</string>
+    <string name="set_time_btn">ضبط الوقت</string>
+    <string name="cancel_btn">إلغاء</string>
+    <string name="okay_btn">نعم</string>
+
+    <string name="biblenotify_is_running">التطبيق يعمل الآن</string>
+
+    <string name="time_saved_toast">تم حفظ إعدادات الوقت</string>
+    <string name="start_sending_notifications_first_toast">يجب أن تبدأ في إرسال الإشعارات أولاً</string>
+    <string name="error_toast">حصل خطأ في التطبيق</string>
+
+    <string name="info_btn">معلومات</string>
+    <string name="languages_btn">اللغات</string>
+    <string name="languages_text">اللغة:</string>
+</resources>

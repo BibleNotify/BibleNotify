@@ -1,793 +1,793 @@
 {
   "all": [
     {
-      "verse": "In the beginning Elohim created the heaven and the earth.",
-      "place": "Genesis 1:1 (story)",
+      "verse": "فِي الْبَدْءِ خَلَقَ اللهُ السَّمَاوَاتِ وَالأَرْضَ",
+      "place": "سفر التكوين 1:1",
       "data": "Gn/1"
     },
     {
-      "verse": "And Elohim blessed the seventh day, and sanctified it: because that in it he had rested from all his work which Elohim created and made.",
-      "place": "Genesis 2:3",
+      "verse": "وَبَارَكَ اللهُ الْيَوْمَ السَّابِعَ وَقَدَّسَهُ، لِأَنَّهُ فِيهِ اسْتَرَاحَ مِنْ جَمِيعِ عَمَلِهِ الَّذِي عَمِلَ اللهُ خَالِقًا",
+      "place": "سفر التكوين 2:3",
       "data": "Gn/2"
     },
     {
-      "verse": "If thou doest well, shalt thou not be accepted? and if thou doest not well, sin lieth at the door. And unto thee shall be his desire, and thou shalt rule over him.",
-      "place": "Genesis 4:7 (story)",
+      "verse": "إِنْ أَحْسَنْتَ أَفَلَا رَفْعٌ؟ وَإِنْ لَمْ تُحْسِنْ فَعِنْدَ الْبَابِ خَطِيَّةٌ رَابِضَةٌ، وَإِلَيْكَ اشْتِيَاقُهَا وَأَنْتَ تَسُودُ عَلَيْهَا",
+      "place": "سفر التكوين 4:7",
       "data": "Gn/4"
     },
     {
-      "verse": "While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.",
-      "place": "Genesis 8:22",
+      "verse": "مُدَّةَ كُلِّ أَيَّامِ الأَرْضِ: زَرْعٌ وَحَصَادٌ، وَبَرْدٌ وَحَرٌّ، وَصَيْفٌ وَشِتَاءٌ، وَنَهَارٌ وَلَيْلٌ، لَا تَزَالُ",
+      "place": "سفر التكوين 8:22",
       "data": "Gn/8"
     },
     {
-      "verse": "And I, behold, I will harden the hearts of the Egyptians, and they shall follow them: and I will get me honour upon Pharaoh, and upon all his host, upon his chariots, and upon his horsemen.",
-      "place": "Exodus 14:17 (story)",
+      "verse": "وَهَا أَنَا أُشَدِّدُ قُلُوبَ الْمِصْرِيِّينَ حَتَّى يَدْخُلُوا وَرَاءَهُمْ، فَأَتَمَجَّدُ بِفِرْعَوْنَ وَكُلِّ جَيْشِهِ، بِمَرْكَبَاتِهِ وَفُرْسَانِهِ",
+      "place": "سفر الخروج 14:17",
       "data": "Ex/14"
     },
     {
-      "verse": "Thou shalt have no other Elohims before me.",
-      "place": "Exodus 20:3",
+      "verse": "لَا يَكُنْ لَكَ آلِهَةٌ أُخْرَى أَمَامِي",
+      "place": "سفر الخروج 20:3",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth.",
-      "place": "Exodus 20:4",
+      "verse": "لاَ تَصْنَعْ لَكَ تِمْثَالًا مَنْحُوتًا، وَلاَ صُورَةً مَا مِمَّا فِي السَّمَاءِ مِنْ فَوْقُ، وَمَا فِي الأَرْضِ مِنْ تَحْتُ، وَمَا فِي الْمَاءِ مِنْ تَحْتِ الأَرْضِ",
+      "place": "سفر الخروج 20:4",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not bow down thyself to them, nor serve them: for I Yahweh thy Elohim am a jealous Elohim, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me;",
-      "place": "Exodus 20:5",
+      "verse": "لَا تَسْجُدْ لَهُنَّ وَلَا تَعْبُدْهُنَّ، لأَنِّي أَنَا الرَّبَّ إِلَهَكَ إِلَهٌ غَيُورٌ، أَفْتَقِدُ ذُنُوبَ الآبَاءِ فِي الأَبْنَاءِ فِي الْجِيلِ الثَّالِثِ وَالرَّابِعِ مِنْ مُبْغِضِيَّ",
+      "place": "سفر الخروج 20:5",
       "data": "Ex/20"
     },
     {
-      "verse": "And shewing mercy unto thousands of them that love me, and keep my commandments.",
-      "place": "Exodus 20:6",
+      "verse": "وَأَصْنَعُ إِحْسَانًا إِلَى أُلُوفٍ مِنْ مُحِبِّيَّ وَحَافِظِي وَصَايَايَ",
+      "place": "سفر الخروج 20:6",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not take the name of Yahweh thy Elohim in vain; for Yahweh will not hold him guiltless that taketh his name in vain.",
-      "place": "Exodus 20:7",
+      "verse": "لاَ تَنْطِقْ بِاسْمِ الرَّبِّ إِلهِكَ بَاطِلًا، لأَنَّ الرَّبَّ لاَ يُبْرِئُ مَنْ نَطَقَ بِاسْمِهِ بَاطِلًا",
+      "place": "سفر الخروج 20:7",
       "data": "Ex/20"
     },
     {
-      "verse": "Remember the sabbath day, to keep it holy.",
-      "place": "Exodus 20:8",
+      "verse": "اُذْكُرْ يَوْمَ السَّبْتِ لِتُقَدِّسَهُ",
+      "place": "سفر الخروج 20:8",
       "data": "Ex/20"
     },
     {
-      "verse": "Six days shalt thou labour, and do all thy work:",
-      "place": "Exodus 20:9",
+      "verse": "سِتَّةَ أَيَّامٍ تَعْمَلُ وَتَصْنَعُ جَمِيعَ عَمَلِكَ",
+      "place": "سفر الخروج 20:9",
       "data": "Ex/20"
     },
     {
-      "verse": "But the seventh day is the sabbath of Yahweh thy Elohim: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates:",
-      "place": "Exodus 20:10",
+      "verse": "وَأَمَّا الْيَوْمُ السَّابِعُ فَفِيهِ سَبْتٌ لِلرَّبِّ إِلهِكَ. لاَ تَصْنَعْ عَمَلاً مَا أَنْتَ وَابْنُكَ وَابْنَتُكَ وَعَبْدُكَ وَأَمَتُكَ وَبَهِيمَتُكَ وَنَزِيلُكَ الَّذِي دَاخِلَ أَبْوَابِكَ",
+      "place": "سفر الخروج 20:10",
       "data": "Ex/20"
     },
     {
-      "verse": "For in six days Yahweh made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore Yahweh blessed the sabbath day, and hallowed it.",
-      "place": "Exodus 20:11",
+      "verse": "لأَنْ فِي سِتَّةِ أَيَّامٍ صَنَعَ الرَّبُّ السَّمَاءَ وَالأَرْضَ وَالْبَحْرَ وَكُلَّ مَا فِيهَا، وَاسْتَرَاحَ فِي الْيَوْمِ السَّابِعِ. لِذَلِكَ بَارَكَ الرَّبُّ يَوْمَ السَّبْتِ وَقَدَّسَهُ",
+      "place": "سفر الخروج 20:11",
       "data": "Ex/20"
     },
     {
-      "verse": "Honour thy father and thy mother: that thy days may be long upon the land which Yahweh thy Elohim giveth thee.",
-      "place": "Exodus 20:12",
+      "verse": "أَكْرِمْ أَبَاكَ وَأُمَّكَ لِكَيْ تَطُولَ أَيَّامُكَ عَلَى الأَرْضِ الَّتِي يُعْطِيكَ الرَّبُّ إِلَهُكَ",
+      "place": "سفر الخروج 20:12",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not kill.",
-      "place": "Exodus 20:13",
+      "verse": "لَا تَقْتُلْ",
+      "place": "سفر الخروج 20:13",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not commit adultery.",
-      "place": "Exodus 20:14",
+      "verse": "لَا تَزْنِ",
+      "place": "سفر الخروج 20:14",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not steal.",
-      "place": "Exodus 20:15",
+      "verse": "لَا تَسْرِقْ",
+      "place": "سفر الخروج 20:15",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not bear false witness against thy neighbour.",
-      "place": "Exodus 20:16",
+      "verse": "لَا تَشْهَدْ عَلَى قَرِيبِكَ شَهَادَةَ زُورٍ",
+      "place": "سفر الخروج 20:16",
       "data": "Ex/20"
     },
     {
-      "verse": "Thou shalt not covet thy neighbour's house, thou shalt not covet thy neighbour's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour's.",
-      "place": "Exodus 20:17",
+      "verse": "لَا تَشْتَهِ بَيْتَ قَرِيبِكَ. لَا تَشْتَهِ امْرَأَةَ قَرِيبِكَ، وَلَا عَبْدَهُ، وَلَا أَمَتَهُ، وَلَا ثَوْرَهُ، وَلَا حِمَارَهُ، وَلَا شَيْئًا مِمَّا لِقَرِيبِكَ",
+      "place": "سفر الخروج 20:17",
       "data": "Ex/20"
     },
     {
-      "verse": "Yahweh bless thee, and keep thee:",
-      "place": "Numbers 6:24",
+      "verse": "يُبَارِكُكَ الرَّبُّ وَيَحْرُسُكَ",
+      "place": "سفر العدد 6:24",
       "data": "Nm/6"
     },
     {
-      "verse": "Yahweh make his face shine upon thee, and be gracious unto thee:",
-      "place": "Numbers 6:25",
+      "verse": "يُضِيءُ الرَّبُّ بِوَجْهِهِ عَلَيْكَ وَيَرْحَمُكَ",
+      "place": "سفر العدد 6:25",
       "data": "Nm/6"
     },
     {
-      "verse": "Yahweh lift up his countenance upon thee, and give thee peace.",
-      "place": "Numbers 6:26",
+      "verse": "يَرْفَعُ الرَّبُّ وَجْهَهُ عَلَيْكَ وَيَمْنَحُكَ سَلاَمًا",
+      "place": "سفر العدد 6:26",
       "data": "Nm/6"
     },
     {
-      "verse": "And they shall put my name upon the children of Israel, and I will bless them.",
-      "place": "Numbers 6:27",
+      "verse": "فَيَجْعَلُونَ اسْمِي عَلَى بَنِي إِسْرَائِيلَ، وَأَنَا أُبَارِكُهُمْ",
+      "place": "سفر العدد 6:27",
       "data": "Nm/6"
     },
     {
-      "verse": "Be strong and of a good courage, fear not, nor be afraid of them: for Yahweh thy Elohim, he it is that doth go with thee; he will not fail thee, nor forsake thee.",
-      "place": "Deuteronomy 31:6",
+      "verse": "تَشَدَّدُوا وَتَشَجَّعُوا. لَا تَخَافُوا وَلَا تَرْهَبُوا وُجُوهَهُمْ، لأَنَّ الرَّبَّ إِلَهَكَ سَائِرٌ مَعَكَ. لَا يُهْمِلُكَ وَلَا يَتْرُكُكَ",
+      "place": "سفر التثنية 31:6",
       "data": "Dt/31"
     },
     {
-      "verse": "In Gibeon Yahweh appeared to Solomon in a dream by night: and Elohim said, Ask what I shall give thee.",
-      "place": "1 kings 3:5 (story)",
+      "verse": "فِي جِبْعُونَ تَرَاءَى الرَّبُّ لِسُلَيْمَانَ فِي حُلْمٍ لَيْلًا، وَقَالَ اللهُ: «اسْأَلْ مَاذَا أُعْطِيكَ»",
+      "place": "سفر الملوك الأول 3:5",
       "data": "1Kgs/3"
     },
     {
-      "verse": "And Elijah came unto all the people, and said, How long halt ye between two opinions? if Yahweh be Elohim follow him: but if Baal, then follow him. And the people answered him not a word.",
-      "place": "1 kings 18:21 (story)",
+      "verse": "فَتَقَدَّمَ إِيلِيَّا إِلَى جَمِيعِ الشَّعْبِ وَقَالَ: «حَتَّى مَتَى تَعْرُجُونَ بَيْنَ الْفِرْقَتَيْنِ؟ إِنْ كَانَ الرَّبُّ هُوَ اللهَ فَاتَّبِعُوهُ، وَإِنْ كَانَ الْبَعْلُ فَاتَّبِعُوهُ». فَلَمْ يُجِبْهُ الشَّعْبُ بِكَلِمَةٍ",
+      "place": "سفر الملوك الأول 18:21",
       "data": "1Kgs/18"
     },
     {
-      "verse": "Yet I have left me seven thousand in Israel, all the knees which have not bowed unto Baal, and every mouth which hath not kissed him.",
-      "place": "1 kings 19:18 (story)",
+      "verse": "وَقَدْ أَبْقَيْتُ فِي إِسْرَائِيلَ سَبْعَةَ آلاَفٍ، كُلَّ الرُّكَبِ الَّتِي لَمْ تَجْثُ لِلْبَعْلِ وَكُلَّ فَمٍ لَمْ يُقَبِّلْهُ",
+      "place": "سفر الملوك الأول 19:18",
       "data": "1Kgs/19"
     },
     {
-      "verse": "If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.",
-      "place": "2 Chronicles 7:14",
+      "verse": "فَإِذَا تَوَاضَعَ شَعْبِي الَّذِينَ دُعِيَ اسْمِي عَلَيْهِمْ وَصَلَّوْا وَطَلَبُوا وَجْهِي، وَرَجَعُوا عَنْ طُرُقِهِمِ الرَّدِيةِ فَإِنَّنِي أَسْمَعُ مِنَ السَّمَاءِ وَأَغْفِرُ خَطِيَّتَهُمْ وَأُبْرِئُ أَرْضَهُمْ",
+      "place": "سفر أخبار الأيام الثاني 7:14",
       "data": "2Chr/7"
     },
     {
-      "verse": "And said, Naked came I out of my mother's womb, and naked shall I return thither: Yahweh gave, and Yahweh hath taken away; blessed be the name of Yahweh.",
-      "place": "Job 1:21 (story)",
+      "verse": "وَقَالَ: عُرْيَانًا خَرَجْتُ مِنْ بَطْنِ أُمِّي، وَعُرْيَانًا أَعُودُ إِلَى هُنَاكَ. الرَّبُّ أَعْطَى وَالرَّبُّ أَخَذَ، فَلْيَكُنِ اسْمُ الرَّبِّ مُبَارَكًا»",
+      "place": "سفر أيوب  1:21",
       "data": "Jb/1"
     },
     {
-      "verse": "Who hath put wisdom in the inward parts? or who hath given understanding to the heart?",
-      "place": "Job 38:36",
+      "verse": "مَنْ وَضَعَ فِي الطَّخَاءِ حِكْمَةً، أَوْ مَنْ أَظْهَرَ فِي الشُّهُبِ فِطْنَةً؟",
+      "place": "سفر أيوب  38:36",
       "data": "Jb/38"
     },
     {
-      "verse": "Once have I spoken; but I will not answer: yea, twice; but I will proceed no further.",
-      "place": "Job 40:5",
+      "verse": "مَرَّةً تَكَلَّمْتُ فَلَا أُجِيبُ، وَمَرَّتَيْنِ فَلَا أَزِيدُ",
+      "place": "سفر أيوب  40:5",
       "data": "Jb/40"
     },
     {
-      "verse": "I know that thou canst do every thing, and that no thought can be withholden from thee.",
-      "place": "Job 42:2",
+      "verse": "قَدْ عَلِمْتُ أَنَّكَ تَسْتَطِيعُ كُلَّ شَيْءٍ، وَلَا يَعْسُرُ عَلَيْكَ أَمْرٌ",
+      "place": "سفر أيوب  42:2",
       "data": "Jb/42"
     },
     {
-      "verse": "Why do the heathen rage, and the people imagine a vain thing?",
-      "place": "Psalms 2:1",
+      "verse": "لِمَاذَا ارْتَجَّتِ الأُمَمُ، وَتَفَكَّرَ الشُّعُوبُ فِي الْبَاطِلِ؟",
+      "place": "سفر المزامير 2:1",
       "data": "Ps/2"
     },
     {
-      "verse": "The heavens declare the glory of Elohim, and the firmament sheweth his handywork.",
-      "place": "Psalms 19:1",
+      "verse": "اَلسَّمَاوَاتُ تُحَدِّثُ بِمَجْدِ اللهِ، وَالْفَلَكُ يُخْبِرُ بِعَمَلِ يَدَيْهِ",
+      "place": "سفر المزامير 19:1",
       "data": "Ps/19"
     },
     {
-      "verse": "Yahweh is my shepherd; I shall not want.",
-      "place": "Psalms 23:1",
+      "verse": "الرَّبُّ رَاعِيَّ فَلَا يُعْوِزُنِي شَيْءٌ",
+      "place": "سفر المزامير 23:1",
       "data": "Ps/23"
     },
     {
-      "verse": "Lead me in thy truth, and teach me: for thou art the Elohim of my salvation; on thee do I wait all the day.",
-      "place": "Psalms 25:5",
+      "verse": "دَرِّبْنِي فِي حَقِّكَ وَعَلِّمْنِي، لأَنَّكَ أَنْتَ إِلَهُ خَلاَصِي. إِيَّاكَ انْتَظَرْتُ الْيَوْمَ كُلَّهُ",
+      "place": "سفر المزامير 25:5",
       "data": "Ps/25"
     },
     {
-      "verse": "What man is he that feareth Yahweh? him shall he teach in the way that he shall choose.",
-      "place": "Psalms 25:12",
+      "verse": "مَنْ هُوَ الإِنْسَانُ الْخَائِفُ الرَّبَّ؟ يُعَلِّمُهُ طَرِيقًا يَخْتَارُهُ",
+      "place": "سفر المزامير 25:12",
       "data": "Ps/25"
     },
     {
-      "verse": "Look upon mine affliction and my pain; and forgive all my sins.",
-      "place": "Psalms 25:18",
+      "verse": "انْظُرْ إِلَى ذُلِّي وَتَعَبِي، وَاغْفِرْ جَمِيعَ خَطَايَايَ",
+      "place": "سفر المزامير 25:18",
       "data": "Ps/25"
     },
     {
-      "verse": "Blessed is he whose transgression is forgiven, whose sin is covered.",
-      "place": "Psalms 32:1",
+      "verse": "طُوبَى لِلَّذِي غُفِرَ إِثْمُهُ وَسُتِرَتْ خَطِيَّتُهُ",
+      "place": "سفر المزامير 32:1",
       "data": "Ps/32"
     },
     {
-      "verse": "Keep thy tongue from evil, and thy lips from speaking guile.",
-      "place": "Psalms 34:13",
+      "verse": "صُنْ لِسَانَكَ عَنِ الشَّرِّ، وَشَفَتَيْكَ عَنِ التَّكَلُّمِ بِالْغِشِّ",
+      "place": "سفر المزامير 34:13",
       "data": "Ps/34"
     },
     {
-      "verse": "What time I am afraid, I will trust in thee.",
-      "place": "Psalms 56:3",
+      "verse": "فِي يَوْمِ خَوْفِي، أَنَا عَلَيْكَ أَتَّكِلُ",
+      "place": "سفر المزامير 56:3",
       "data": "Ps/56"
     },
     {
-      "verse": "In Elohim have I put my trust: I will not be afraid what man can do unto me.",
-      "place": "Psalms 56:11",
+      "verse": "عَلَى اللهِ تَوَكَّلْتُ فَلَا أَخَافُ. مَاذَا يَصْنَعُهُ بِي الإِنْسَانُ؟",
+      "place": "سفر المزامير 56:11",
       "data": "Ps/56"
     },
     {
-      "verse": "I will set no wicked thing before mine eyes: I hate the work of them that turn aside; it shall not cleave to me.",
-      "place": "Psalms 101:3",
+      "verse": "لَا أَضَعُ قُدَّامَ عَيْنَيَّ أَمْرًا رَدِيئًا. عَمَلَ الزَّيَغَانِ أَبْغَضْتُ. لَا يَلْصَقُ بِي",
+      "place": "سفر المزامير 101:3",
       "data": "Ps/101"
     },
     {
-      "verse": "For as the heaven is high above the earth, so great is his mercy toward them that fear him.",
-      "place": "Psalms 103:11",
+      "verse": "لأَنَّهُ مِثْلُ ارْتِفَاعِ السَّمَاوَاتِ فَوْقَ الأَرْضِ قَوِيَتْ رَحْمَتُهُ عَلَى خَائِفِيهِ. كَبُعْدِ الْمَشْرِقِ مِنَ الْمَغْرِبِ أَبْعَدَ عَنَّا مَعَاصِيَنَا",
+      "place": "سفر المزامير 103:11",
       "data": "Ps/103"
     },
     {
-      "verse": "As far as the east is from the west, so far hath he removed our transgressions from us.",
-      "place": "Psalms 103:12",
+      "verse": "كَبُعْدِ الْمَشْرِقِ مِنَ الْمَغْرِبِ أَبْعَدَ عَنَّا مَعَاصِيَنَا",
+      "place": "سفر المزامير 103:12",
       "data": "Ps/103"
     },
     {
-      "verse": "Happy is that people, that is in such a case: yea, happy is that people, whose mighty one is Yahweh.",
-      "place": "Psalms 144:15",
+      "verse": "طُوبَى لِلشَّعْبِ الَّذِي لَهُ كَهَذَا. طُوبَى لِلشَّعْبِ الَّذِي الرَّبُّ إِلَهُهُ",
+      "place": "سفر المزامير 144:15",
       "data": "Ps/144"
     },
     {
-      "verse": "Thy word have I hid in mine heart, that I might not sin against thee.",
-      "place": "Psalms 119:11",
+      "verse": "خَبَأْتُ كَلاَمَكَ فِي قَلْبِي لِكَيْلاَ أُخْطِئَ إِلَيْكَ",
+      "place": "سفر المزامير 119:11",
       "data": "Ps/119"
     },
     {
-      "verse": "Thy word is a lamp unto my feet, and a light unto my path.",
-      "place": "Psalms 119:105",
+      "verse": "سِرَاجٌ لِرِجْلِي كَلاَمُكَ وَنُورٌ لِسَبِيلِي",
+      "place": "سفر المزامير 119:105",
       "data": "Ps/119"
     },
     {
-      "verse": "Trust in Yahweh with all thine heart; and lean not unto thine own understanding.",
-      "place": "Proverbs 3:5",
+      "verse": "تَوَكَّلْ عَلَى الرَّبِّ بِكُلِّ قَلْبِكَ، وَعَلَى فَهْمِكَ لَا تَعْتَمِدْ",
+      "place": "سفر الأمثال 3:5",
       "data": "Prv/3"
     },
     {
-      "verse": "When pride cometh, then cometh shame: but with the lowly is wisdom.",
-      "place": "Proverbs 11:2",
+      "verse": "تَأْتِي الْكِبْرِيَاءُ فَيَأْتِي الْهَوَانُ، وَمَعَ الْمُتَوَاضِعِينَ حِكْمَةٌ",
+      "place": "سفر الأمثال 11:2",
       "data": "Prv/11"
     },
     {
-      "verse": "There is that scattereth, and yet increaseth; and there is that withholdeth more than is meet, but it tendeth to poverty.",
-      "place": "Proverbs 11:24",
+      "verse": "يُوجَدُ مَنْ يُفَرِّقُ فَيَزْدَادُ أَيْضًا، وَمَنْ يُمْسِكُ أَكْثَرَ مِنَ اللاَّئِقِ وَإِنَّمَا إِلَى الْفَقْرِ",
+      "place": "سفر الأمثال 11:24",
       "data": "Prv/11"
     },
     {
-      "verse": "He that keepeth his mouth keepeth his life: but he that openeth wide his lips shall have destruction.",
-      "place": "Proverbs 13:3",
+      "verse": "مَنْ يَحْفَظُ فَمَهُ يَحْفَظُ نَفْسَهُ. مَنْ يَشْحَرْ شَفَتَيْهِ فَلَهُ هَلاَكٌ",
+      "place": "سفر الأمثال 13:3",
       "data": "Prv/13"
     },
     {
-      "verse": "He that walketh with wise men shall be wise: but a companion of fools shall be destroyed.",
-      "place": "Proverbs 13:20",
+      "verse": "اَلْمُسَايِرُ الْحُكَمَاءَ يَصِيرُ حَكِيمًا، وَرَفِيقُ الْجُهَّالِ يُضَرُّ",
+      "place": "سفر الأمثال 13:20",
       "data": "Prv/13"
     },
     {
-      "verse": "There is a way which seemeth right unto a man, but the end thereof are the ways of death.",
-      "place": "Proverbs 14:12",
+      "verse": "تُوجَدُ طَرِيقٌ تَظْهَرُ لِلإِنْسَانِ مُسْتَقِيمَةً، وَعَاقِبَتُهَا طُرُقُ الْمَوْتِ",
+      "place": "سفر الأمثال 14:12",
       "data": "Prv/14"
     },
     {
-      "verse": "In all labour there is profit: but the talk of the lips tendeth only to penury.",
-      "place": "Proverbs 14:23",
+      "verse": "فِي كُلِّ تَعَبٍ مَنْفَعَةٌ، وَكَلاَمُ الشَّفَتَيْنِ إِنَّمَا هُوَ إِلَى الْفَقْرِ",
+      "place": "سفر الأمثال 14:23",
       "data": "Prv/14"
     },
     {
-      "verse": "A soft answer turneth away wrath: but grievous words stir up anger.",
-      "place": "Proverbs 15:1",
+      "verse": "اَلْجَوَابُ اللَّيِّنُ يَصْرِفُ الْغَضَبَ، وَالْكَلاَمُ الْمُوجِعُ يُهَيِّجُ السَّخَطَ",
+      "place": "سفر الأمثال 15:1",
       "data": "Prv/15"
     },
     {
-      "verse": "Better is a dry morsel, and quietness therewith, than an house full of sacrifices with strife.",
-      "place": "Proverbs 17:1",
+      "verse": "لُقْمَةٌ يَابِسَةٌ وَمَعَهَا سَلاَمَةٌ، خَيْرٌ مِنْ بَيْتٍ مَلآنٍ ذَبَائِحَ مَعَ خِصَامٍ",
+      "place": "سفر الأمثال 17:1",
       "data": "Prv/17"
     },
     {
-      "verse": "He that covereth a transgression seeketh love; but he that repeateth a matter separateth very friends.",
-      "place": "Proverbs 17:9",
+      "verse": "مَنْ يَسْتُرْ مَعْصِيَةً يَطْلُبِ الْمَحَبَّةَ، وَمَنْ يُكَرِّرْ أَمْرًا يُفَرِّقْ بَيْنَ الأَصْدِقَاءِ",
+      "place": "سفر الأمثال 17:9",
       "data": "Prv/17"
     },
     {
-      "verse": "The beginning of strife is as when one letteth out water: therefore leave off contention, before it be meddled with.",
-      "place": "Proverbs 17:14",
+      "verse": "اِبْتِدَاءُ الْخِصَامِ إِطْلاَقُ الْمَاءِ، فَقَبْلَ أَنْ تَدْفُقَ الْمُخَاصَمَةُ اتْرُكْهَا",
+      "place": "سفر الأمثال 17:14",
       "data": "Prv/17"
     },
     {
-      "verse": "Even a fool, when he holdeth his peace, is counted wise: and he that shutteth his lips is esteemed a man of understanding.",
-      "place": "Proverbs 17:28",
+      "verse": "بَلِ الأَحْمَقُ إِذَا سَكَتَ يُحْسَبُ حَكِيمًا، وَمَنْ ضَمَّ شَفَتَيْهِ فَهِيمًا.",
+      "place": "سفر الأمثال 17:28",
       "data": "Prv/17"
     },
     {
-      "verse": "Death and life are in the power of the tongue: and they that love it shall eat the fruit thereof.",
-      "place": "Proverbs 18:21",
+      "verse": "اَلْمَوْتُ وَالْحَيَاةُ فِي يَدِ اللِّسَانِ، وَأَحِبَّاؤُهُ يَأْكُلُونَ ثَمَرَهُ",
+      "place": "سفر الأمثال 18:21",
       "data": "Prv/18"
     },
     {
-      "verse": "A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.",
-      "place": "Proverbs 18:24",
+      "verse": "اَلْمُكْثِرُ الأَصْحَابِ يُخْرِبُ نَفْسَهُ، وَلكِنْ يُوجَدْ مُحِبٌّ أَلْزَقُ مِنَ الأَخِ",
+      "place": "سفر الأمثال 18:24",
       "data": "Prv/18"
     },
     {
-      "verse": "Wilt thou set thine eyes upon that which is not? for riches certainly make themselves wings; they fly away as an eagle toward heaven.",
-      "place": "Proverbs 23:5",
+      "verse": "هَلْ تُطَيِّرُ عَيْنَيْكَ نَحْوَهُ وَلَيْسَ هُوَ؟ لأَنَّهُ إِنَّمَا يَصْنَعُ لِنَفْسِهِ أَجْنِحَةً. كَالنَّسْرِ يَطِيرُ نَحْوَ السَّمَاءِ",
+      "place": "سفر الأمثال 23:5",
       "data": "Prv/23"
     },
     {
-      "verse": "Buy the truth, and sell it not; also wisdom, and instruction, and understanding.",
-      "place": "Proverbs 23:23",
+      "verse": "اِقْتَنِ الْحَقَّ وَلَا تَبِعْهُ، وَالْحِكْمَةَ وَالأَدَبَ وَالْفَهْمَ",
+      "place": "سفر الأمثال 23:23",
       "data": "Prv/23"
     },
     {
-      "verse": "The thought of foolishness is sin: and the scorner is an abomination to men.",
-      "place": "Proverbs 24:9",
+      "verse": "فِكْرُ الْحَمَاقَةِ خَطِيَّةٌ، وَمَكْرَهَةُ النَّاسِ الْمُسْتَهْزِئُ",
+      "place": "سفر الأمثال 24:9",
       "data": "Prv/24"
     },
     {
-      "verse": "For a just man falleth seven times, and riseth up again: but the wicked shall fall into mischief.",
-      "place": "Proverbs 24:16",
+      "verse": "لأَنَّ الصِّدِّيقَ يَسْقُطُ سَبْعَ مَرَّاتٍ وَيَقُومُ، أَمَّا الأَشْرَارُ فَيَعْثُرُونَ بِالشَّرِّ",
+      "place": "سفر الأمثال 24:16",
       "data": "Prv/24"
     },
     {
-      "verse": "Open thy mouth for the dumb in the cause of all such as are appointed to destruction.",
-      "place": "Proverbs 31:8",
+      "verse": "اِفْتَحْ فَمَكَ لأَجْلِ الأَخْرَسِ فِي دَعْوَى كُلِّ يَتِيمٍ",
+      "place": "سفر الأمثال 31:8",
       "data": "Prv/31"
     },
     {
-      "verse": "Favour is deceitful, and beauty is vain: but a woman that feareth Yahweh, she shall be praised.",
-      "place": "Proverbs 31:30",
+      "verse": "اَلْحُسْنُ غِشٌّ وَالْجَمَالُ بَاطِلٌ، أَمَّا الْمَرْأَةُ الْمُتَّقِيَةُ الرَّبَّ فَهِيَ تُمْدَحُ",
+      "place": "سفر الأمثال 31:30",
       "data": "Prv/31"
     },
     {
-      "verse": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.",
-      "place": "Ecclesiastes 9:10",
+      "verse": "كُلُّ مَا تَجِدُهُ يَدُكَ لِتَفْعَلَهُ فَافْعَلْهُ بِقُوَّتِكَ، لأَنَّهُ لَيْسَ مِنْ عَمَلٍ وَلَا اخْتِرَاعٍ وَلَا مَعْرِفَةٍ وَلَا حِكْمَةٍ فِي الْهَاوِيَةِ الَّتِي أَنْتَ ذَاهِبٌ إِلَيْهَا",
+      "place": "سفر الجامعة 9:10",
       "data": "Eccl/9"
     },
     {
-      "verse": "Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.",
-      "place": "Ecclesiastes 10:1",
+      "verse": "اَلذُّبَابُ الْمَيِّتُ يُنَتِّنُ وَيُخَمِّرُ طِيبَ الْعَطَّارِ. جَهَالَةٌ قَلِيلَةٌ أَثْقَلُ مِنَ الْحِكْمَةِ وَمِنَ الْكَرَامَةِ",
+      "place": "سفر الجامعة 10:1",
       "data": "Eccl/10"
     },
     {
-      "verse": "Curse not the king, no not in thy thought; and curse not the rich in thy bedchamber: for a bird of the air shall carry the voice, and that which hath wings shall tell the matter.",
-      "place": "Ecclesiastes 10:20",
+      "verse": "لَا تَسُبَّ الْمَلِكَ وَلَا فِي فِكْرِكَ، وَلَا تَسُبَّ الْغَنِيَّ فِي مَضْجَعِكَ، لأَنَّ طَيْرَ السَّمَاءِ يَنْقُلُ الصَّوْتَ، وَذُو الْجَنَاحِ يُخْبِرُ بِالأَمْرِ",
+      "place": "سفر الجامعة 10:20",
       "data": "Eccl/10"
     },
     {
-      "verse": "Let us hear the conclusion of the whole matter: Fear Elohim, and keep his commandments: for this is the whole duty of man.",
-      "place": "Ecclesiastes 12:13",
+      "verse": "فَلْنَسْمَعْ خِتَامَ الأَمْرِ كُلِّهِ: اتَّقِ اللهَ وَاحْفَظْ وَصَايَاهُ، لأَنَّ هَذَا هُوَ الإِنْسَانُ كُلُّهُ",
+      "place": "سفر الجامعة 12:13",
       "data": "Eccl/12"
     },
     {
-      "verse": "The grass withereth, the flower fadeth: but the word of our Elohim shall stand for ever.",
-      "place": "Isaiah 40:8",
+      "verse": "يَبِسَ الْعُشْبُ، ذَبُلَ الزَّهْرُ. وَأَمَّا كَلِمَةُ إِلَهِنَا فَتَثْبُتُ إِلَى الأَبَدِ",
+      "place": "سفر إشعياء 40:8",
       "data": "Is/40"
     },
     {
-      "verse": "He shall feed his flock like a shepherd: he shall gather the lambs with his arm, and carry them in his bosom, and shall gently lead those that are with young.",
-      "place": "Isaiah 40:11",
+      "verse": "كَرَاعٍ يَرْعَى قَطِيعَهُ. بِذِرَاعِهِ يَجْمَعُ الْحُمْلاَنَ، وَفِي حِضْنِهِ يَحْمِلُهَا، وَيَقُودُ الْمُرْضِعَاتِ",
+      "place": "سفر إشعياء 40:11",
       "data": "Is/40"
     },
     {
-      "verse": "When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee.",
-      "place": "Isaiah 43:2",
+      "verse": "إِذَا اجْتَزْتَ فِي الْمِيَاهِ فَأَنَا مَعَكَ، وَفِي الأَنْهَارِ فَلاَ تَغْمُرُكَ. إِذَا مَشَيْتَ فِي النَّارِ فَلاَ تُلْذَعُ، وَاللَّهِيبُ لاَ يُحْرِقُكَ",
+      "place": "سفر إشعياء 43:2",
       "data": "Is/43"
     },
     {
-      "verse": "Let the wicked forsake his way, and the unrighteous man his thoughts: and let him return unto Yahweh, and he will have mercy upon him; and to our Elohim, for he will abundantly pardon.",
-      "place": "Isaiah 55:7",
+      "verse": "لِيَتْرُكِ الشِّرِّيرُ طَرِيقَهُ، وَرَجُلُ الإِثْمِ أَفْكَارَهُ، وَلْيَتُبْ إِلَى الرَّبِّ فَيَرْحَمَهُ، وَإِلَى إِلَهِنَا لأَنَّهُ يُكْثِرُ الْغُفْرَانَ",
+      "place": "سفر إشعياء 55:7",
       "data": "Is/55"
     },
     {
-      "verse": "Then shalt thou delight thyself in Yahweh; and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of Yahweh hath spoken it.",
-      "place": "Isaiah 58:14",
+      "verse": "فَإِنَّكَ حِينَئِذٍ تَتَلَذَّذُ بِالرَّبِّ، وَأُرَكِّبُكَ عَلَى مُرْتَفَعَاتِ الأَرْضِ، وَأُطْعِمُكَ مِيرَاثَ يَعْقُوبَ أَبِيكَ، لأَنَّ فَمَ الرَّبِّ تَكَلَّمَ.",
+      "place": "سفر إشعياء 58:14",
       "data": "Is/58"
     },
     {
-      "verse": "Blessed is the man that trusteth in Yahweh, and whose hope Yahweh is.",
-      "place": "Jeremiah 17:7",
+      "verse": "مُبَارَكٌ الرَّجُلُ الَّذِي يَتَّكِلُ عَلَى الرَّبِّ، وَكَانَ الرَّبُّ مُتَّكَلَهُ",
+      "place": "سفر إرميا 17:7",
       "data": "Jer/17"
     },
     {
-      "verse": "The heart is deceitful above all things, and desperately wicked: who can know it?",
-      "place": "Jeremiah 17:9",
+      "verse": "اَلْقَلْبُ أَخْدَعُ مِنْ كُلِّ شَيْءٍ وَهُوَ نَجِيسٌ، مَنْ يَعْرِفُهُ؟",
+      "place": "سفر إرميا 17:9",
       "data": "Jer/17"
     },
     {
-      "verse": "Yahweh Elohim is my strength, and he will make my feet like hinds' feet, and he will make me to walk upon mine high places. To the chief singer on my stringed instruments.",
-      "place": "Habakkuk 3:19",
+      "verse": "اَلرَّبُّ السَّيِّدُ قُوَّتِي، وَيَجْعَلُ قَدَمَيَّ كَالأَيَائِلِ، وَيُمَشِّينِي عَلَى مُرْتَفَعَاتِي",
+      "place": "حبقوق 3:19",
       "data": "Hb/3"
     },
     {
-      "verse": "Seek him that maketh the seven stars and Orion, and turneth the shadow of death into the morning, and maketh the day dark with night: that calleth for the waters of the sea, and poureth them out upon the face of the earth: Yahweh is his name:",
-      "place": "Amos 5:8",
+      "verse": "اَلَّذِي صَنَعَ الثُّرَيَّا وَالْجَبَّارَ، وَيُحَوِّلُ ظِلَّ الْمَوْتِ صُبْحًا، وَيُظْلِمُ النَّهَارَ كَاللَّيْلِ. الَّذِي يَدْعُو مِيَاهَ الْبَحْرِ وَيَصُبُّهَا عَلَى وَجْهِ الأَرْضِ، يَهْوَهُ اسْمُهُ",
+      "place": "سفر عاموس 5:8",
       "data": "Am/5"
     },
     {
-      "verse": "Woe unto you that desire the day of Yahweh! to what end is it for you? the day of Yahweh is darkness, and not light.",
-      "place": "Amos 5:18",
+      "verse": "وَيْلٌ لِلَّذِينَ يَشْتَهُونَ يَوْمَ الرَّبِّ! لِمَاذَا لَكُمْ يَوْمُ الرَّبِّ؟ هُوَ ظَلاَمٌ لاَ نُورٌ",
+      "place": "سفر عاموس 5:18",
       "data": "Am/5"
     },
     {
-      "verse": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.",
-      "place": "Matthew 5:13",
+      "verse": "أَنْتُمْ مِلْحُ الأَرْضِ، وَلكِنْ إِنْ فَسَدَ الْمِلْحُ فَبِمَاذَا يُمَلَّحُ؟ لاَ يَصْلُحُ بَعْدُ لِشَيْءٍ، إِلاَّ لأَنْ يُطْرَحَ خَارِجًا وَيُدَاسَ مِنَ النَّاسِ",
+      "place": "متّى 5:13",
       "data": "Mt/5"
     },
     {
-      "verse": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
-      "place": "Matthew 5:16",
+      "verse": "فَلْيُضِئْ نُورُكُمْ هكَذَا قُدَّامَ النَّاسِ، لِكَيْ يَرَوْا أَعْمَالَكُمُ الْحَسَنَةَ، وَيُمَجِّدُوا أَبَاكُمُ الَّذِي فِي السَّمَاوَاتِ",
+      "place": "متّى 5:16",
       "data": "Mt/5"
     },
     {
-      "verse": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil.",
-      "place": "Matthew 5:17",
+      "verse": "لاَ تَظُنُّوا أَنِّي جِئْتُ لأَنْقُضَ النَّامُوسَ أَوِ الأَنْبِيَاءَ. مَا جِئْتُ لأَنْقُضَ بَلْ لأُكَمِّلَ",
+      "place": "متّى 5:17",
       "data": "Mt/5"
     },
     {
-      "verse": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;",
-      "place": "Matthew 5:44",
+      "verse": "وَأَمَّا أَنَا فَأَقُولُ لَكُمْ: أَحِبُّوا أَعْدَاءَكُمْ. بَارِكُوا لَاعِنِيكُمْ. أَحْسِنُوا إِلَى مُبْغِضِيكُمْ. وَصَلُّوا لأَجْلِ الَّذِينَ يُسِيئُونَ إِلَيْكُمْ وَيَطْرُدُونَكُمْ",
+      "place": "متّى 5:44",
       "data": "Mt/5"
     },
     {
-      "verse": "Give us this day our daily bread.",
-      "place": "Matthew 6:11",
+      "verse": "خُبْزَنَا كَفَافَنَا أَعْطِنَا الْيَوْمَ",
+      "place": "متّى 6:11",
       "data": "Mt/6"
     },
     {
-      "verse": "Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal:",
-      "place": "Matthew 6:19",
+      "verse": "لاَ تَكْنِزُوا لَكُمْ كُنُوزًا عَلَى الأَرْضِ حَيْثُ يُفْسِدُ السُّوسُ وَالصَّدَأُ، وَحَيْثُ يَنْقُبُ السَّارِقُونَ وَيَسْرِقُونَ",
+      "place": "متّى 6:19",
       "data": "Mt/6"
     },
     {
-      "verse": "For where your treasure is, there will your heart be also.",
-      "place": "Matthew 6:21",
+      "verse": "لأَنَّهُ حَيْثُ يَكُونُ كَنْزُكَ هُنَاكَ يَكُونُ قَلْبُكَ أَيْضًا",
+      "place": "متّى 6:21",
       "data": "Mt/6"
     },
     {
-      "verse": "But seek ye first the kingdom of Elohim, and his righteousness; and all these things shall be added unto you.",
-      "place": "Matthew 6:33",
+      "verse": "لَكِنِ اطْلُبُوا أَوَّلاً مَلَكُوتَ اللهِ وَبِرَّهُ، وَهذِهِ كُلُّهَا تُزَادُ لَكُمْ",
+      "place": "متّى 6:33",
       "data": "Mt/6"
     },
     {
-      "verse": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
-      "place": "Matthew 6:34",
+      "verse": "فَلاَ تَهْتَمُّوا لِلْغَدِ، لأَنَّ الْغَدَ يَهْتَمُّ بِمَا لِنَفْسِهِ. يَكْفِي الْيَوْمَ شَرُّهُ.",
+      "place": "متّى 6:34",
       "data": "Mt/6"
     },
     {
-      "verse": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:",
-      "place": "Matthew 7:7",
+      "verse": "اِسْأَلُوا تُعْطَوْا. اُطْلُبُوا تَجِدُوا. اِقْرَعُوا يُفْتَحْ لَكُمْ",
+      "place": "متّى 7:7",
       "data": "Mt/7"
     },
     {
-      "verse": "Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat:",
-      "place": "Matthew 7:13",
+      "verse": "اُدْخُلُوا مِنَ الْبَابِ الضَّيِّقِ، لأَنَّهُ وَاسِعٌ الْبَابُ وَرَحْبٌ الطَّرِيقُ الَّذِي يُؤَدِّي إِلَى الْهَلاَكِ، وَكَثِيرُونَ هُمُ الَّذِينَ يَدْخُلُونَ مِنْهُ!",
+      "place": "متّى 7:13",
       "data": "Mt/7"
     },
     {
-      "verse": "And he lifted up his eyes on his disciples, and said, Blessed be ye poor: for yours is the kingdom of Elohim.",
-      "place": "Luke 6:20",
+      "verse": "وَرَفَعَ عَيْنَيْهِ إِلَى تَلاَمِيذِهِ وَقَالَ: «طُوبَاكُمْ أَيُّهَا الْمَسَاكِينُ لأَنَّ لَكُمْ مَلَكُوتَ اللهِ",
+      "place": "لُوقَا 6:20",
       "data": "Lk/6"
     },
     {
-      "verse": "Blessed are ye that hunger now: for ye shall be filled. Blessed are ye that weep now: for ye shall laugh.",
-      "place": "Luke 6:21",
+      "verse": "طُوبَاكُمْ أَيُّهَا الْجِيَاعُ الآنَ، لأَنَّكُمْ تُشْبَعُونَ. طُوبَاكُمْ أَيُّهَا الْبَاكُونَ الآنَ، لأَنَّكُمْ سَتَضْحَكُونَ",
+      "place": "لُوقَا 6:21",
       "data": "Lk/6"
     },
     {
-      "verse": "Blessed are ye, when men shall hate you, and when they shall separate you from their company, and shall reproach you, and cast out your name as evil, for the Son of man's sake.",
-      "place": "Luke 6:22",
+      "verse": "طُوبَاكُمْ إِذَا أَبْغَضَكُمُ النَّاسُ، وَإِذَا أَفْرَزُوكُمْ وَعَيَّرُوكُمْ، وَأَخْرَجُوا اسْمَكُمْ كَشِرِّيرٍ مِنْ أَجْلِ ابْنِ الإِنْسَانِ",
+      "place": "لُوقَا 6:22",
       "data": "Lk/6"
     },
     {
-      "verse": "Rejoice ye in that day, and leap for joy: for, behold, your reward is great in heaven: for in the like manner did their fathers unto the prophets.",
-      "place": "Luke 6:23",
+      "verse": "اِفْرَحُوا فِي ذلِكَ الْيَوْمِ وَتَهَلَّلُوا، فَهُوَذَا أَجْرُكُمْ عَظِيمٌ فِي السَّمَاءِ. لأَنَّ آبَاءَهُمْ هكَذَا كَانُوا يَفْعَلُونَ بِالأَنْبِيَاءِ",
+      "place": "لُوقَا 6:23",
       "data": "Lk/6"
     },
     {
-      "verse": "But love ye your enemies, and do good, and lend, hoping for nothing again; and your reward shall be great, and ye shall be the children of the Highest: for he is kind unto the unthankful and to the evil.",
-      "place": "Luke 6:35",
+      "verse": "بَلْ أَحِبُّوا أَعْدَاءَكُمْ، وَأَحْسِنُوا وَأَقْرِضُوا وَأَنْتُمْ لاَ تَرْجُونَ شَيْئًا، فَيَكُونَ أَجْرُكُمْ عَظِيمًا وَتَكُونُوا بَنِي الْعَلِيِّ، فَإِنَّهُ مُنْعِمٌ عَلَى غَيْرِ الشَّاكِرِينَ وَالأَشْرَارِ",
+      "place": "لُوقَا 6:35",
       "data": "Lk/6"
     },
     {
-      "verse": "I tell you, Nay: but, except ye repent, ye shall all likewise perish.",
-      "place": "Luke 13:5",
+      "verse": "كلا! أقولُ لكُمْ: بل إنْ لَمْ تتوبوا فجميعُكُمْ كذلكَ تهلِكونَ",
+      "place": "لُوقَا 13:5",
       "data": "Lk/13"
     },
     {
-      "verse": "And, behold, there are last which shall be first, and there are first which shall be last.",
-      "place": "Luke 13:30",
+      "verse": "وَهُوَذَا آخِرُونَ يَكُونُونَ أَوَّلِينَ، وَأَوَّلُونَ يَكُونُونَ آخِرِينَ",
+      "place": "لُوقَا 13:30",
       "data": "Lk/13"
     },
     {
-      "verse": "Behold, your house is left unto you desolate: and verily I say unto you, Ye shall not see me, until the time come when ye shall say, Blessed is he that cometh in the name of Yahweh.",
-      "place": "Luke 13:35",
+      "verse": "هُوَذَا بَيْتُكُمْ يُتْرَكُ لَكُمْ خَرَابًا! وَالْحَقَّ أَقُولُ لَكُمْ: إِنَّكُمْ لاَ تَرَوْنَنِي حَتَّى يَأْتِيَ وَقْتٌ تَقُولُونَ فِيهِ: مُبَارَكٌ الآتِي بِاسْمِ الرَّبِّ!",
+      "place": "لُوقَا 13:35",
       "data": "Lk/13"
     },
     {
-      "verse": "Then said Yahushua, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
-      "place": "Luke 23:34 (story)",
+      "verse": "فَقَالَ يَسُوعُ: «يَا أَبَتَاهُ، اغْفِرْ لَهُمْ، لأَنَّهُمْ لاَ يَعْلَمُونَ مَاذَا يَفْعَلُونَ». وَإِذِ اقْتَسَمُوا ثِيَابَهُ اقْتَرَعُوا عَلَيْهَا",
+      "place": "لُوقَا 23:34",
       "data": "Lk/23"
     },
     {
-      "verse": "Greater love hath no man than this, that a man lay down his life for his friends.",
-      "place": "John 15:13",
+      "verse": "لَيْسَ لأَحَدٍ حُبٌّ أَعْظَمُ مِنْ هَذَا: أَنْ يَضَعَ أَحَدٌ نَفْسَهُ لأَجْلِ أَحِبَّائِهِ.",
+      "place": "يُوحَنَّا 15:13",
       "data": "Jn/15"
     },
     {
-      "verse": "Ye have not chosen me, but I have chosen you, and ordained you, that ye should go and bring forth fruit, and that your fruit should remain: that whatsoever ye shall ask of the Father in my name, he may give it you.",
-      "place": "John 15:16",
+      "verse": "لَيْسَ أَنْتُمُ اخْتَرْتُمُونِي بَلْ أَنَا اخْتَرْتُكُمْ، وَأَقَمْتُكُمْ لِتَذْهَبُوا وَتَأْتُوا بِثَمَرٍ، وَيَدُومَ ثَمَرُكُمْ، لِكَيْ يُعْطِيَكُمُ الآبُ كُلَّ مَا طَلَبْتُمْ بِاسْمِي",
+      "place": "يُوحَنَّا 15:16",
       "data": "Jn/15"
     },
     {
-      "verse": "If the world hate you, ye know that it hated me before it hated you.",
-      "place": "John 15:18",
+      "verse": "إِنْ كَانَ الْعَالَمُ يُبْغِضُكُمْ فَاعْلَمُوا أَنَّهُ قَدْ أَبْغَضَنِي قَبْلَكُمْ",
+      "place": "يُوحَنَّا 15:18",
       "data": "Jn/15"
     },
     {
-      "verse": "Elohim forbid. How shall we, that are dead to sin, live any longer therein?",
-      "place": "Romans 6:2",
+      "verse": "حَاشَا! نَحْنُ الَّذِينَ مُتْنَا عَنِ الْخَطِيَّةِ، كَيْفَ نَعِيشُ بَعْدُ فِيهَا؟",
+      "place": "ﺭﻭﻣﻴﺔ 6:2",
       "data": "Rom/6"
     },
     {
-      "verse": "Let not sin therefore reign in your mortal body, that ye should obey it in the lusts thereof.",
-      "place": "Romans 6:12",
+      "verse": "إِذًا لَا تَمْلِكَنَّ الْخَطِيَّةُ فِي جَسَدِكُمُ الْمَائِتِ لِكَيْ تُطِيعُوهَا فِي شَهَوَاتِهِ",
+      "place": "ﺭﻭﻣﻴﺔ 6:12",
       "data": "Rom/6"
     },
     {
-      "verse": "What then? shall we sin, because we are not under the law, but under grace? Elohim forbid.",
-      "place": "Romans 6:15",
+      "verse": "!فَمَاذَا إِذًا؟ أَنُخْطِئُ لأَنَّنَا لَسْنَا تَحْتَ النَّامُوسِ بَلْ تَحْتَ النِّعْمَةِ؟ حَاشَا",
+      "place": "ﺭﻭﻣﻴﺔ 6:15",
       "data": "Rom/6"
     },
     {
-      "verse": "For the wages of sin is death; but the gift of Elohim is eternal life through Yahushua Messiah our master.",
-      "place": "Romans 6:23",
+      "verse": "لأَنَّ أُجْرَةَ الْخَطِيَّةِ هِيَ مَوْتٌ، وَأَمَّا هِبَةُ اللهِ فَهِيَ حَيَاةٌ أَبَدِيَّةٌ بِالْمَسِيحِ يَسُوعَ رَبِّنَا",
+      "place": "ﺭﻭﻣﻴﺔ 6:23",
       "data": "Rom/6"
     },
     {
-      "verse": "There is therefore now no condemnation to them which are in Messiah Yahushua, who walk not after the flesh, but after the Spirit.",
-      "place": "Romans 8:1",
+      "verse": "إِذًا لَا شَيْءَ مِنَ الدَّيْنُونَةِ الآنَ عَلَى الَّذِينَ هُمْ فِي الْمَسِيحِ يَسُوعَ، السَّالِكِينَ لَيْسَ حَسَبَ الْجَسَدِ بَلْ حَسَبَ الرُّوحِ",
+      "place": "ﺭﻭﻣﻴﺔ 8:1",
       "data": "Rom/8"
     },
     {
-      "verse": "And we know that all things work together for good to them that love Elohim, to them who are the called according to his purpose.",
-      "place": "Romans 8:28",
+      "verse": "وَنَحْنُ نَعْلَمُ أَنَّ كُلَّ الأَشْيَاءِ تَعْمَلُ مَعًا لِلْخَيْرِ لِلَّذِينَ يُحِبُّونَ اللهَ، الَّذِينَ هُمْ مَدْعُوُّونَ حَسَبَ قَصْدِهِ",
+      "place": "ﺭﻭﻣﻴﺔ 8:28",
       "data": "Rom/8"
     },
     {
-      "verse": "Nay, in all these things we are more than conquerors through him that loved us.",
-      "place": "Romans 8:37",
+      "verse": "وَلكِنَّنَا فِي هَذِهِ جَمِيعِهَا يَعْظُمُ انْتِصَارُنَا بِالَّذِي أَحَبَّنَا",
+      "place": "ﺭﻭﻣﻴﺔ 8:37",
       "data": "Rom/8"
     },
     {
-      "verse": "Nor height, nor depth, nor any other creature, shall be able to separate us from the love of Elohim, which is in Messiah Yahushua our Master.",
-      "place": "Romans 8:39",
+      "verse": "وَلَا عُلْوَ وَلَا عُمْقَ، وَلَا خَلِيقَةَ أُخْرَى، تَقْدِرُ أَنْ تَفْصِلَنَا عَنْ مَحَبَّةِ اللهِ الَّتِي فِي الْمَسِيحِ يَسُوعَ رَبِّنَا",
+      "place": "ﺭﻭﻣﻴﺔ 8:39",
       "data": "Rom/8"
     },
     {
-      "verse": "Bless them which persecute you: bless, and curse not.",
-      "place": "Romans 12:14",
+      "verse": "بَارِكُوا عَلَى الَّذِينَ يَضْطَهِدُونَكُمْ. بَارِكُوا وَلَا تَلْعَنُوا",
+      "place": "ﺭﻭﻣﻴﺔ 12:14",
       "data": "Rom/12"
     },
     {
-      "verse": "If it be possible, as much as lieth in you, live peaceably with all men.",
-      "place": "Romans 12:18",
+      "verse": "إِنْ كَانَ مُمْكِنًا فَحَسَبَ طَاقَتِكُمْ سَالِمُوا جَمِيعَ النَّاسِ",
+      "place": "ﺭﻭﻣﻴﺔ 12:18",
       "data": "Rom/12"
     },
     {
-      "verse": "Be not overcome of evil, but overcome evil with good.",
-      "place": "Romans 12:21",
+      "verse": "لَا يَغْلِبَنَّكَ الشَّرُّ بَلِ اغْلِبِ الشَّرَّ بِالْخَيْرِ",
+      "place": "ﺭﻭﻣﻴﺔ 12:21",
       "data": "Rom/12"
     },
     {
-      "verse": "Owe no man any thing, but to love one another: for he that loveth another hath fulfilled the law.",
-      "place": "Romans 13:8",
+      "verse": "لَا تَكُونُوا مَدْيُونِينَ لأَحَدٍ بِشَيْءٍ إِلاَّ بِأَنْ يُحِبَّ بَعْضُكُمْ بَعْضًا، لأَنَّ مَنْ أَحَبَّ غَيْرَهُ فَقَدْ أَكْمَلَ النَّامُوسَ",
+      "place": "ﺭﻭﻣﻴﺔ 13:8",
       "data": "Rom/13"
     },
     {
-      "verse": "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armour of light.",
-      "place": "Romans 13:12",
+      "verse": "قَدْ تَنَاهَى اللَّيْلُ وَتَقَارَبَ النَّهَارُ، فَلْنَخْلَعْ أَعْمَالَ الظُّلْمَةِ وَنَلْبَسْ أَسْلِحَةَ النُّورِ",
+      "place": "ﺭﻭﻣﻴﺔ 13:12",
       "data": "Rom/13"
     },
     {
-      "verse": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
-      "place": "1 Corinthians 13:1",
+      "verse": "إن كنت أتكلم بألسنة الناس والملائكة ولكن ليس لي محبة، فقد صرت نحاسا يطن أو صنجا يرن",
+      "place": "رسالة بولس الرسول الأولى إلى أهل كورنثوس 13:1",
       "data": "1Cor/13"
     },
     {
-      "verse": "Therefore seeing we have this ministry, as we have received mercy, we faint not;",
-      "place": "2 Corinthians 4:1",
+      "verse": "مِنْ أَجْلِ ذَلِكَ، - إِذْ لَنَا هَذِهِ الْخِدْمَةُ - كَمَا رُحِمْنَا­ لَا نَفْشَلُ،",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:1",
       "data": "2Cor/4"
     },
     {
-      "verse": "For Elohim, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of Elohim in the face of Yahushua Messiah.",
-      "place": "2 Corinthians 4:6",
+      "verse": "لأَنَّ اللهَ الَّذِي قَالَ: «أَنْ يُشْرِقَ نُورٌ مِنْ ظُلْمَةٍ»، هُوَ الَّذِي أَشْرَقَ فِي قُلُوبِنَا، لإِنَارَةِ مَعْرِفَةِ مَجْدِ اللهِ فِي وَجْهِ يَسُوعَ الْمَسِيحِ",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:6",
       "data": "2Cor/4"
     },
     {
-      "verse": "We are troubled on every side, yet not distressed; we are perplexed, but not in despair;",
-      "place": "2 Corinthians 4:8",
+      "verse": "مُكْتَئِبِينَ فِي كُلِّ شَيْءٍ، لكِنْ غَيْرَ مُتَضَايِقِينَ. مُتَحَيِّرِينَ، لكِنْ غَيْرَ يَائِسِينَ",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:8",
       "data": "2Cor/4"
     },
     {
-      "verse": "For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory;",
-      "place": "2 Corinthians 4:17",
+      "verse": "لأَنَّ خِفَّةَ ضِيقَتِنَا الْوَقْتِيَّةَ تُنْشِئُ لَنَا أَكْثَرَ فَأَكْثَرَ ثِقَلَ مَجْدٍ أَبَدِيًّا",
+      "place": "رسالة بولس الرسول الثانية إلى أهل كورنثوس 4:17",
       "data": "2Cor/4"
     },
     {
-      "verse": "I am crucified with Messiah: nevertheless I live; yet not I, but Messiah liveth in me: and the life which I now live in the flesh I live by the faith of the Son of Elohim, who loved me, and gave himself for me.",
-      "place": "Galatians 2:20",
+      "verse": "مَعَ الْمَسِيحِ صُلِبْتُ، فَأَحْيَا لَا أَنَا، بَلِ الْمَسِيحُ يَحْيَا فِيَّ. فَمَا أَحْيَاهُ الآنَ فِي الْجَسَدِ، فَإِنَّمَا أَحْيَاهُ فِي الإِيمَانِ، إِيمَانِ ابْنِ اللهِ، الَّذِي أَحَبَّنِي وَأَسْلَمَ نَفْسَهُ لأَجْلِي",
+      "place": "رسالة بولس الرسول إلى أهل غلاطية 2:20",
       "data": "Gal/2"
     },
     {
-      "verse": "And they that are Messiah's have crucified the flesh with the affections and lusts.",
-      "place": "Galatians 5:24",
+      "verse": "وَلكِنَّ الَّذِينَ هُمْ لِلْمَسِيحِ قَدْ صَلَبُوا الْجَسَدَ مَعَ الأَهْوَاءِ وَالشَّهَوَاتِ",
+      "place": "رسالة بولس الرسول إلى أهل غلاطية 5:24",
       "data": "Gal/5"
     },
     {
-      "verse": "For he that soweth to his flesh shall of the flesh reap corruption; but he that soweth to the Spirit shall of the Spirit reap life everlasting.",
-      "place": "Galatians 6:8",
+      "verse": "لأَنَّ مَنْ يَزْرَعُ لِجَسَدِهِ فَمِنَ الْجَسَدِ يَحْصُدُ فَسَادًا، وَمَنْ يَزْرَعُ لِلرُّوحِ فَمِنَ الرُّوحِ يَحْصُدُ حَيَاةً أَبَدِيَّةً",
+      "place": "رسالة بولس الرسول إلى أهل غلاطية 6:8",
       "data": "Gal/6"
     },
     {
-      "verse": "And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
-      "place": "Galatians 6:9",
+      "verse": "فَلَا نَفْشَلْ فِي عَمَلِ الْخَيْرِ لأَنَّنَا سَنَحْصُدُ فِي وَقْتِهِ إِنْ كُنَّا لَا نَكِلُّ",
+      "place": "رسالة بولس الرسول إلى أهل غلاطية 6:9",
       "data": "Gal/6"
     },
     {
-      "verse": "Rejoice in Yahweh alway: and again I say, Rejoice.",
-      "place": "Philippians 4:4",
+      "verse": "اِفْرَحُوا فِي الرَّبِّ كُلَّ حِينٍ، وَأَقُولُ أَيْضًا: افْرَحُوا",
+      "place": "فيلبي 4:4",
       "data": "Phil/4"
     },
     {
-      "verse": "And the peace of Elohim, which passeth all understanding, shall keep your hearts and minds through Messiah Yahushua.",
-      "place": "Philippians 4:7",
+      "verse": "وَسَلاَمُ اللهِ الَّذِي يَفُوقُ كُلَّ عَقْلٍ، يَحْفَظُ قُلُوبَكُمْ وَأَفْكَارَكُمْ فِي الْمَسِيحِ يَسُوعَ",
+      "place": "فيلبي 4:7",
       "data": "Phil/4"
     },
     {
-      "verse": "Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.",
-      "place": "Philippians 4:8",
+      "verse": "أَخِيرًا أَيُّهَا الإِخْوَةُ كُلُّ مَا هُوَ حَقٌ، كُلُّ مَا هُوَ جَلِيلٌ، كُلُّ مَا هُوَ عَادِلٌ، كُلُّ مَا هُوَ طَاهِرٌ، كُلُّ مَا هُوَ مُسِرٌّ، كُلُّ مَا صِيتُهُ حَسَنٌ، إِنْ كَانَتْ فَضِيلَةٌ وَإِنْ كَانَ مَدْحٌ، فَفِي هَذِهِ افْتَكِرُوا",
+      "place": "فيلبي 4:8",
       "data": "Phil/4"
     },
     {
-      "verse": "I can do all things through Messiah which strengtheneth me.",
-      "place": "Philippians 4:13",
+      "verse": "أَسْتَطِيعُ كُلَّ شَيْءٍ فِي الْمَسِيحِ الَّذِي يُقَوِّينِي",
+      "place": "فيلبي 4:13",
       "data": "Phil/4"
     },
     {
-      "verse": "For when they shall say, Peace and safety; then sudden destruction cometh upon them, as travail upon a woman with child; and they shall not escape.",
-      "place": "1 Thessalonians 5:3",
+      "verse": "لأَنَّهُ حِينَمَا يَقُولُونَ: «سَلاَمٌ وَأَمَانٌ»، حِينَئِذٍ يُفَاجِئُهُمْ هَلاَكٌ بَغْتَةً، كَالْمَخَاضِ لِلْحُبْلَى، فَلَا يَنْجُونَ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:3",
       "data": "1Thes/5"
     },
     {
-      "verse": "But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.",
-      "place": "1 Thessalonians 5:8",
+      "verse": "وَأَمَّا نَحْنُ الَّذِينَ مِنْ نَهَارٍ، فَلْنَصْحُ لاَبِسِينَ دِرْعَ الإِيمَانِ وَالْمَحَبَّةِ، وَخُوذَةً هِيَ رَجَاءُ الْخَلاَصِ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:8",
       "data": "1Thes/5"
     },
     {
-      "verse": "Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.",
-      "place": "1 Thessalonians 5:14",
+      "verse": "وَنَطْلُبُ إِلَيْكُمْ أَيُّهَا الإِخْوَةُ: أَنْذِرُوا الَّذِينَ بِلاَ تَرْتِيبٍ. شَجِّعُوا صِغَارَ النُّفُوسِ. أَسْنِدُوا الضُّعَفَاءَ. تَأَنَّوْا عَلَى الْجَمِيعِ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:14",
       "data": "1Thes/5"
     },
     {
-      "verse": "See that none render evil for evil unto any man; but ever follow that which is good, both among yourselves, and to all men.",
-      "place": "1 Thessalonians 5:15",
+      "verse": "انْظُرُوا أَنْ لَا يُجَازِيَ أَحَدٌ أَحَدًا عَنْ شَرٍّ بِشَرٍّ، بَلْ كُلَّ حِينٍ اتَّبِعُوا الْخَيْرَ بَعْضُكُمْ لِبَعْضٍ وَلِلْجَمِيعِ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:15",
       "data": "1Thes/5"
     },
     {
-      "verse": "Rejoice evermore.",
-      "place": "1 Thessalonians 5:16",
+      "verse": "افْرَحُوا كُلَّ حِينٍ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:16",
       "data": "1Thes/5"
     },
     {
-      "verse": "Pray without ceasing.",
-      "place": "1 Thessalonians 5:17",
+      "verse": "صَلُّوا بِلاَ انْقِطَاعٍ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:17",
       "data": "1Thes/5"
     },
     {
-      "verse": "Prove all things; hold fast that which is good.",
-      "place": "1 Thessalonians 5:21",
+      "verse": "امْتَحِنُوا كُلَّ شَيْءٍ. تَمَسَّكُوا بِالْحَسَنِ. امْتَنِعُوا عَنْ كُلِّ شِبْهِ شَرٍّ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:21",
       "data": "1Thes/5"
     },
     {
-      "verse": "Abstain from all appearance of evil.",
-      "place": "1 Thessalonians 5:22",
+      "verse": "امْتَنِعُوا عَنْ كُلِّ شِبْهِ شَرٍّ",
+      "place": "رسالة بولس الرسول الأولى إلى أهل تسالونيكي 5:22",
       "data": "1Thes/5"
     },
     {
-      "verse": "But righteousness with contentment is great gain.",
-      "place": "1 Timothy 6:6",
+      "verse": "وَأَمَّا التَّقْوَى مَعَ الْقَنَاعَةِ فَهِيَ تِجَارَةٌ عَظِيمَةٌ",
+      "place": "رسالة بولس الرسول الأولى إلى تيموثاوس 6:6",
       "data": "1Tm/6"
     },
     {
-      "verse": "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.",
-      "place": "1 Timothy 6:10",
+      "verse": "لأَنَّ مَحَبَّةَ الْمَالِ أَصْلٌ لِكُلِّ الشُّرُورِ، الَّذِي إِذِ ابْتَغَاهُ قَوْمٌ ضَلُّوا عَنِ الإِيمَانِ، وَطَعَنُوا أَنْفُسَهُمْ بِأَوْجَاعٍ كَثِيرَةٍ",
+      "place": "رسالة بولس الرسول الأولى إلى تيموثاوس  6:10",
       "data": "1Tm/6"
     },
     {
-      "verse": "Now faith is the substance of things hoped for, the evidence of things not seen.",
-      "place": "Hebrews 11:1",
+      "verse": "وَأَمَّا الإِيمَانُ فَهُوَ الثِّقَةُ بِمَا يُرْجَى وَالإِيقَانُ بِأُمُورٍ لَا تُرَى",
+      "place": "ﺍﻟﻌﺒﺮﺍﻧﻴﻴﻦ 11:1",
       "data": "Heb/11"
     },
     {
-      "verse": "Through faith we understand that the worlds were framed by the word of Yahweh, so that things which are seen were not made of things which do appear.",
-      "place": "Hebrews 11:3",
+      "verse": "بِالإِيمَانِ نَفْهَمُ أَنَّ الْعَالَمِينَ أُتْقِنَتْ بِكَلِمَةِ اللهِ، حَتَّى لَمْ يَتَكَوَّنْ مَا يُرَى مِمَّا هُوَ ظَاهِرٌ",
+      "place": "ﺍﻟﻌﺒﺮﺍﻧﻴﻴﻦ 11:3",
       "data": "Heb/11"
     },
     {
-      "verse": "But without faith it is impossible to please him: for he that cometh to Yahweh must believe that he is, and that he is a rewarder of them that diligently seek him.",
-      "place": "Hebrews 11:6",
+      "verse": "وَلكِنْ بِدُونِ إِيمَانٍ لَا يُمْكِنُ إِرْضَاؤُهُ، لأَنَّهُ يَجِبُ أَنَّ الَّذِي يَأْتِي إِلَى اللهِ يُؤْمِنُ بِأَنَّهُ مَوْجُودٌ، وَأَنَّهُ يُجَازِي الَّذِينَ يَطْلُبُونَهُ",
+      "place": "ﺍﻟﻌﺒﺮﺍﻧﻴﻴﻦ 11:6",
       "data": "Heb/11"
     },
     {
-      "verse": "Choosing rather to suffer affliction with the people of Yahweh, than to enjoy the pleasures of sin for a season;",
-      "place": "Hebrews 11:25",
+      "verse": "مُفَضِّلًا بِالأَحْرَى أَنْ يُذَلَّ مَعَ شَعْبِ اللهِ عَلَى أَنْ يَكُونَ لَهُ تَمَتُّعٌ وَقْتِيٌّ بِالْخَطِيَّةِ",
+      "place": "ﺍﻟﻌﺒﺮﺍﻧﻴﻴﻦ 11:25",
       "data": "Heb/11"
     },
     {
-      "verse": "James, a servant of Elohim and of the master Yahushua messiah to the twelve tribes which are scattered abroad, greeting.",
-      "place": "James 1:1",
+      "verse": "يَعْقُوبُ، عَبْدُ اللهِ وَالرَّبِّ يَسُوعَ الْمَسِيحِ، يُهْدِي السَّلاَمَ إِلَى الاثْنَيْ عَشَرَ سِبْطًا الَّذِينَ فِي الشَّتَاتِ",
+      "place": "رسالة يعقوب 1:1",
       "data": "Jas/1"
     },
     {
-      "verse": "My brethren, count it all joy when ye fall into divers temptations;",
-      "place": "James 1:2",
+      "verse": "اِحْسِبُوهُ كُلَّ فَرَحٍ يَا إِخْوَتِي حِينَمَا تَقَعُونَ فِي تَجَارِبَ مُتَنَوِّعَةٍ",
+      "place": "رسالة يعقوب 1:2",
       "data": "Jas/1"
     },
     {
-      "verse": "Knowing this, that the trying of your faith worketh patience.",
-      "place": "James 1:3",
+      "verse": "عَالِمِينَ أَنَّ امْتِحَانَ إِيمَانِكُمْ يُنْشِئُ صَبْرًا",
+      "place": "رسالة يعقوب 1:3",
       "data": "Jas/1"
     },
     {
-      "verse": "But let patience have her perfect work, that ye may be perfect and entire, wanting nothing.",
-      "place": "James 1:4",
+      "verse": "وَأَمَّا الصَّبْرُ فَلْيَكُنْ لَهُ عَمَلٌ تَامٌّ، لِكَيْ تَكُونُوا تَامِّينَ وَكَامِلِينَ غَيْرَ نَاقِصِينَ فِي شَيْءٍ",
+      "place": "رسالة يعقوب 1:4",
       "data": "Jas/1"
     },
     {
-      "verse": "Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which Yahweh hath promised to them that love him.",
-      "place": "James 1:12",
+      "verse": "طُوبَى لِلرَّجُلِ الَّذِي يَحْتَمِلُ التَّجْرِبَةَ، لأَنَّهُ إِذَا تَزَكَّى يَنَالُ «إِكْلِيلَ الْحَيَاةِ» الَّذِي وَعَدَ بِهِ الرَّبُّ لِلَّذِينَ يُحِبُّونَهُ",
+      "place": "رسالة يعقوب 1:12",
       "data": "Jas/1"
     },
     {
-      "verse": "But every man is tempted, when he is drawn away of his own lust, and enticed.",
-      "place": "James 1:14",
+      "verse": "وَلكِنَّ كُلَّ وَاحِدٍ يُجَرَّبُ إِذَا انْجَذَبَ وَانْخَدَعَ مِنْ شَهْوَتِهِ",
+      "place": "رسالة يعقوب 1:14",
       "data": "Jas/1"
     },
     {
-      "verse": "Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:",
-      "place": "James 1:19",
+      "verse": "إِذًا يَا إِخْوَتِي الأَحِبَّاءَ، لِيَكُنْ كُلُّ إِنْسَانٍ مُسْرِعًا فِي الاسْتِمَاعِ، مُبْطِئًا فِي التَّكَلُّمِ، مُبْطِئًا فِي الْغَضَبِ",
+      "place": "رسالة يعقوب 1:19",
       "data": "Jas/1"
     },
     {
-      "verse": "Pure religion and undefiled before messiah and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.",
-      "place": "James 1:27",
+      "verse": "اَلدِّيَانَةُ الطَّاهِرَةُ النَّقِيَّةُ عِنْدَ اللهِ الآبِ هِيَ هَذِهِ: افْتِقَادُ الْيَتَامَى وَالأَرَامِلِ فِي ضِيقَتِهِمْ، وَحِفْظُ الإِنْسَانِ نَفْسَهُ بِلاَ دَنَسٍ مِنَ الْعَالَمِ",
+      "place": "رسالة يعقوب 1:27",
       "data": "Jas/1"
     },
     {
-      "verse": "Here is the patience of the saints: here are they that keep the commandments of Elohim, and the faith of Yahushua.",
-      "place": "Revelations 14:12",
+      "verse": "هُنَا صَبْرُ الْقِدِّيسِينَ. هُنَا الَّذِينَ يَحْفَظُونَ وَصَايَا اللهِ وَإِيمَانَ يَسُوعَ",
+      "place": "سفر رؤيا يوحنا اللاهوتي 14:12",
       "data": "Rv/14"
     },
     {
-      "verse": "And there shall be no night there; and they need no candle, neither light of the sun; for Yahweh Elohim giveth them light: and they shall reign for ever and ever.",
-      "place": "Revelations 22:5",
+      "verse": "وَلَا يَكُونُ لَيْلٌ هُنَاكَ، وَلَا يَحْتَاجُونَ إِلَى سِرَاجٍ أَوْ نُورِ شَمْسٍ، لأَنَّ الرَّبَّ الإِلَهَ يُنِيرُ عَلَيْهِمْ، وَهُمْ سَيَمْلِكُونَ إِلَى أَبَدِ الآبِدِينَ",
+      "place": "سفر رؤيا يوحنا اللاهوتي 22:5",
       "data": "Rv/22"
     },
     {
-      "verse": "He that is unjust, let him be unjust still: and he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still: and he that is holy, let him be holy still.",
-      "place": "Revelations 22:11",
+      "verse": "مَنْ يَظْلِمْ فَلْيَظْلِمْ بَعْدُ. وَمَنْ هُوَ نَجِسٌ فَلْيَتَنَجَّسْ بَعْدُ. وَمَنْ هُوَ بَارٌّ فَلْيَتَبَرَّرْ بَعْدُ. وَمَنْ هُوَ مُقَدَّسٌ فَلْيَتَقَدَّسْ بَعْدُ",
+      "place": "سفر رؤيا يوحنا اللاهوتي 22:11",
       "data": "Rv/22"
     },
     {
-      "verse": "And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.",
-      "place": "Revelations 22:12",
+      "verse": "وَهَا أَنَا آتِي سَرِيعًا وَأُجْرَتِي مَعِي لأُجَازِيَ كُلَّ وَاحِدٍ كَمَا يَكُونُ عَمَلُهُ",
+      "place": "سفر رؤيا يوحنا اللاهوتي 22:12",
       "data": "Rv/22"
     }
   ]

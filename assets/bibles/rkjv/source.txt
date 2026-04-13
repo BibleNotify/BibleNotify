@@ -1,0 +1,3 @@
+The arabic Translation of the bible is provided by The Coptic Orthodox Church with a free license
+link("https://st-takla.org/") (SVD Translation)
+

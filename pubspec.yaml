@@ -47,6 +47,8 @@ flutter:
   generate: true
   uses-material-design: true
 
+  default-flavor: otherStores
+
   assets:
     - assets/images/
     - assets/icons/

@@ -32,6 +32,7 @@ android {
             applicationId = "com.biblenotify.biblenotify"
         }
         create("otherStores") {
+            isDefault = true
             dimension = "distribution"
             applicationId = "com.correctsyntax.biblenotify"
         }

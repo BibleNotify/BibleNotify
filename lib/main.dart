@@ -1,6 +1,7 @@
 import 'package:biblenotify/L10n/generated/app_localizations.dart';
 import 'package:biblenotify/app_viewmodel.dart';
 import 'package:biblenotify/services/l10n_service.dart';
+import 'package:biblenotify/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:biblenotify/app/app.bottomsheets.dart';
 import 'package:biblenotify/app/app.dialogs.dart';
@@ -49,9 +50,7 @@ class MainApp extends StatelessWidget {
           navigatorKey: StackedService.navigatorKey,
           navigatorObservers: [StackedService.routeObserver],
           theme: ThemeData(
-            //7DD273
-            //242424
-            colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF7DD273)),
+            colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
           ),
           builder: (context, child) {
             locator<L10nService>().capture(context);

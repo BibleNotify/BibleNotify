@@ -50,8 +50,7 @@ Bible Notify is a community project. Contributions are always welcome! Feel free
 
 ## Release Process
 
-- [ ] Update ``versionName`` in ``build.gradle``.
-- [ ] Update ``versonCode`` to +1 of the previous number in ``build.gradle``.
+- [ ] Update the version and version code in ``pubspec.yaml``.
 - [ ] Build a signed apk ``com.correctsyntax.biblenotify`` by choosing the ``otherStoresRelease`` Build Variant in Android Studio.
 - [ ] Write release notes and create new GitHub release with built apk attached.
 
@@ -60,7 +59,7 @@ For the Google Play version since it has a different package name:
 - [ ] Create new release and upload the appbundle to Google Play.
 
 
-## License
+## Licenses
 
 Bible Notify is licensed under the terms of the GPL-3.0 License.
 

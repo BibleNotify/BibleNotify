@@ -1,15 +1,15 @@
 {
     "@@locale": "fr",
 
-    "notification__title": "A Word from the Scriptures",
+    "notification__title": "Lecture d'un livre des Écritures",
     "@notification__title": {
         "type": "text"
     },
-    "home__dailyVerseNotificationAt": "Daily verse notification at",
+    "home__dailyVerseNotificationAt": "Notification quotidienne à",
     "@home__dailyVerseNotificationAt": {
         "type": "text"
     },
-    "settings__title": "Settings",
+    "settings__title": "Paramètres",
     "@settings__title": {
         "type": "text"
     },
@@ -23,6 +23,14 @@
     },
     "settings__licenseAndContributors": "License and contributors",
     "@settings__licenseAndContributors": {
+        "type": "text"
+    },
+    "permissions__alarmPermissionIsRequired": "Alarm permission is required",
+    "@permissions__alarmPermissionIsRequired": {
+        "type": "text"
+    },
+    "permissions__okay": "Okay",
+    "@permissions__okay": {
         "type": "text"
     }
 }

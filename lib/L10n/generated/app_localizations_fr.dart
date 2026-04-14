@@ -9,13 +9,13 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
-  String get notification__title => 'A Word from the Scriptures';
+  String get notification__title => 'Lecture d\'un livre des Écritures';
 
   @override
-  String get home__dailyVerseNotificationAt => 'Daily verse notification at';
+  String get home__dailyVerseNotificationAt => 'Notification quotidienne à';
 
   @override
-  String get settings__title => 'Settings';
+  String get settings__title => 'Paramètres';
 
   @override
   String get settings__bibleTranslation => 'Bible translation';
@@ -25,4 +25,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get settings__licenseAndContributors => 'License and contributors';
+
+  @override
+  String get permissions__alarmPermissionIsRequired => 'Alarm permission is required';
+
+  @override
+  String get permissions__okay => 'Okay';
 }

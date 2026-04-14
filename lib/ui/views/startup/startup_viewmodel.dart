@@ -37,6 +37,5 @@ class StartupViewModel extends BaseViewModel {
 
     await _notificationsService.init();
     await _notificationsService.requestNotificationPermission();
-    await _notificationsService.requestExactAlarmPermission();
   }
 }

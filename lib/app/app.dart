@@ -14,6 +14,7 @@ import 'package:biblenotify/services/verse_and_chapter_service.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/services/app_info_service.dart';
 import 'package:biblenotify/services/web_service.dart';
+import 'package:biblenotify/ui/views/permissions/permissions_view.dart';
 // @stacked-import
 
 @StackedApp(
@@ -22,6 +23,7 @@ import 'package:biblenotify/services/web_service.dart';
     MaterialRoute(page: StartupView),
     MaterialRoute(page: SettingsView),
     MaterialRoute(page: ReaderView),
+    MaterialRoute(page: PermissionsView),
 // @stacked-route
   ],
   dependencies: [

@@ -60,7 +60,7 @@ class ReaderViewModel extends BaseViewModel {
     String chapterContent = chapterJson['text'] as String;
 
     chapterContent = chapterContent.replaceAll(
-        "<p><sup>$highlightVerseNumber</sup>", "<p class='hv'><sup>$highlightVerseNumber</sup>");
+        '<p><sup>$highlightVerseNumber</sup>', "<p class='hv'><sup>$highlightVerseNumber</sup>");
 
     // Assign the title
     title = chapterJson['chapter'] as String;

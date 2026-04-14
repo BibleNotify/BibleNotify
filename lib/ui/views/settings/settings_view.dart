@@ -99,7 +99,7 @@ class SettingsView extends StackedView<SettingsViewModel> {
               ),
 
               // Bottom text
-              Center(
+              const Center(
                 child: Padding(
                   padding: EdgeInsets.only(top: 5.0, bottom: 40.0),
                   child: Text(

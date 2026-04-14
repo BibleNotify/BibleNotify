@@ -24,7 +24,13 @@
     "settings__licenseAndContributors": "License and contributors",
     "@settings__licenseAndContributors": {
         "type": "text"
+    },
+    "permissions__alarmPermissionIsRequired": "Alarm permission is required",
+    "@permissions__alarmPermissionIsRequired": {
+        "type": "text"
+    },
+    "permissions__okay": "Okay",
+    "@permissions__okay": {
+        "type": "text"
     }
-
-    
 }

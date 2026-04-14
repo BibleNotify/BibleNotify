@@ -50,12 +50,13 @@ class NotificationsService with ListenableServiceMixin {
     //selectNotificationStream.close();
   }
 
-  Future<void> checkIfAndroidPermissionsGranted() async {
+  Future<bool> checkIfAndroidPermissionsGranted() async {
     bool grantedNotificationPermission = await androidImplementation?.areNotificationsEnabled() ?? false;
     bool grantedExactAlarmPermission = await androidImplementation?.canScheduleExactNotifications() ?? false;
 
     _notificationsPermissionsGranted = grantedNotificationPermission == true && grantedExactAlarmPermission == true;
     notifyListeners();
+    return _notificationsPermissionsGranted;
   }
 
   Future<void> requestExactAlarmPermission() async {
@@ -80,6 +81,7 @@ class NotificationsService with ListenableServiceMixin {
   }
 
   Future<void> scheduleDailyNotification() async {
+    if (_notificationsPermissionsGranted == false) return;
     await configureLocalTimeZone();
     configureOnTapNotification();
 

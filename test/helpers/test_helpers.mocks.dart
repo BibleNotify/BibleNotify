@@ -989,14 +989,14 @@ class MockNotificationsService extends _i1.Mock implements _i10.NotificationsSer
       );
 
   @override
-  _i7.Future<void> checkIfAndroidPermissionsGranted() => (super.noSuchMethod(
+  _i7.Future<bool> checkIfAndroidPermissionsGranted() => (super.noSuchMethod(
         Invocation.method(
           #checkIfAndroidPermissionsGranted,
           [],
         ),
-        returnValue: _i7.Future<void>.value(),
-        returnValueForMissingStub: _i7.Future<void>.value(),
-      ) as _i7.Future<void>);
+        returnValue: _i7.Future<bool>.value(false),
+        returnValueForMissingStub: _i7.Future<bool>.value(false),
+      ) as _i7.Future<bool>);
 
   @override
   _i7.Future<void> requestExactAlarmPermission() => (super.noSuchMethod(
@@ -1325,4 +1325,21 @@ class MockAppInfoService extends _i1.Mock implements _i14.AppInfoService {
 /// A class which mocks [WebService].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockWebService extends _i1.Mock implements _i15.WebService {}
+class MockWebService extends _i1.Mock implements _i15.WebService {
+  @override
+  _i7.Future<void> launchWebUrl(
+    String? url,
+    bool? external,
+  ) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #launchWebUrl,
+          [
+            url,
+            external,
+          ],
+        ),
+        returnValue: _i7.Future<void>.value(),
+        returnValueForMissingStub: _i7.Future<void>.value(),
+      ) as _i7.Future<void>);
+}

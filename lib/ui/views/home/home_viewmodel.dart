@@ -40,10 +40,17 @@ class HomeViewModel extends ReactiveViewModel {
   }
 
   Future<void> onToggleNotificationsEnabled(bool value) async {
-    _settingsService.setNotificationsEnabled(value);
-    if (value == true) {
-      await _notificationsService.scheduleDailyNotification();
+    if (await _notificationsService.checkIfAndroidPermissionsGranted() == false) {
+      if (value == true) {
+        _navigationService.navigateToPermissionsView();
+      }
+    } else {
+      _settingsService.setNotificationsEnabled(value);
+      if (value == true) {
+        await _notificationsService.scheduleDailyNotification();
+      }
     }
+
     rebuildUi();
   }
 

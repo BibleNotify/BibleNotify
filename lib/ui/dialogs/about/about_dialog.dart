@@ -47,7 +47,7 @@ class AboutDialog extends StackedView<AboutDialogModel> {
                               ),
                             ),
                             Text(
-                              'Bible Notify Contributors',
+                              viewModel.s.about__contributors,
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
@@ -62,7 +62,7 @@ class AboutDialog extends StackedView<AboutDialogModel> {
                               softWrap: true,
                             ),
                             Text(
-                              'Bible Notify License',
+                              viewModel.s.about__license,
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,

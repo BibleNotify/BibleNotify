@@ -27,8 +27,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settings__licenseAndContributors => 'License and contributors';
 
   @override
-  String get permissions__alarmPermissionIsRequired => 'Alarm permission is required';
+  String get permissions__alarmPermissionIsRequired =>
+      'Alarm permission is required';
 
   @override
   String get permissions__okay => 'Okay';
+
+  @override
+  String get about__contributors => 'Bible Notify Contributors';
+
+  @override
+  String get about__license => 'Bible Notify License';
 }

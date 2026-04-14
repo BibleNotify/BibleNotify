@@ -32,5 +32,13 @@
     "permissions__okay": "Okay",
     "@permissions__okay": {
         "type": "text"
+    },
+    "about__contributors": "Bible Notify Contributors",
+    "@about__contributors": {
+        "type": "text"
+    },
+    "about__license": "Bible Notify License",
+    "@about__license": {
+        "type": "text"
     }
 }

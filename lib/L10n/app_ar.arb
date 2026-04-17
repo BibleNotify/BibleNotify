@@ -1,7 +1,7 @@
 {
     "@@locale": "ar",
 
-    "notification__title": "A Word from the Scriptures",
+    "notification__title": "كملة من الكتاب المقدس",
     "@notification__title": {
         "type": "text"
     },

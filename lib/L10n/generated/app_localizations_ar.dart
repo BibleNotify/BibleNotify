@@ -9,7 +9,7 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get notification__title => 'A Word from the Scriptures';
+  String get notification__title => 'كملة من الكتاب المقدس';
 
   @override
   String get home__dailyVerseNotificationAt => 'Daily verse notification at';

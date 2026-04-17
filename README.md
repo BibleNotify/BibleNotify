@@ -51,9 +51,11 @@ Bible Notify is a community project. Contributions are always welcome! Feel free
 ## Release Process
 
 - [ ] Update the version and version code in ``pubspec.yaml``.
+- [ ] Write release notes.
 - [ ] Build a signed appbundle ``com.biblenotify.biblenotify``.
-- [ ] Create new release and upload the appbundle to Google Play.
-- [ ] Write release notes and create new GitHub release with built apk attached.
+- [ ] Create new release and upload the appbundle file to the Google Play Console.
+- [ ] Download the signed apk from the app bundle explorer in the Google Play Console.
+- [ ] Create a new GitHub release with the signed apk attached.
 
 
 ## Licenses

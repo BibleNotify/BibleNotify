@@ -7,5 +7,4 @@ class AboutDialogModel extends BaseViewModel {
   final _l10nService = locator<L10nService>();
 
   AppLocalizations get s => _l10nService.s;
-
 }

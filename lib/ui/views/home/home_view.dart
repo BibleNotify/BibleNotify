@@ -88,16 +88,24 @@ class HomeView extends StackedView<HomeViewModel> {
                                   spacing: 12.0,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      viewModel.s.home__dailyVerseNotificationAt.toUpperCase(),
-                                      style: const TextStyle(
-                                        fontSize: 14.0,
-                                        fontWeight: FontWeight.w500,
+                                    Opacity(
+                                      opacity: viewModel.notificationsEnabled == true ? 1.0 : 0.5,
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            viewModel.s.home__dailyVerseNotificationAt.toUpperCase(),
+                                            style: const TextStyle(
+                                              fontSize: 14.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                          Text(
+                                            viewModel.currentNotificationTime.format(context),
+                                            style: const TextStyle(
+                                                fontSize: 60.0, height: 0.85, fontWeight: FontWeight.w500),
+                                          ),
+                                        ],
                                       ),
-                                    ),
-                                    Text(
-                                      viewModel.currentNotificationTime.format(context),
-                                      style: const TextStyle(fontSize: 60.0, height: 0.85, fontWeight: FontWeight.w500),
                                     ),
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.center,

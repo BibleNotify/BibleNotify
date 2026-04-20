@@ -1,43 +1,43 @@
 {
     "@@locale": "ar",
 
-    "notification__title": "A Word from the Scriptures",
+    "notification__title": "كلمة من الكتاب المقدس",
     "@notification__title": {
         "type": "text"
     },
-    "home__dailyVerseNotificationAt": "Daily verse notification at",
+    "home__dailyVerseNotificationAt": "إشعار الآية اليومية في",
     "@home__dailyVerseNotificationAt": {
         "type": "text"
     },
-    "settings__title": "Settings",
+    "settings__title": "الإعدادات",
     "@settings__title": {
         "type": "text"
     },
-    "settings__bibleTranslation": "Bible translation",
+    "settings__bibleTranslation": "ترجمة الكتاب المقدس",
     "@settings__bibleTranslation": {
         "type": "text"
     },
-    "settings__interfaceLanguage": "Interface language",
+    "settings__interfaceLanguage": "لغة الواجهة",
     "@settings__interfaceLanguage": {
         "type": "text"
     },
-    "settings__licenseAndContributors": "License and contributors",
+    "settings__licenseAndContributors": "الترخيص والمساهمون",
     "@settings__licenseAndContributors": {
         "type": "text"
     },
-    "permissions__alarmPermissionIsRequired": "Alarm permission is required",
+    "permissions__alarmPermissionIsRequired": "إذن تشغيل المنبه مطلوب ",
     "@permissions__alarmPermissionIsRequired": {
         "type": "text"
     },
-    "permissions__okay": "Okay",
+    "permissions__okay": "حسنًا",
     "@permissions__okay": {
         "type": "text"
     },
-    "about__contributors": "Bible Notify Contributors",
+    "about__contributors": "مساهمو التطبيق",
     "@about__contributors": {
         "type": "text"
     },
-    "about__license": "Bible Notify License",
+    "about__license": "رخصة التطبيق",
     "@about__license": {
         "type": "text"
     }

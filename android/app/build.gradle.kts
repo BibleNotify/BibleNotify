@@ -23,21 +23,7 @@ kotlin {
 
 
 android {
-    namespace = "com.correctsyntax.biblenotify"
-    flavorDimensions.add("distribution")
-
-    productFlavors {
-        create("googlePlay") {
-            dimension = "distribution"
-            applicationId = "com.biblenotify.biblenotify"
-        }
-        create("otherStores") {
-            isDefault = true
-            dimension = "distribution"
-            applicationId = "com.correctsyntax.biblenotify"
-        }
-    }
-
+    namespace = "com.biblenotify.biblenotify"
 
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
@@ -51,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.correctsyntax.biblenotify"
+        applicationId = "com.biblenotify.biblenotify"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

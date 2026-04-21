@@ -21,7 +21,7 @@ Bible Notify is a free, daily Bible verse notification application for Android. 
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=com.biblenotify.biblenotify)
 
-Please note that the application package name is different on Google Play than other app stores and the apk in releases.
+Please note that for versions prior to the application package name is different on Google Play than other app stores and the apk in releases.
 
 
 ## Desktop Version
@@ -51,12 +51,11 @@ Bible Notify is a community project. Contributions are always welcome! Feel free
 ## Release Process
 
 - [ ] Update the version and version code in ``pubspec.yaml``.
-- [ ] Build a signed apk ``com.correctsyntax.biblenotify`` by choosing the ``otherStoresRelease`` Build Variant in Android Studio.
-- [ ] Write release notes and create new GitHub release with built apk attached.
-
-For the Google Play version since it has a different package name:
-- [ ] Build a signed appbundle ``com.biblenotify.biblenotify`` by choosing the ``googlePlayRelease`` Build Variant in Android Studio.
-- [ ] Create new release and upload the appbundle to Google Play.
+- [ ] Write release notes.
+- [ ] Build a signed appbundle ``com.biblenotify.biblenotify``.
+- [ ] Create new release and upload the appbundle file to the Google Play Console.
+- [ ] Download the signed apk from the app bundle explorer in the Google Play Console.
+- [ ] Create a new GitHub release with the signed apk attached.
 
 
 ## Licenses

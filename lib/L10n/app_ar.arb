@@ -1,7 +1,7 @@
 {
     "@@locale": "ar",
 
-    "notification__title": "كلمة من الكتاب المقدس",
+    "notification__title": "كملة من الكتاب المقدس",
     "@notification__title": {
         "type": "text"
     },

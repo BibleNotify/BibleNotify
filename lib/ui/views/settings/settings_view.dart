@@ -22,7 +22,14 @@ class SettingsView extends StackedView<SettingsViewModel> {
   ) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(viewModel.s.settings__title),
+        title: Text(
+          viewModel.s.settings__title,
+          style: const TextStyle(
+            fontWeight: FontWeight.w700,
+            fontFamily: 'Merriweather',
+            letterSpacing: -0.2,
+          ),
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(

@@ -18,7 +18,11 @@ class HomeView extends StackedView<HomeViewModel> {
       appBar: AppBar(
         title: const Text(
           'Bible Notify',
-          style: TextStyle(fontWeight: FontWeight.w500),
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontFamily: 'Merriweather',
+            letterSpacing: -0.2,
+          ),
         ),
         actions: [
           IconButton(
@@ -66,11 +70,20 @@ class HomeView extends StackedView<HomeViewModel> {
                                   children: [
                                     Text(
                                       viewModel.randomVerseText,
-                                      style: const TextStyle(fontSize: 18.0),
+                                      style: const TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Merriweather',
+                                        letterSpacing: 0.4,
+                                        fontFamilyFallback: ['Amiri'],
+                                      ),
                                     ),
                                     Text(
-                                      viewModel.randomVerseReference,
-                                      style: const TextStyle(fontSize: 14.0),
+                                      viewModel.randomVerseReference.toUpperCase(),
+                                      style: const TextStyle(
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.w700,
+                                        letterSpacing: -0.05,
+                                      ),
                                     )
                                   ],
                                 ),
@@ -91,18 +104,25 @@ class HomeView extends StackedView<HomeViewModel> {
                                     Opacity(
                                       opacity: viewModel.notificationsEnabled == true ? 1.0 : 0.5,
                                       child: Column(
+                                        spacing: 9.0,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             viewModel.s.home__dailyVerseNotificationAt.toUpperCase(),
                                             style: const TextStyle(
                                               fontSize: 14.0,
-                                              fontWeight: FontWeight.w500,
+                                              fontWeight: FontWeight.w700,
+                                              letterSpacing: -0.05,
                                             ),
                                           ),
                                           Text(
                                             viewModel.currentNotificationTime.format(context),
                                             style: const TextStyle(
-                                                fontSize: 60.0, height: 0.85, fontWeight: FontWeight.w500),
+                                              fontSize: 60.0,
+                                              height: 0.85,
+                                              fontWeight: FontWeight.w500,
+                                              letterSpacing: -2.5,
+                                            ),
                                           ),
                                         ],
                                       ),

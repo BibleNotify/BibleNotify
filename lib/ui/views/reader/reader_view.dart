@@ -28,7 +28,14 @@ class ReaderView extends StackedView<ReaderViewModel> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
-        title: Text(viewModel.title),
+        title: Text(
+          viewModel.title,
+          style: const TextStyle(
+            fontWeight: FontWeight.w700,
+            fontFamily: 'Merriweather',
+            letterSpacing: -0.2,
+          ),
+        ),
         centerTitle: true,
       ),
       body: SafeArea(

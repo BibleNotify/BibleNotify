@@ -22,7 +22,8 @@ dependencies:
 
   # Notifications
   flutter_local_notifications: ^21.0.0
-
+  workmanager: ^0.9.0+3
+  
   # Settings
   shared_preferences: ^2.5.4
 
@@ -46,6 +47,29 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+
+  fonts:
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/Merriweather/Merriweather-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Merriweather/Merriweather-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Merriweather/Merriweather-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Merriweather/Merriweather-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+    - family: MerriweatherSans
+      fonts:
+        - asset: assets/fonts/MerriweatherSans/MerriweatherSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/MerriweatherSans/MerriweatherSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/MerriweatherSans/MerriweatherSans-Bold.ttf
+          weight: 700
 
   assets:
     - assets/images/

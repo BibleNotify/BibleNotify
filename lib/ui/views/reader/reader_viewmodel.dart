@@ -4,8 +4,10 @@ import 'dart:developer';
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/services/settings_service.dart';
 import 'package:biblenotify/services/verse_and_chapter_service.dart';
+import 'package:biblenotify/services/web_service.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:stacked/stacked.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_android/webview_flutter_android.dart';
@@ -13,6 +15,7 @@ import 'package:webview_flutter_android/webview_flutter_android.dart';
 class ReaderViewModel extends BaseViewModel {
   final _settingsService = locator<SettingsService>();
   final _versesAndChaptersService = locator<VerseAndChapterService>();
+  final _webService = locator<WebService>();
 
   String title = '';
 
@@ -50,6 +53,10 @@ class ReaderViewModel extends BaseViewModel {
       );
     await AndroidWebViewController.enableDebugging(kDebugMode);
 
+    // Load font
+    ByteData fontData = await rootBundle.load('assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    String fontUri = _webService.getFontUri(fontData, 'font/truetype').toString();
+
     // Get the verse
     int verseIndex = await _settingsService.getCurrentRandomVerseIndex();
     Map<String, dynamic> verseJson = await _versesAndChaptersService.getVerseJsonFromIndex(verseIndex);
@@ -74,20 +81,27 @@ class ReaderViewModel extends BaseViewModel {
 </head>
 <body>
 <style>
+@font-face {
+  font-family: 'Merriweather';
+  src: url('$fontUri');
+}
 
 body {
-margin: 40px 10% 100px 10%;
-color: #000;
+font-family: 'Merriweather';
+margin: 40px 5% 100px 5%;
+color: #fff;
 }
 
 p {
-font-size: 18px;
-font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: #000;
+font-family: 'Merriweather';
+letter-spacing: 0.3px;
+line-height: 155%;
+font-size: 16px;
+color: #fff;
 }
 
 .hv {
-color: black;
+color: #fff;
 font-weight: bold;
 }
 

@@ -17,6 +17,7 @@ class HomeViewModel extends ReactiveViewModel {
   final _versesAndChaptersService = locator<VerseAndChapterService>();
 
   bool get notificationsEnabled => _settingsService.notificationsEnabled;
+  String get currentBibleTranslation => _settingsService.currentBibleTranslation;
 
   TimeOfDay get currentNotificationTime =>
       TimeOfDay.fromDateTime(DateTime.parse(_settingsService.currentNotificationTime));

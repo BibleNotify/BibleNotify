@@ -1,3 +1,4 @@
+import 'package:biblenotify/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
@@ -62,6 +63,7 @@ class HomeView extends StackedView<HomeViewModel> {
                             width: cardWidth,
                             child: Card(
                               elevation: 0,
+                              color: grayColor.withAlpha(100),
                               child: Padding(
                                 padding: const EdgeInsets.all(20.0),
                                 child: Column(
@@ -78,9 +80,9 @@ class HomeView extends StackedView<HomeViewModel> {
                                       ),
                                     ),
                                     Text(
-                                      viewModel.randomVerseReference.toUpperCase(),
+                                      '${viewModel.randomVerseReference.toUpperCase()} (${viewModel.currentBibleTranslation.toUpperCase()})',
                                       style: const TextStyle(
-                                        fontSize: 14.0,
+                                        fontSize: 13.0,
                                         fontWeight: FontWeight.w700,
                                         letterSpacing: -0.05,
                                       ),
@@ -95,6 +97,7 @@ class HomeView extends StackedView<HomeViewModel> {
                             width: cardWidth,
                             child: Card(
                               elevation: 0,
+                              color: grayColor.withAlpha(100),
                               child: Padding(
                                 padding: const EdgeInsets.all(20.0),
                                 child: Column(
@@ -112,7 +115,7 @@ class HomeView extends StackedView<HomeViewModel> {
                                             style: const TextStyle(
                                               fontSize: 14.0,
                                               fontWeight: FontWeight.w700,
-                                              letterSpacing: -0.05,
+                                              letterSpacing: -0.01,
                                             ),
                                           ),
                                           Text(
@@ -149,6 +152,7 @@ class HomeView extends StackedView<HomeViewModel> {
                                           icon: Image.asset(
                                             'assets/icons/pencil-square.png',
                                             width: 22.0,
+                                            color: Colors.white,
                                           ),
                                         ),
                                       ],

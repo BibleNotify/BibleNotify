@@ -29,12 +29,16 @@ class PermissionsView extends StackedView<PermissionsViewModel> {
                       viewModel.s.permissions__alarmPermissionIsRequired,
                       style: const TextStyle(
                         fontSize: 21.0,
+                        fontWeight: FontWeight.w700,
+                        fontFamily: 'Merriweather',
+                        letterSpacing: -0.2,
                       ),
                     ),
                     FilledButton.tonal(
                       onPressed: viewModel.onOkay,
                       child: Text(viewModel.s.permissions__okay),
                     ),
+                    const SizedBox(height: 12.0),
                     Image.asset(
                       'assets/images/alarm_permission_gif.gif',
                       height: 220.0,

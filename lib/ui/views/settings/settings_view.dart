@@ -41,6 +41,7 @@ class SettingsView extends StackedView<SettingsViewModel> {
                 leading: Image.asset(
                   'assets/icons/book.png',
                   width: 22.0,
+                  color: Colors.white,
                 ),
                 title: Text(viewModel.s.settings__bibleTranslation),
                 subtitle: Text(Const.bibleTranslationOptions[viewModel.bibleTranslation]!),
@@ -50,18 +51,20 @@ class SettingsView extends StackedView<SettingsViewModel> {
                 leading: Image.asset(
                   'assets/icons/translate.png',
                   width: 22.0,
+                  color: Colors.white,
                 ),
                 title: Text(viewModel.s.settings__interfaceLanguage),
                 subtitle: Text(Const.interfaceLanguageOptions[viewModel.interfaceLanguage]!),
                 onTap: () => viewModel.showInterfaceLanguageBottomSheet(context),
               ),
 
-              const Opacity(opacity: 0.5, child: Divider()),
+              const Opacity(opacity: 0.1, child: Divider()),
 
               ListTile(
                 leading: Image.asset(
                   'assets/icons/c-circle.png',
                   width: 22.0,
+                  color: Colors.white,
                 ),
                 title: Text(viewModel.s.settings__licenseAndContributors),
                 onTap: viewModel.showAboutDialog,
@@ -71,6 +74,7 @@ class SettingsView extends StackedView<SettingsViewModel> {
                 leading: Image.asset(
                   'assets/icons/info-square.png',
                   width: 22.0,
+                  color: Colors.white,
                 ),
                 title: const Text('Bible Notify'),
                 subtitle: Text(viewModel.appInfo),

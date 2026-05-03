@@ -1,7 +1,7 @@
 name: biblenotify
 description:  Offline, privacy-friendly daily Bible verse notification app for Android 
 publish_to: 'none'
-version: 5.0.0+24
+version: 5.1.0+25
 
 environment:
   sdk: '>=3.0.3 <4.0.0'

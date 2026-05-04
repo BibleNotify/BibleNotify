@@ -129,6 +129,12 @@ abstract class AppLocalizations {
   /// **'License and contributors'**
   String get settings__licenseAndContributors;
 
+  /// No description provided for @settings__privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy'**
+  String get settings__privacyPolicy;
+
   /// No description provided for @permissions__alarmPermissionIsRequired.
   ///
   /// In en, this message translates to:

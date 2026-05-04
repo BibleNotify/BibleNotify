@@ -12,29 +12,32 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notification__title => 'كملة من الكتاب المقدس';
 
   @override
-  String get home__dailyVerseNotificationAt => 'Daily verse notification at';
+  String get home__dailyVerseNotificationAt => 'إشعار الآية اليومية في';
 
   @override
-  String get settings__title => 'Settings';
+  String get settings__title => 'الإعدادات';
 
   @override
-  String get settings__bibleTranslation => 'Bible translation';
+  String get settings__bibleTranslation => 'ترجمة الكتاب المقدس';
 
   @override
-  String get settings__interfaceLanguage => 'Interface language';
+  String get settings__interfaceLanguage => 'لغة الواجهة';
 
   @override
-  String get settings__licenseAndContributors => 'License and contributors';
+  String get settings__licenseAndContributors => 'الترخيص والمساهمون';
 
   @override
-  String get permissions__alarmPermissionIsRequired => 'Alarm permission is required';
+  String get settings__privacyPolicy => 'Privacy policy';
 
   @override
-  String get permissions__okay => 'Okay';
+  String get permissions__alarmPermissionIsRequired => 'إذن تشغيل المنبه مطلوب ';
 
   @override
-  String get about__contributors => 'Bible Notify Contributors';
+  String get permissions__okay => 'حسنًا';
 
   @override
-  String get about__license => 'Bible Notify License';
+  String get about__contributors => 'مساهمو التطبيق';
+
+  @override
+  String get about__license => 'رخصة التطبيق';
 }

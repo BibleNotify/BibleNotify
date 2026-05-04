@@ -56,6 +56,10 @@ class SettingsViewModel extends ReactiveViewModel {
     rebuildUi();
   }
 
+  void onPrivacyPolicy() async {
+    await _webService.launchWebUrl('https://biblenotify.github.io/privacy/', false);
+  }
+
   void showAboutDialog() {
     _dialogService.showCustomDialog(
       variant: DialogType.about,

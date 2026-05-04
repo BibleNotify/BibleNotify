@@ -25,6 +25,10 @@
     "@settings__licenseAndContributors": {
         "type": "text"
     },
+    "settings__privacyPolicy": "Privacy policy",
+    "@settings__privacyPolicy": {
+        "type": "text"
+    },
     "permissions__alarmPermissionIsRequired": "Alarm permission is required",
     "@permissions__alarmPermissionIsRequired": {
         "type": "text"

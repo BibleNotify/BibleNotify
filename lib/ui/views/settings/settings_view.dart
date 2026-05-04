@@ -72,6 +72,16 @@ class SettingsView extends StackedView<SettingsViewModel> {
 
               ListTile(
                 leading: Image.asset(
+                  'assets/icons/c-circle.png',
+                  width: 22.0,
+                  color: Colors.white,
+                ),
+                title: Text(viewModel.s.settings__privacyPolicy),
+                onTap: viewModel.onPrivacyPolicy,
+              ),
+
+              ListTile(
+                leading: Image.asset(
                   'assets/icons/info-square.png',
                   width: 22.0,
                   color: Colors.white,

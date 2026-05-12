@@ -38,6 +38,7 @@ Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-
 
 Bible Notify is built with Flutter using [Stacked Architecture](https://stacked.filledstacks.com/).
 
+- Check ``flutter-version.txt`` to check that you have the right Flutter version.
 - Run ``flutter pub get`` to install the dependencies.
 - Choose an emulator or a connected device.
 - Hit ``F5`` to run the code in the emulator, or open a terminal and run with ``flutter run``.
@@ -46,6 +47,11 @@ Bible Notify is built with Flutter using [Stacked Architecture](https://stacked.
 ## Contributing
 
 Bible Notify is a community project. Contributions are always welcome! Feel free to open a PR or ask questions.
+
+
+## Adding a new Bible translation
+
+See [this document](/assets/bibles/adding_new_bible.md) for how to add a new Bible translation to Bible Notify.
 
 
 ## Release Process

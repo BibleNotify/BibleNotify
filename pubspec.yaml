@@ -22,8 +22,8 @@ dependencies:
 
   # Notifications
   flutter_local_notifications: ^21.0.0
-  workmanager: ^0.9.0+3
-  
+  android_alarm_manager_plus: ^5.0.0
+
   # Settings
   shared_preferences: ^2.5.4
 

@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:developer';
+import 'dart:ui' show RootIsolateToken;
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/app/app.router.dart';
 import 'package:biblenotify/services/l10n_service.dart';
@@ -10,7 +12,6 @@ import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:workmanager/workmanager.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 final AndroidFlutterLocalNotificationsPlugin? androidImplementation =
@@ -24,21 +25,6 @@ void notificationTapBackground(NotificationResponse notificationResponse) {
   if (notificationResponse.payload != null) {
     locator<NavigationService>().navigateTo(Routes.readerView);
   }
-}
-
-@pragma('vm:entry-point')
-void schedulingNotificationCallbackDispatcher() {
-  Workmanager().executeTask((taskName, inputData) async {
-    // Re-initialize the locator and services
-    await setupLocator();
-    await locator<SettingsService>().init();
-    await locator<L10nService>().init();
-
-    final notificationsService = locator<NotificationsService>();
-    await notificationsService.scheduleDailyNotification();
-
-    return Future.value(true);
-  });
 }
 
 class NotificationsService with ListenableServiceMixin {
@@ -97,7 +83,17 @@ class NotificationsService with ListenableServiceMixin {
   }
 
   Future<void> scheduleDailyNotification() async {
-    if (_notificationsPermissionsGranted == false) return;
+    if (await checkIfAndroidPermissionsGranted() == false) {
+      final isBackgroundIsolate = RootIsolateToken.instance == null;
+
+      if (isBackgroundIsolate) {
+        log('Exact Alarm permission missing in background worker.');
+        return;
+      } else {
+        await _navigationService.navigateToPermissionsView();
+        return;
+      }
+    }
     await configureLocalTimeZone();
     configureOnTapNotification();
 
@@ -136,18 +132,6 @@ class NotificationsService with ListenableServiceMixin {
       ),
       matchDateTimeComponents: DateTimeComponents.time,
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-    );
-
-    // Schedule WorkManager to wake up right after
-    // the notification fires to pick a new verse.
-    final nextVersePickTime = (await nextInstanceOfTimeInterval()).add(const Duration(seconds: 2));
-    final delay = nextVersePickTime.difference(tz.TZDateTime.now(tz.local));
-
-    await Workmanager().registerOneOffTask(
-      'daily-verse-refresh',
-      'fetchAndScheduleNext',
-      initialDelay: delay,
-      existingWorkPolicy: ExistingWorkPolicy.replace,
     );
   }
 

@@ -1,7 +1,8 @@
+import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:biblenotify/L10n/generated/app_localizations.dart';
 import 'package:biblenotify/app_viewmodel.dart';
+import 'package:biblenotify/background_worker.dart';
 import 'package:biblenotify/services/l10n_service.dart';
-import 'package:biblenotify/services/notifications_service.dart';
 import 'package:biblenotify/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:biblenotify/app/app.bottomsheets.dart';
@@ -11,7 +12,6 @@ import 'package:biblenotify/app/app.router.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:workmanager/workmanager.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,16 +19,8 @@ Future<void> main() async {
   setupDialogUi();
   setupBottomSheetUi();
 
-  await Workmanager().initialize(schedulingNotificationCallbackDispatcher);
-  await Workmanager().registerPeriodicTask(
-    'daily-verse-refresh',
-    'fetchAndScheduleVerse',
-    existingWorkPolicy: ExistingPeriodicWorkPolicy.keep,
-    constraints: Constraints(
-      networkType: NetworkType.notRequired,
-      requiresBatteryNotLow: true,
-    ),
-  );
+  await AndroidAlarmManager.initialize();
+  await rescheduleAlarmsAfterBoot();
 
   // Preload to avoid interface language flicker
   await locator<L10nService>().init();

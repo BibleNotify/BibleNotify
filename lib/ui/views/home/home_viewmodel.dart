@@ -1,6 +1,7 @@
 import 'package:biblenotify/L10n/generated/app_localizations.dart';
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/app/app.router.dart';
+import 'package:biblenotify/background_worker.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/services/notifications_service.dart';
 import 'package:biblenotify/services/settings_service.dart';
@@ -48,7 +49,7 @@ class HomeViewModel extends ReactiveViewModel {
     } else {
       _settingsService.setNotificationsEnabled(value);
       if (value == true) {
-        await _notificationsService.scheduleDailyNotification();
+        await scheduleNextAlarm();
       }
     }
 

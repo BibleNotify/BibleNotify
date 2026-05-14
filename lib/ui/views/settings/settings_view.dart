@@ -44,7 +44,12 @@ class SettingsView extends StackedView<SettingsViewModel> {
                   color: Colors.white,
                 ),
                 title: Text(viewModel.s.settings__bibleTranslation),
-                subtitle: Text(Const.bibleTranslationOptions[viewModel.bibleTranslation]!),
+                subtitle: Text(
+                  Const.bibleTranslationOptions[viewModel.bibleTranslation]!,
+                  style: TextStyle(
+                    color: Colors.white.withAlpha(200),
+                  ),
+                ),
                 onTap: viewModel.showBibleTranslationBottomSheet,
               ),
               ListTile(
@@ -54,7 +59,12 @@ class SettingsView extends StackedView<SettingsViewModel> {
                   color: Colors.white,
                 ),
                 title: Text(viewModel.s.settings__interfaceLanguage),
-                subtitle: Text(Const.interfaceLanguageOptions[viewModel.interfaceLanguage]!),
+                subtitle: Text(
+                  Const.interfaceLanguageOptions[viewModel.interfaceLanguage]!,
+                  style: TextStyle(
+                    color: Colors.white.withAlpha(200),
+                  ),
+                ),
                 onTap: () => viewModel.showInterfaceLanguageBottomSheet(context),
               ),
 
@@ -87,7 +97,12 @@ class SettingsView extends StackedView<SettingsViewModel> {
                   color: Colors.white,
                 ),
                 title: const Text('Bible Notify'),
-                subtitle: Text(viewModel.appInfo),
+                subtitle: Text(
+                  viewModel.appInfo,
+                  style: TextStyle(
+                    color: Colors.white.withAlpha(200),
+                  ),
+                ),
               ),
 
               // Social

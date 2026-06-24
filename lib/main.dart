@@ -1,7 +1,6 @@
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:biblenotify/L10n/generated/app_localizations.dart';
 import 'package:biblenotify/app_viewmodel.dart';
-import 'package:biblenotify/background_worker.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +19,6 @@ Future<void> main() async {
   setupBottomSheetUi();
 
   await AndroidAlarmManager.initialize();
-  await rescheduleAlarmsAfterBoot();
 
   // Preload to avoid interface language flicker
   await locator<L10nService>().init();

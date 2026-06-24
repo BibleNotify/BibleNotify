@@ -16,12 +16,20 @@ class L10nService with ListenableServiceMixin {
   /// Initialize and load the saved locale
   Future<void> init() async {
     String localeCode = await _settingsService.getCurrentInterfaceLanguage();
-
     _currentLocale = Locale(localeCode);
     notifyListeners();
   }
 
-  /// Captures the context so that the app localizations can be accessed.
+  /// Context-free initialization used exclusively by background isolates (the alarmCallback function)
+  Future<void> initBackground() async {
+    String localeCode = await _settingsService.getCurrentInterfaceLanguage();
+    _currentLocale = Locale(localeCode);
+
+    // Load the standard AppLocalizations bundle directly from the generated delegate
+    _strings = await AppLocalizations.delegate.load(_currentLocale!);
+  }
+
+  /// Captures the context so that the app localizations can be accessed via UI.
   void capture(BuildContext context) {
     _strings = AppLocalizations.of(context);
   }
@@ -29,9 +37,7 @@ class L10nService with ListenableServiceMixin {
   /// Change and persist the locale
   Future<void> changeLocale(String languageCode) async {
     _currentLocale = Locale(languageCode);
-
     await _settingsService.setCurrentInterfaceLanguage(languageCode);
-
     notifyListeners();
   }
 }

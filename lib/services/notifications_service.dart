@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'dart:developer';
-import 'dart:ui' show RootIsolateToken;
+import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/app/app.router.dart';
+import 'package:biblenotify/alarm_callback.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/services/settings_service.dart';
 import 'package:biblenotify/services/verse_and_chapter_service.dart';
@@ -84,54 +84,67 @@ class NotificationsService with ListenableServiceMixin {
 
   Future<void> scheduleDailyNotification() async {
     if (await checkIfAndroidPermissionsGranted() == false) {
-      final isBackgroundIsolate = RootIsolateToken.instance == null;
-
-      if (isBackgroundIsolate) {
-        log('Exact Alarm permission missing in background worker.');
-        return;
-      } else {
-        await _navigationService.navigateToPermissionsView();
-        return;
-      }
+      await _navigationService.navigateToPermissionsView();
+      return;
     }
-    await configureLocalTimeZone();
-    configureOnTapNotification();
+    await scheduleNextAlarm();
+  }
 
-    // Generate the random verse
+  Future<void> scheduleNextAlarm() async {
+    DateTime notificationDateTime = DateTime.parse(await _settingsService.getCurrentNotificationTime());
+
+    final now = DateTime.now();
+    var targetDate = DateTime(now.year, now.month, now.day, notificationDateTime.hour, notificationDateTime.minute);
+
+    if (targetDate.isBefore(now)) {
+      targetDate = targetDate.add(const Duration(days: 1));
+    }
+
+    await AndroidAlarmManager.periodic(
+      const Duration(days: 1),
+      999,
+      alarmCallback,
+      startAt: targetDate,
+      exact: true,
+      wakeup: true,
+      rescheduleOnReboot: true,
+    );
+  }
+
+  Future<void> showBackgroundNotification() async {
+    const InitializationSettings initializationSettings = InitializationSettings(
+      android: AndroidInitializationSettings('notification_icon'),
+    );
+    await flutterLocalNotificationsPlugin.initialize(settings: initializationSettings);
+
     int verseIndex = await _versesAndChaptersService.generateRandomVerseIndex();
-    // Set the current index
     await _settingsService.setCurrentRandomVerseIndex(verseIndex);
+
     Map<String, dynamic> verseJson = await _versesAndChaptersService.getVerseJsonFromIndex(verseIndex);
     String verseText = verseJson['verse'] as String;
     String verseReference = verseJson['place'] as String;
 
-    // Notification title
     String notificationTitle = _l10nService.s.notification__title;
 
-    // Schedule the notification
-    await flutterLocalNotificationsPlugin.zonedSchedule(
+    await flutterLocalNotificationsPlugin.show(
       id: 0,
       title: notificationTitle,
       body: verseText,
-      payload: '',
-      scheduledDate: await nextInstanceOfTimeInterval(),
-      // tz.TZDateTime.now(
-      //   tz.local,
-      // ).add(const Duration(seconds: 10)),
       notificationDetails: NotificationDetails(
         android: AndroidNotificationDetails(
+          'bible_notify_channel',
+          'Bible Daily Notifications',
+          channelDescription: 'Bible Notify Daily Notification Channel',
           icon: 'notification_icon',
-          'bible_notify_id',
-          'bible_notify_daily_notification_channel',
-          channelDescription: 'Bible Notify Daily Notification',
+          importance: Importance.max,
+          priority: Priority.high,
           styleInformation: BigTextStyleInformation(
             verseText,
             summaryText: verseReference,
           ),
         ),
       ),
-      matchDateTimeComponents: DateTimeComponents.time,
-      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+      payload: verseIndex.toString(),
     );
   }
 

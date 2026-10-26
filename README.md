@@ -31,27 +31,27 @@ Get [Bible Notify Desktop](https://github.com/BibleNotify/BibleNotifyDesktop), a
 
 ## Element Chat
 
-Need help? Want to help out? [Join our Element chat](https://matrix.to/#/#bible-notify:matrix.org) to chat with the developers or get support.
+Need help? Want to help out? Or just looking for a little community? [Join our Element chat](https://matrix.to/#/#bible-notify:matrix.org) to chat with the developers or get support.
 
 
 ## Running the Code
 
-Bible Notify is built with Flutter using [Stacked Architecture](https://stacked.filledstacks.com/).
+Bible Notify is built with Flutter using [Stacked architecture](https://stacked.filledstacks.com/).
 
 - Check ``flutter-version.txt`` to check that you have the right Flutter version.
 - Run ``flutter pub get`` to install the dependencies.
 - Choose an emulator or a connected device.
-- Hit ``F5`` to run the code in the emulator, or open a terminal and run with ``flutter run``.
+- Press ``F5`` to run the code in the emulator, or open a terminal and run with ``flutter run``.
 
 
 ## Contributing
 
-Bible Notify is a community project. Contributions are always welcome! Feel free to open a PR or ask questions.
+Bible Notify is a community project. Contributions are always welcome! Feel free to open a PR or ask questions either in a GitHub issue or in [our Element chat](https://matrix.to/#/#bible-notify:matrix.org).
 
 
 ## Adding a new Bible translation
 
-See [this document](/assets/bibles/adding_new_bible.md) for how to add a new Bible translation to Bible Notify.
+See [this document](/assets/bibles/adding_new_bible.md) for the process of adding a new Bible translation to Bible Notify.
 
 
 ## Release Process

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 const Color primaryColor = Color(0xFF7DD273);
 const Color veryLightBlueGrayColor = Color(0xFFebf0f0);

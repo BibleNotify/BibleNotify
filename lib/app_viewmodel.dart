@@ -1,6 +1,6 @@
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/services/l10n_service.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 
 class AppViewModel extends ReactiveViewModel {

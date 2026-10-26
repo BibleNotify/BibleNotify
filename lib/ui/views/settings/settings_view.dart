@@ -1,12 +1,13 @@
 import 'package:biblenotify/common/constants.dart';
+import 'package:biblenotify/ui/common/app_colors.dart';
 import 'package:biblenotify/ui/views/settings/widgets/rounded_btn_item/rounded_btn_item.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 
 import 'settings_viewmodel.dart';
 
 class SettingsView extends StackedView<SettingsViewModel> {
-  const SettingsView({Key? key}) : super(key: key);
+  const SettingsView({super.key});
 
   @override
   void onViewModelReady(SettingsViewModel viewModel) async {
@@ -21,6 +22,7 @@ class SettingsView extends StackedView<SettingsViewModel> {
     Widget? child,
   ) {
     return Scaffold(
+      backgroundColor: darkGrayColor,
       appBar: AppBar(
         title: Text(
           viewModel.s.settings__title,

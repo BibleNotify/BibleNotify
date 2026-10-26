@@ -1,11 +1,11 @@
 import 'package:biblenotify/ui/common/app_colors.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 
 import 'home_viewmodel.dart';
 
 class HomeView extends StackedView<HomeViewModel> {
-  const HomeView({Key? key}) : super(key: key);
+  const HomeView({super.key});
 
   @override
   void onViewModelReady(HomeViewModel viewModel) async {
@@ -16,6 +16,7 @@ class HomeView extends StackedView<HomeViewModel> {
   @override
   Widget builder(BuildContext context, HomeViewModel viewModel, Widget? child) {
     return Scaffold(
+      backgroundColor: darkGrayColor,
       appBar: AppBar(
         title: const Text(
           'Bible Notify',

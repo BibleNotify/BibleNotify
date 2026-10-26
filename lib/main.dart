@@ -3,14 +3,13 @@ import 'package:biblenotify/L10n/generated/app_localizations.dart';
 import 'package:biblenotify/app_viewmodel.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/ui/common/app_colors.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:biblenotify/app/app.bottomsheets.dart';
 import 'package:biblenotify/app/app.dialogs.dart';
 import 'package:biblenotify/app/app.locator.dart';
 import 'package:biblenotify/app/app.router.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,29 +33,38 @@ class MainApp extends StatelessWidget {
     return ViewModelBuilder<AppViewModel>.reactive(
       viewModelBuilder: () => AppViewModel(),
       builder: (context, model, child) {
+        final _localizationsService = locator<L10nService>();
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          locale: locator<L10nService>().currentLocale,
-          localizationsDelegates: const [
+          locale: _localizationsService.currentLocale,
+          localizationsDelegates: [
             AppLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
+            ...GlobalMaterialLocalizations.delegates,
           ],
           supportedLocales: const [
             Locale('ar'), // Arabic
             Locale('en'), // English
             Locale('fr'), // French
           ],
+          localeResolutionCallback: (locale, supportedLocales) {
+            for (Locale supportedLocale in supportedLocales) {
+              if (supportedLocale.languageCode == locale?.languageCode) {
+                return supportedLocale;
+              }
+            }
+            return const Locale('en'); // Fallback to English
+          },
           initialRoute: Routes.startupView,
           onGenerateRoute: StackedRouter().onGenerateRoute,
           navigatorKey: StackedService.navigatorKey,
           navigatorObservers: [StackedService.routeObserver],
           theme: ThemeData(
             fontFamily: 'MerriweatherSans',
+            brightness: Brightness.dark,
             colorScheme: const ColorScheme.dark(
               primary: primaryColor,
               onSurface: Colors.white,
+              surface: darkGrayColor,
             ),
             dialogTheme: const DialogThemeData(
               backgroundColor: grayColor,
@@ -148,8 +156,9 @@ class MainApp extends StatelessWidget {
             ),
           ),
           builder: (context, child) {
-            locator<L10nService>().capture(context);
-            return child!;
+            return MaterialUiCompatibilityBridge(
+              child: child!,
+            );
           },
         );
       },

@@ -1,5 +1,5 @@
 import 'package:biblenotify/ui/views/settings/widgets/rounded_btn_item/rounded_btn_item_model.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 
 class RoundedBtnItem extends StackedView<RoundedBtnItemModel> {

@@ -4,6 +4,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i7;
+import 'dart:typed_data' as _i16;
 import 'dart:ui' as _i8;
 
 import 'package:biblenotify/L10n/generated/app_localizations.dart' as _i3;
@@ -1048,6 +1049,26 @@ class MockNotificationsService extends _i1.Mock implements _i10.NotificationsSer
       ) as _i7.Future<void>);
 
   @override
+  _i7.Future<void> scheduleNextAlarm() => (super.noSuchMethod(
+        Invocation.method(
+          #scheduleNextAlarm,
+          [],
+        ),
+        returnValue: _i7.Future<void>.value(),
+        returnValueForMissingStub: _i7.Future<void>.value(),
+      ) as _i7.Future<void>);
+
+  @override
+  _i7.Future<void> showBackgroundNotification() => (super.noSuchMethod(
+        Invocation.method(
+          #showBackgroundNotification,
+          [],
+        ),
+        returnValue: _i7.Future<void>.value(),
+        returnValueForMissingStub: _i7.Future<void>.value(),
+      ) as _i7.Future<void>);
+
+  @override
   _i7.Future<_i2.TZDateTime> nextInstanceOfTimeInterval() => (super.noSuchMethod(
         Invocation.method(
           #nextInstanceOfTimeInterval,
@@ -1218,13 +1239,14 @@ class MockL10nService extends _i1.Mock implements _i13.L10nService {
       ) as _i7.Future<void>);
 
   @override
-  void capture(_i6.BuildContext? context) => super.noSuchMethod(
+  _i7.Future<void> initBackground() => (super.noSuchMethod(
         Invocation.method(
-          #capture,
-          [context],
+          #initBackground,
+          [],
         ),
-        returnValueForMissingStub: null,
-      );
+        returnValue: _i7.Future<void>.value(),
+        returnValueForMissingStub: _i7.Future<void>.value(),
+      ) as _i7.Future<void>);
 
   @override
   _i7.Future<void> changeLocale(String? languageCode) => (super.noSuchMethod(
@@ -1342,4 +1364,39 @@ class MockWebService extends _i1.Mock implements _i15.WebService {
         returnValue: _i7.Future<void>.value(),
         returnValueForMissingStub: _i7.Future<void>.value(),
       ) as _i7.Future<void>);
+
+  @override
+  String getFontUri(
+    _i16.ByteData? data,
+    String? mime,
+  ) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getFontUri,
+          [
+            data,
+            mime,
+          ],
+        ),
+        returnValue: _i5.dummyValue<String>(
+          this,
+          Invocation.method(
+            #getFontUri,
+            [
+              data,
+              mime,
+            ],
+          ),
+        ),
+        returnValueForMissingStub: _i5.dummyValue<String>(
+          this,
+          Invocation.method(
+            #getFontUri,
+            [
+              data,
+              mime,
+            ],
+          ),
+        ),
+      ) as String);
 }

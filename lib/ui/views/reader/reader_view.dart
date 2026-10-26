@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
+import 'package:biblenotify/ui/common/app_colors.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'reader_viewmodel.dart';
 
 class ReaderView extends StackedView<ReaderViewModel> {
-  const ReaderView({Key? key}) : super(key: key);
+  const ReaderView({super.key});
 
   @override
   void onViewModelReady(ReaderViewModel viewModel) async {
@@ -26,7 +27,7 @@ class ReaderView extends StackedView<ReaderViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: darkGrayColor,
       appBar: AppBar(
         title: Text(
           viewModel.title,

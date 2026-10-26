@@ -11,7 +11,6 @@ class StartupViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();
   final _notificationsService = locator<NotificationsService>();
 
-  // Place anything here that needs to happen before we get into the application
   Future<void> runStartupLogic() async {
     // Initialize settings
     await _settingsService.init();

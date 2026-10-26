@@ -6,7 +6,7 @@ import 'package:biblenotify/services/settings_service.dart';
 import 'package:biblenotify/services/verse_and_chapter_service.dart';
 import 'package:biblenotify/services/web_service.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:stacked/stacked.dart';
 import 'package:webview_flutter/webview_flutter.dart';

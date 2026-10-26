@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:biblenotify/ui/common/app_colors.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 
 import 'permissions_viewmodel.dart';
 
 class PermissionsView extends StackedView<PermissionsViewModel> {
-  const PermissionsView({Key? key}) : super(key: key);
+  const PermissionsView({super.key});
 
   @override
   Widget builder(
@@ -13,7 +14,7 @@ class PermissionsView extends StackedView<PermissionsViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: darkGrayColor,
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.only(left: 20.0, right: 20.0),

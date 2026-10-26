@@ -7,7 +7,7 @@ import 'package:biblenotify/services/app_info_service.dart';
 import 'package:biblenotify/services/l10n_service.dart';
 import 'package:biblenotify/services/settings_service.dart';
 import 'package:biblenotify/services/web_service.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
